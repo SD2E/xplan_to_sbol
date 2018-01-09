@@ -1,0 +1,401 @@
+{
+    "id" : "b7cf7a75-9769-4d54-a807-ac81b92fb0af",
+    "name" : "Rule30 Q0 Plan",
+    "initialState": [
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN3928_pAN4036_system_0_0_0/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1201_system_0_0_1/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1201_system_0_0p002_1/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1717_system_5_0p002_0/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1201_system_0_0_0/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1717_system_0_0p002_1/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1717_system_5_0p002_1/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1717_system_0_0p002_0/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1717_system_5_0_0/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1201_system_5_0p002_0/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1717_system_5_0_1/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1201_system_5_0p002_1/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1717_system_0_0_1/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1717_system_0_0_0/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN3928_pAN4036_system_0_0_1/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1201_system_5_0_0/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1201_system_5_0_1/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN3928_pAN4036_system_0_0p002_1/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN3928_pAN4036_system_0_0p002_0/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN3928_pAN4036_system_5_0_0/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN1201_system_0_0p002_0/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN3928_pAN4036_system_5_0p002_0/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN3928_pAN4036_system_5_0_1/1",
+            "Strain Id": "UNKNOWN"
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                }
+            ],
+            "Sample Id": "http://hub.sd2e.org/user/nroehner/rule30_conditions/pAN3928_pAN4036_system_5_0p002_1/1",
+            "Strain Id": "UNKNOWN"
+        }
+    ],
+    "steps" : [
+	{
+	    "id" : 0,
+	    "name" : "Isolate Plasmids Step",
+	    "operator" : {
+		"id" : 0,
+		"name" : "Isolate Plasmids Operator",
+		"type" : "isolatePlasmids",
+		"plasmids" : [ ["pAN3928", "pAN4036"], ["pAN1201"], ["pAN1717"]]
+	    }	    
+	},
+	{
+	    "id" : 1,
+	    "name" : "Transform Step",
+	    "operator" : {
+		"id" : 1,
+		"name" : "Transform Plasmids Operator",
+		"type" : "transformPlasmids",
+		"host" : "NEB-10-beta",
+		"plasmids" : [ ["pAN3928", "pAN4036"], ["pAN1201"], ["pAN1717"]],
+		"samples" : [ "s1", "s2", "s3" ]
+	    }	    
+
+	},
+	{
+	    "id" : 2,
+	    "name" : "Innoculate Step",
+	    "operator" : {
+		"id" : 2,
+		"name" : "Innoculate Operator",
+		"type" : "innoculate",
+		"samples" : [ "s1", "s2", "s3" ]
+	    }	    
+	}
+    ]
+}
