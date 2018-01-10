@@ -14,13 +14,13 @@ Installation
 Windows
 -------------
 
-Currently, xplan_to_sbol is only compatible with 64-bit Windows and requires that both Git and Python 3 be installed first. To install xplan_to_sbol, checkout this repository from GitHub and run the following in the Command Prompt from xplan_to_sbol_Win_64_3:
+xplan_to_sbol requires Git and Python 3, and it currently depends on a version of pySBOL that is only compatible with 64-bit Windows. To install xplan_to_sbol, checkout this repository from GitHub and run the following in the Command Prompt from the xplan_to_sbol directory:
 
 .. code-block:: powershell
 
     python setup.py install
 
-This command will also automatically download and install the sbol and pySBOLx packages that xplan_to_sbol depends on from GitHub.
+This command will also automatically download and install the pySBOL and pySBOLx packages that xplan_to_sbol depends on from GitHub.
 
 
 Usage
@@ -45,7 +45,7 @@ xplan_to_sbol can also be imported and used as a Python module like so:
 Example
 --------
 
-Run the following from xplan_to_sbol_Win_64_3:
+Run the following from the xplan_to_sbol directory:
 
 .. code-block:: powershell
 
