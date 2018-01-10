@@ -20,7 +20,7 @@ xplan_to_sbol requires Git and Python 3, and it currently depends on a version o
 
     python setup.py install
 
-This command will also automatically download and install the pySBOL and pySBOLx packages that xplan_to_sbol depends on from GitHub.
+This command will automatically download and install the pySBOL and pySBOLx packages that xplan_to_sbol depends on from GitHub. Git and Python 3 must be installed separately.
 
 
 Usage
