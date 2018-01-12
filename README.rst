@@ -30,7 +30,7 @@ xplan_to_sbol can be run from the Command Prompt as follows:
 
 .. code-block:: powershell
 
-    xplan_to_sbol -xp [path to XPLAN JSON file] -sp [path for output SBOL RDF/XML file] -hm [authority to prefix generated URIs]
+    xplan_to_sbol -hm [authority to prefix generated URIs] -op [path to OM file (unit reference)] -xp [path to XPLAN JSON file] -sp [path for output SBOL RDF/XML file] 
 
 xplan_to_sbol can also be imported and used as a Python module like so:
 
@@ -38,7 +38,7 @@ xplan_to_sbol can also be imported and used as a Python module like so:
 
     import xplan_to_sbol.__main__ as xbol
 
-    args = ['-xp', 'path to input XPLAN JSON file', '-sp', 'path for output SBOL RDF/XML file', '-hm', 'authority to prefix generated URIs']
+    args = ['-hm', 'authority to prefix generated URIs', '-op', 'path to OM file (unit reference)', '-xp', 'path to input XPLAN JSON file', '-sp', 'path for output SBOL RDF/XML file']
 
     xbol.main(args)
 
@@ -49,6 +49,6 @@ Run the following from the xplan_to_sbol directory:
 
 .. code-block:: powershell
 
-    xplan_to_sbol -xp example/xplan/yeastGates-Q0.json -sp example/sbol/yeastGates-Q0.xml -hm http://sift.net
+    xplan_to_sbol -hm http://sift.net -op example/om/om-2.0.rdf -xp example/xplan/yeastGates-Q0.json -sp example/sbol/yeastGates-Q0.xml 
 
 An example of importing xplan_to_sbol can be found in the Jupyter notebook xplan_to_sbol.ipynb.
