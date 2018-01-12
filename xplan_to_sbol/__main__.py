@@ -3,46 +3,64 @@ import json
 import sys
 from pySBOLx.pySBOLx import XDocument
 
-def load_activity(src_entity_data, doc, operator, replicate_id, entity_dict, act_dict, dest_sample_data=None):
+def load_activity(src_entity_data, doc, operator, replicate_id, entity_dict, act_dict, dest_entity_data=None):
     try:
-        src_entity_id = src_entity_data['sample'].replace('-', '_')
+        src_entity_id = src_entity_data['sample']
     except:
-        src_entity_id = src_entity_data.replace('-', '_')
+        src_entity_id = src_entity_data
 
     try:
         src_entity = act_dict[src_entity_id]
     except:
         src_entity = entity_dict[src_entity_id]
 
-    if dest_sample_data is None:
+    if dest_entity_data is None:
         act_dict[src_entity_id] = doc.create_activity(operator, replicate_id, [src_entity])
     else:
-        dest_sample = load_sample(dest_sample_data, doc, entity_dict, [src_entity])
+        try:
+            dest_entity_id = dest_entity_data['dest']
+        except:
+            dest_entity_id = dest_entity_data
+        
+        dest_entity = entity_dict[dest_entity_id]
 
-        doc.create_activity(operator, replicate_id, [src_entity], dest_sample)
+        doc.create_activity(operator, replicate_id, [src_entity], dest_entity)
 
 def load_src_dest_activity(entity_data, doc, operator, replicate_id, entity_dict, act_dict):
     src_entity_data = entity_data['src']
 
     try:
-        dest_sample_data = entity_data['dest']
+        dest_entity_data = entity_data['dest']
 
-        if isinstance(dest_sample_data, str):
-            load_activity(src_entity_data, doc, operator, replicate_id, entity_dict, act_dict, dest_sample_data)
+        if isinstance(dest_entity_data, str):
+            load_activity(src_entity_data, doc, operator, replicate_id, entity_dict, act_dict, dest_entity_data)
         else:
-            for dest_sample_datum in dest_sample_data:
-                load_activity(src_entity_data, doc, operator, replicate_id, entity_dict, act_dict, dest_sample_datum)
+            for dest_entity_datum in dest_entity_data:
+                load_activity(src_entity_data, doc, operator, replicate_id, entity_dict, act_dict, dest_entity_datum)
     except:
-        dest_sample_data = entity_data['dests']
+        dest_entity_data = entity_data['dests']
 
-        for dest_sample_datum in dest_sample_data:
-            load_activity(src_entity_data, doc, operator, replicate_id, entity_dict, act_dict, dest_sample_datum['dest'])
+        for dest_entity_datum in dest_entity_data:
+            load_activity(src_entity_data, doc, operator, replicate_id, entity_dict, act_dict, dest_entity_datum)
+
+def load_step_activities(step_data, doc, entity_dict, act_dict):
+    operator = step_data['operator']['type'].replace('-', '_')
+    replicate_id = repr(step_data['id'])
+
+    for entity_data in step_data['operator']['samples']:
+        if operator == 'uploadData':
+            load_activity(entity_data, doc, operator, replicate_id, entity_dict, act_dict, entity_data)
+        else:
+            try:
+                load_src_dest_activity(entity_data, doc, operator, replicate_id, entity_dict, act_dict)
+            except:
+                load_activity(entity_data, doc, operator, replicate_id, entity_dict, act_dict)
 
 def load_sample(sample_data, doc, entity_dict, src_samples=[], strain_condition=None, induction_condition=None):
     try:
-        sample_id = sample_data['sample'].replace('-', '_')
+        sample_id = sample_data['sample']
     except:
-        sample_id = sample_data.replace('-', '_')
+        sample_id = sample_data
 
     if sample_id not in entity_dict:
         if strain_condition is None:
@@ -63,16 +81,13 @@ def load_sample(sample_data, doc, entity_dict, src_samples=[], strain_condition=
                 else:
                     condition = None
             else:
-                for system in systems:
-                    doc.create_module(system, induction_condition)
-
-                condition = induction_condition
+                condition = doc.copy_inducible_system(system=induction_condition, sub_systems=systems)
         elif induction_condition is None:
             condition = strain_condition
         else:
             condition = induction_condition
 
-        entity_dict[sample_id] = doc.create_sample(sample_id, src_samples, condition)
+        entity_dict[sample_id] = doc.create_sample(sample_id.replace('-', '_'), src_samples, condition)
     
     return entity_dict[sample_id]
 
@@ -95,57 +110,24 @@ def load_src_dest_samples(sample_data, doc, entity_dict, strain_condition=None, 
         for dest_sample_datum in dest_sample_data:
             load_sample(dest_sample_datum['dest'], doc, entity_dict, [src_sample], strain_condition, induction_condition)
 
-def load_samples(sample_data, doc, entity_dict, strain_condition=None, induction_condition=None):
-    try:
-        load_src_dest_samples(sample_data, doc, entity_dict, strain_condition, induction_condition)
-    except:
-        load_sample(sample_data=sample_data, doc=doc, entity_dict=entity_dict, strain_condition=strain_condition, induction_condition=induction_condition)
+def load_experimental_data(source, doc, sample, exp, operator, replicate_id, attachs, entity_dict):
+    if source not in entity_dict:
+        attachs.append(doc.create_attachment(source=source, replicate_id=replicate_id))
 
-
-def load_sample_conditions(sample_data, doc, entity_dict, unit_dict, om):
-    try:
-        strain_condition = load_strain_condition(sample_data, doc)
-
-        try:
-            induction_condition = load_induction_condition(sample_data, doc, unit_dict, om, strain_condition)
-
-            load_samples(sample_data, doc, entity_dict, strain_condition, induction_condition)
-        except:
-            load_samples(sample_data, doc, entity_dict, strain_condition)
-    except:
-        try:
-            induction_condition = load_induction_condition(sample_data, doc, unit_dict, om)
-
-            load_samples(sample_data=sample_data, doc=doc, entity_dict=entity_dict, induction_condition=induction_condition)
-        except:
-            load_samples(sample_data, doc, entity_dict)
+        entity_dict[source] = doc.create_experimental_data([attachs[-1]], sample, exp, operator, replicate_id)
     
+    return entity_dict[source]
 
-def load_experimental_data(attach_data, doc, exp, operator, replicate_id, entity_dict, attachs, exp_data):
-    sample = load_sample(attach_data['sample'], doc, entity_dict)
+def load_entities(entity_data, doc, exp, operator, replicate_id, attachs, entity_dict, strain_condition=None, induction_condition=None):
+    if operator == 'uploadData':
+        sample = load_sample(sample_data=entity_data, doc=doc, entity_dict=entity_dict, strain_condition=strain_condition, induction_condition=induction_condition)
 
-    attachs.append(doc.create_attachment(source=attach_data['dest'], replicate_id=replicate_id))
-    exp_data.append(doc.create_experimental_data([attachs[-1]], sample, exp, operator, replicate_id))
-    
-def load_step_entities(step_data, doc, exp, entity_dict, unit_dict, om, attachs, exp_data):
-    operator = step_data['operator']['type'].replace('-', '_')
-    replicate_id = repr(step_data['id'])
-
-    for entity_data in step_data['operator']['samples']:
-        if operator == 'uploadData':
-            load_experimental_data(entity_data, doc, exp, operator, replicate_id, entity_dict, attachs, exp_data)
-        else:
-            load_sample_conditions(entity_data, doc, entity_dict, unit_dict, om)
-                
-def load_step_activities(step_data, doc, entity_dict, act_dict):
-    operator = step_data['operator']['type'].replace('-', '_')
-    replicate_id = repr(step_data['id'])
-
-    for entity_data in step_data['operator']['samples']:
+        load_experimental_data(entity_data['dest'], doc, sample, exp, operator, replicate_id, attachs, entity_dict)
+    else:
         try:
-            load_src_dest_activity(entity_data, doc, operator, replicate_id, entity_dict, act_dict)
+            load_src_dest_samples(entity_data, doc, entity_dict, strain_condition, induction_condition)
         except:
-            load_activity(entity_data, doc, operator, replicate_id, entity_dict, act_dict)
+            load_sample(sample_data=entity_data, doc=doc, entity_dict=entity_dict, strain_condition=strain_condition, induction_condition=induction_condition)
 
 def load_inducer(inducer_data, doc, unit_dict, om, mags, units):
     mags.append(repr(inducer_data['amount']))
@@ -200,6 +182,31 @@ def load_strain_condition(sample_data, doc):
 
     return doc.create_system(devices)
 
+def load_entities_and_conditions(entity_data, doc, exp, operator, replicate_id, attachs, entity_dict, unit_dict, om):
+    try:
+        strain_condition = load_strain_condition(entity_data, doc)
+
+        try:
+            induction_condition = load_induction_condition(entity_data, doc, unit_dict, om, strain_condition)
+
+            load_entities(entity_data, doc, exp, operator, replicate_id, attachs, entity_dict, strain_condition, induction_condition)
+        except:
+            load_entities(entity_data, doc, exp, operator, replicate_id, attachs, entity_dict, strain_condition)
+    except:
+        try:
+            induction_condition = load_induction_condition(entity_data, doc, unit_dict, om)
+
+            load_entities(entity_data=entity_data, doc=doc, exp=exp, operator=operator, replicate_id=replicate_id, attachs=attachs, entity_dict=entity_dict, induction_condition=induction_condition)
+        except:
+            load_entities(entity_data, doc, exp, operator, replicate_id, attachs, entity_dict)
+    
+def load_step_entities(step_data, doc, exp, attachs, entity_dict, unit_dict, om):
+    operator = step_data['operator']['type'].replace('-', '_')
+    replicate_id = repr(step_data['id'])
+
+    for entity_data in step_data['operator']['samples']:
+        load_entities_and_conditions(entity_data, doc, exp, operator, replicate_id, attachs, entity_dict, unit_dict, om)
+
 def load_experiment(plan_data, doc):
     exp_id = plan_data['id'].replace('-', '_')
 
@@ -228,17 +235,16 @@ def main(args=None):
     exp = load_experiment(plan_data, doc)
 
     attachs = []
-    exp_data = []
 
     entity_dict = {}
     unit_dict = {}
     
     for step_data in plan_data['steps']:
-        load_step_entities(step_data, doc, exp, entity_dict, unit_dict, om, attachs, exp_data)
+        load_step_entities(step_data, doc, exp, attachs, entity_dict, unit_dict, om)
 
     doc.add_top_levels([exp])
     doc.add_top_levels(attachs)
-    doc.add_top_levels(exp_data)
+    # doc.add_top_levels(exp_data)
     doc.add_top_levels(list(entity_dict.values()))
     doc.add_top_levels(list(unit_dict.values()))
     
