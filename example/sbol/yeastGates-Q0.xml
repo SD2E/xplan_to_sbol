@@ -11593,162 +11593,6 @@
     <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#SmallMolecule"/>
     <sbol:version>1.0.0</sbol:version>
   </sbol:ComponentDefinition>
-  <sbol:ModuleDefinition rdf:about="http://sift.net/Beta_estradiol_system_0/1.0.0">
-    <dcterms:title>Beta_estradiol_system_0</dcterms:title>
-    <sbol:displayId>Beta_estradiol_system_0</sbol:displayId>
-    <sbol:functionalComponent>
-      <sbol:FunctionalComponent rdf:about="http://sift.net/Beta_estradiol_system_0/Beta_estradiol/1.0.0">
-        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
-        <sbol:definition rdf:resource="http://sift.net/Beta_estradiol/1.0.0"/>
-        <sbol:direction rdf:resource="http://sbols.org/v2#in"/>
-        <sbol:displayId>Beta_estradiol</sbol:displayId>
-        <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_0/Beta_estradiol"/>
-        <sbol:version>1.0.0</sbol:version>
-        <sd2:measure>
-          <om:Measure rdf:about="http://sift.net/Beta_estradiol_system_0/Beta_estradiol/Beta_estradiol_measure/1.0.0">
-            <dcterms:title>Beta_estradiol_measure</dcterms:title>
-            <sbol:displayId>Beta_estradiol_measure</sbol:displayId>
-            <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_0/Beta_estradiol/Beta_estradiol_measure"/>
-            <sbol:version>1.0.0</sbol:version>
-            <om:hasNumericalValue>0</om:hasNumericalValue>
-            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
-          </om:Measure>
-        </sd2:measure>
-      </sbol:FunctionalComponent>
-    </sbol:functionalComponent>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_0"/>
-    <sbol:version>1.0.0</sbol:version>
-  </sbol:ModuleDefinition>
-  <sbol:ModuleDefinition rdf:about="http://sift.net/Beta_estradiol_system_0p01/1.0.0">
-    <dcterms:title>Beta_estradiol_system_0p01</dcterms:title>
-    <sbol:displayId>Beta_estradiol_system_0p01</sbol:displayId>
-    <sbol:functionalComponent>
-      <sbol:FunctionalComponent rdf:about="http://sift.net/Beta_estradiol_system_0p01/Beta_estradiol/1.0.0">
-        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
-        <sbol:definition rdf:resource="http://sift.net/Beta_estradiol/1.0.0"/>
-        <sbol:direction rdf:resource="http://sbols.org/v2#in"/>
-        <sbol:displayId>Beta_estradiol</sbol:displayId>
-        <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_0p01/Beta_estradiol"/>
-        <sbol:version>1.0.0</sbol:version>
-        <sd2:measure>
-          <om:Measure rdf:about="http://sift.net/Beta_estradiol_system_0p01/Beta_estradiol/Beta_estradiol_measure/1.0.0">
-            <dcterms:title>Beta_estradiol_measure</dcterms:title>
-            <sbol:displayId>Beta_estradiol_measure</sbol:displayId>
-            <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_0p01/Beta_estradiol/Beta_estradiol_measure"/>
-            <sbol:version>1.0.0</sbol:version>
-            <om:hasNumericalValue>0.01</om:hasNumericalValue>
-            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
-          </om:Measure>
-        </sd2:measure>
-      </sbol:FunctionalComponent>
-    </sbol:functionalComponent>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_0p01"/>
-    <sbol:version>1.0.0</sbol:version>
-  </sbol:ModuleDefinition>
-  <sbol:ModuleDefinition rdf:about="http://sift.net/Beta_estradiol_system_0p1/1.0.0">
-    <dcterms:title>Beta_estradiol_system_0p1</dcterms:title>
-    <sbol:displayId>Beta_estradiol_system_0p1</sbol:displayId>
-    <sbol:functionalComponent>
-      <sbol:FunctionalComponent rdf:about="http://sift.net/Beta_estradiol_system_0p1/Beta_estradiol/1.0.0">
-        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
-        <sbol:definition rdf:resource="http://sift.net/Beta_estradiol/1.0.0"/>
-        <sbol:direction rdf:resource="http://sbols.org/v2#in"/>
-        <sbol:displayId>Beta_estradiol</sbol:displayId>
-        <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_0p1/Beta_estradiol"/>
-        <sbol:version>1.0.0</sbol:version>
-        <sd2:measure>
-          <om:Measure rdf:about="http://sift.net/Beta_estradiol_system_0p1/Beta_estradiol/Beta_estradiol_measure/1.0.0">
-            <dcterms:title>Beta_estradiol_measure</dcterms:title>
-            <sbol:displayId>Beta_estradiol_measure</sbol:displayId>
-            <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_0p1/Beta_estradiol/Beta_estradiol_measure"/>
-            <sbol:version>1.0.0</sbol:version>
-            <om:hasNumericalValue>0.1</om:hasNumericalValue>
-            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
-          </om:Measure>
-        </sd2:measure>
-      </sbol:FunctionalComponent>
-    </sbol:functionalComponent>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_0p1"/>
-    <sbol:version>1.0.0</sbol:version>
-  </sbol:ModuleDefinition>
-  <sbol:ModuleDefinition rdf:about="http://sift.net/Beta_estradiol_system_1/1.0.0">
-    <dcterms:title>Beta_estradiol_system_1</dcterms:title>
-    <sbol:displayId>Beta_estradiol_system_1</sbol:displayId>
-    <sbol:functionalComponent>
-      <sbol:FunctionalComponent rdf:about="http://sift.net/Beta_estradiol_system_1/Beta_estradiol/1.0.0">
-        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
-        <sbol:definition rdf:resource="http://sift.net/Beta_estradiol/1.0.0"/>
-        <sbol:direction rdf:resource="http://sbols.org/v2#in"/>
-        <sbol:displayId>Beta_estradiol</sbol:displayId>
-        <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_1/Beta_estradiol"/>
-        <sbol:version>1.0.0</sbol:version>
-        <sd2:measure>
-          <om:Measure rdf:about="http://sift.net/Beta_estradiol_system_1/Beta_estradiol/Beta_estradiol_measure/1.0.0">
-            <dcterms:title>Beta_estradiol_measure</dcterms:title>
-            <sbol:displayId>Beta_estradiol_measure</sbol:displayId>
-            <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_1/Beta_estradiol/Beta_estradiol_measure"/>
-            <sbol:version>1.0.0</sbol:version>
-            <om:hasNumericalValue>1</om:hasNumericalValue>
-            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
-          </om:Measure>
-        </sd2:measure>
-      </sbol:FunctionalComponent>
-    </sbol:functionalComponent>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_1"/>
-    <sbol:version>1.0.0</sbol:version>
-  </sbol:ModuleDefinition>
-  <sbol:ModuleDefinition rdf:about="http://sift.net/Beta_estradiol_system_10/1.0.0">
-    <dcterms:title>Beta_estradiol_system_10</dcterms:title>
-    <sbol:displayId>Beta_estradiol_system_10</sbol:displayId>
-    <sbol:functionalComponent>
-      <sbol:FunctionalComponent rdf:about="http://sift.net/Beta_estradiol_system_10/Beta_estradiol/1.0.0">
-        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
-        <sbol:definition rdf:resource="http://sift.net/Beta_estradiol/1.0.0"/>
-        <sbol:direction rdf:resource="http://sbols.org/v2#in"/>
-        <sbol:displayId>Beta_estradiol</sbol:displayId>
-        <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_10/Beta_estradiol"/>
-        <sbol:version>1.0.0</sbol:version>
-        <sd2:measure>
-          <om:Measure rdf:about="http://sift.net/Beta_estradiol_system_10/Beta_estradiol/Beta_estradiol_measure/1.0.0">
-            <dcterms:title>Beta_estradiol_measure</dcterms:title>
-            <sbol:displayId>Beta_estradiol_measure</sbol:displayId>
-            <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_10/Beta_estradiol/Beta_estradiol_measure"/>
-            <sbol:version>1.0.0</sbol:version>
-            <om:hasNumericalValue>10</om:hasNumericalValue>
-            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
-          </om:Measure>
-        </sd2:measure>
-      </sbol:FunctionalComponent>
-    </sbol:functionalComponent>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_10"/>
-    <sbol:version>1.0.0</sbol:version>
-  </sbol:ModuleDefinition>
-  <sbol:ModuleDefinition rdf:about="http://sift.net/Beta_estradiol_system_100/1.0.0">
-    <dcterms:title>Beta_estradiol_system_100</dcterms:title>
-    <sbol:displayId>Beta_estradiol_system_100</sbol:displayId>
-    <sbol:functionalComponent>
-      <sbol:FunctionalComponent rdf:about="http://sift.net/Beta_estradiol_system_100/Beta_estradiol/1.0.0">
-        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
-        <sbol:definition rdf:resource="http://sift.net/Beta_estradiol/1.0.0"/>
-        <sbol:direction rdf:resource="http://sbols.org/v2#in"/>
-        <sbol:displayId>Beta_estradiol</sbol:displayId>
-        <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_100/Beta_estradiol"/>
-        <sbol:version>1.0.0</sbol:version>
-        <sd2:measure>
-          <om:Measure rdf:about="http://sift.net/Beta_estradiol_system_100/Beta_estradiol/Beta_estradiol_measure/1.0.0">
-            <dcterms:title>Beta_estradiol_measure</dcterms:title>
-            <sbol:displayId>Beta_estradiol_measure</sbol:displayId>
-            <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_100/Beta_estradiol/Beta_estradiol_measure"/>
-            <sbol:version>1.0.0</sbol:version>
-            <om:hasNumericalValue>100</om:hasNumericalValue>
-            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
-          </om:Measure>
-        </sd2:measure>
-      </sbol:FunctionalComponent>
-    </sbol:functionalComponent>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/Beta_estradiol_system_100"/>
-    <sbol:version>1.0.0</sbol:version>
-  </sbol:ModuleDefinition>
   <sd2:Experiment rdf:about="http://sift.net/df82e79b_e18c_457e_8c5c_ed605acc94cd/1.0.0">
     <dcterms:title>Yeast Gates Q0 Plan</dcterms:title>
     <sbol:displayId>df82e79b_e18c_457e_8c5c_ed605acc94cd</sbol:displayId>
@@ -11934,7 +11778,7 @@
     <dcterms:title>strain_124674</dcterms:title>
     <sbol:displayId>strain_124674</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124674"/>
-    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
     <sbol:version>1.0.0</sbol:version>
   </sbol:ComponentDefinition>
   <sbol:ModuleDefinition rdf:about="http://sift.net/strain_124674_system/1.0.0">
@@ -11957,7 +11801,7 @@
     <dcterms:title>strain_124675</dcterms:title>
     <sbol:displayId>strain_124675</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124675"/>
-    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
     <sbol:version>1.0.0</sbol:version>
   </sbol:ComponentDefinition>
   <sbol:ModuleDefinition rdf:about="http://sift.net/strain_124675_system/1.0.0">
@@ -11980,7 +11824,7 @@
     <dcterms:title>strain_124676</dcterms:title>
     <sbol:displayId>strain_124676</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124676"/>
-    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
     <sbol:version>1.0.0</sbol:version>
   </sbol:ComponentDefinition>
   <sbol:ModuleDefinition rdf:about="http://sift.net/strain_124676_system/1.0.0">
@@ -12003,7 +11847,7 @@
     <dcterms:title>strain_124677</dcterms:title>
     <sbol:displayId>strain_124677</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124677"/>
-    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
     <sbol:version>1.0.0</sbol:version>
   </sbol:ComponentDefinition>
   <sbol:ModuleDefinition rdf:about="http://sift.net/strain_124677_system/1.0.0">
@@ -12026,7 +11870,7 @@
     <dcterms:title>strain_124678</dcterms:title>
     <sbol:displayId>strain_124678</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124678"/>
-    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
     <sbol:version>1.0.0</sbol:version>
   </sbol:ComponentDefinition>
   <sbol:ModuleDefinition rdf:about="http://sift.net/strain_124678_Beta_estradiol_system_0/1.0.0">
@@ -12047,6 +11891,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124678_Beta_estradiol_system_0/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>0</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12080,6 +11925,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124678_Beta_estradiol_system_0p01/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>0.01</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12113,6 +11959,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124678_Beta_estradiol_system_0p1/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>0.1</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12146,6 +11993,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124678_Beta_estradiol_system_1/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>1</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12179,6 +12027,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124678_Beta_estradiol_system_10/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>10</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12212,6 +12061,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124678_Beta_estradiol_system_100/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>100</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12247,7 +12097,7 @@
     <dcterms:title>strain_124679</dcterms:title>
     <sbol:displayId>strain_124679</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124679"/>
-    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
     <sbol:version>1.0.0</sbol:version>
   </sbol:ComponentDefinition>
   <sbol:ModuleDefinition rdf:about="http://sift.net/strain_124679_Beta_estradiol_system_0/1.0.0">
@@ -12268,6 +12118,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124679_Beta_estradiol_system_0/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>0</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12301,6 +12152,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124679_Beta_estradiol_system_0p01/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>0.01</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12334,6 +12186,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124679_Beta_estradiol_system_0p1/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>0.1</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12367,6 +12220,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124679_Beta_estradiol_system_1/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>1</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12400,6 +12254,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124679_Beta_estradiol_system_10/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>10</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12433,6 +12288,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124679_Beta_estradiol_system_100/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>100</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12468,7 +12324,7 @@
     <dcterms:title>strain_124680</dcterms:title>
     <sbol:displayId>strain_124680</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124680"/>
-    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
     <sbol:version>1.0.0</sbol:version>
   </sbol:ComponentDefinition>
   <sbol:ModuleDefinition rdf:about="http://sift.net/strain_124680_Beta_estradiol_system_0p01/1.0.0">
@@ -12489,6 +12345,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124680_Beta_estradiol_system_0p01/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>0.01</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12522,6 +12379,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124680_Beta_estradiol_system_0p1/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>0.1</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12555,6 +12413,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124680_Beta_estradiol_system_1/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>1</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12588,6 +12447,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124680_Beta_estradiol_system_10/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>10</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12621,6 +12481,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124680_Beta_estradiol_system_100/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>100</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12656,7 +12517,7 @@
     <dcterms:title>strain_124681</dcterms:title>
     <sbol:displayId>strain_124681</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124681"/>
-    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0100060"/>
     <sbol:version>1.0.0</sbol:version>
   </sbol:ComponentDefinition>
   <sbol:ModuleDefinition rdf:about="http://sift.net/strain_124681_Beta_estradiol_system_0/1.0.0">
@@ -12677,6 +12538,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124681_Beta_estradiol_system_0/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>0</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12710,6 +12572,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124681_Beta_estradiol_system_0p01/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>0.01</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12743,6 +12606,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124681_Beta_estradiol_system_0p1/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>0.1</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12776,6 +12640,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124681_Beta_estradiol_system_1/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>1</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12809,6 +12674,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124681_Beta_estradiol_system_10/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>10</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>
@@ -12842,6 +12708,7 @@
             <sbol:persistentIdentity rdf:resource="http://sift.net/strain_124681_Beta_estradiol_system_100/Beta_estradiol/Beta_estradiol_measure"/>
             <sbol:version>1.0.0</sbol:version>
             <om:hasNumericalValue>100</om:hasNumericalValue>
+            <om:hasUnit rdf:resource="http://sift.net/nanomolair/1.0.0"/>
           </om:Measure>
         </sd2:measure>
       </sbol:FunctionalComponent>

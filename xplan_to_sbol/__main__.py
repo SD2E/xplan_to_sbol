@@ -56,42 +56,18 @@ def load_step_activities(step_data, doc, entity_dict, act_dict):
             except:
                 load_activity(entity_data, doc, operator, replicate_id, entity_dict, act_dict)
 
-def load_sample(sample_data, doc, entity_dict, src_samples=[], strain_condition=None, induction_condition=None):
+def load_sample(sample_data, doc, entity_dict, src_samples=[], condition=None):
     try:
         sample_id = sample_data['sample']
     except:
         sample_id = sample_data
 
     if sample_id not in entity_dict:
-        if strain_condition is None:
-            system_uris = []
-
-            for src_sample in src_samples:
-                if len(src_sample.built) == 1:
-                    for built_uri in src_sample.built:
-                        system_uris.append(built_uri)
-
-            systems = doc.get_systems(system_uris)
-
-            if induction_condition is None:
-                if len(systems) > 1:
-                    condition = doc.create_system(sub_systems=systems)
-                elif len(systems) > 0:
-                    condition = systems[0]
-                else:
-                    condition = None
-            else:
-                condition = doc.copy_inducible_system(system=induction_condition, sub_systems=systems)
-        elif induction_condition is None:
-            condition = strain_condition
-        else:
-            condition = induction_condition
-
         entity_dict[sample_id] = doc.create_sample(sample_id.replace('-', '_'), src_samples, condition)
     
     return entity_dict[sample_id]
 
-def load_src_dest_samples(sample_data, doc, entity_dict, strain_condition=None, induction_condition=None):
+def load_src_dest_samples(sample_data, doc, entity_dict, condition=None):
     src_sample_data = sample_data['src']
     
     src_sample = load_sample(src_sample_data, doc, entity_dict)
@@ -100,15 +76,15 @@ def load_src_dest_samples(sample_data, doc, entity_dict, strain_condition=None, 
         dest_sample_data = sample_data['dest']
 
         if isinstance(dest_sample_data, str):
-            load_sample(dest_sample_data, doc, entity_dict, [src_sample], strain_condition, induction_condition)
+            load_sample(dest_sample_data, doc, entity_dict, [src_sample], condition)
         else:
             for dest_sample_datum in dest_sample_data:
-                load_sample(dest_sample_datum, doc, entity_dict, [src_sample], strain_condition, induction_condition)
+                load_sample(dest_sample_datum, doc, entity_dict, [src_sample], condition)
     except:
         dest_sample_data = sample_data['dests']
 
         for dest_sample_datum in dest_sample_data:
-            load_sample(dest_sample_datum['dest'], doc, entity_dict, [src_sample], strain_condition, induction_condition)
+            load_sample(dest_sample_datum['dest'], doc, entity_dict, [src_sample], condition)
 
 def load_experimental_data(source, doc, sample, exp, operator, replicate_id, attachs, entity_dict):
     if source not in entity_dict:
@@ -118,16 +94,16 @@ def load_experimental_data(source, doc, sample, exp, operator, replicate_id, att
     
     return entity_dict[source]
 
-def load_entities(entity_data, doc, exp, operator, replicate_id, attachs, entity_dict, strain_condition=None, induction_condition=None):
+def load_entities(entity_data, doc, exp, operator, replicate_id, attachs, entity_dict, condition=None):
     if operator == 'uploadData':
-        sample = load_sample(sample_data=entity_data, doc=doc, entity_dict=entity_dict, strain_condition=strain_condition, induction_condition=induction_condition)
+        sample = load_sample(sample_data=entity_data, doc=doc, entity_dict=entity_dict, condition=condition)
 
         load_experimental_data(entity_data['dest'], doc, sample, exp, operator, replicate_id, attachs, entity_dict)
     else:
         try:
-            load_src_dest_samples(entity_data, doc, entity_dict, strain_condition, induction_condition)
+            load_src_dest_samples(entity_data, doc, entity_dict, condition)
         except:
-            load_sample(sample_data=entity_data, doc=doc, entity_dict=entity_dict, strain_condition=strain_condition, induction_condition=induction_condition)
+            load_sample(sample_data=entity_data, doc=doc, entity_dict=entity_dict, condition=condition)
 
 def load_inducer(inducer_data, doc, unit_dict, om, mags, units):
     mags.append(repr(inducer_data['amount']))
@@ -170,7 +146,7 @@ def load_plasmids(plasmid_data, doc):
 
     return plasmids
 
-def load_strain_condition(sample_data, doc):
+def load_strain_condition(sample_data, doc, entity_dict):
     devices = []
 
     try:
@@ -178,18 +154,30 @@ def load_strain_condition(sample_data, doc):
 
         devices.append(doc.create_strain(strain_id, strain_id))
     except:
-        devices.append(load_plasmids(sample_data['plasmids'], doc))
+        try:
+            devices.append(load_plasmids(sample_data['plasmids'], doc))
+        except:
+            src_sample = load_sample(sample_data['src'], doc, entity_dict)
+
+            systems = doc.get_systems(src_sample.built)
+
+            if len(systems) > 1:
+                return doc.create_system(sub_systems=systems)
+            elif len(systems) == 1:
+                return systems[0]
+            else:
+                return None
 
     return doc.create_system(devices)
 
 def load_entities_and_conditions(entity_data, doc, exp, operator, replicate_id, attachs, entity_dict, unit_dict, om):
     try:
-        strain_condition = load_strain_condition(entity_data, doc)
+        strain_condition = load_strain_condition(entity_data, doc, entity_dict)
 
         try:
             induction_condition = load_induction_condition(entity_data, doc, unit_dict, om, strain_condition)
 
-            load_entities(entity_data, doc, exp, operator, replicate_id, attachs, entity_dict, strain_condition, induction_condition)
+            load_entities(entity_data, doc, exp, operator, replicate_id, attachs, entity_dict, induction_condition)
         except:
             load_entities(entity_data, doc, exp, operator, replicate_id, attachs, entity_dict, strain_condition)
     except:
