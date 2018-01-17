@@ -143,7 +143,7 @@ def load_step_activities(step_data, doc, entity_dict, act_dict):
     except:
         load_operator_activities(operator_data, doc, replicate_id, entity_dict, act_dict)
 
-def load_sample(sample_data, doc, entity_dict, condition=None, src_samples=[]):
+def load_sample(sample_data, doc, entity_dict, condition=None, custom=[], src_samples=[]):
     try:
         sample_key = sample_data['sample']
 
@@ -154,7 +154,7 @@ def load_sample(sample_data, doc, entity_dict, condition=None, src_samples=[]):
         sample_id = load_alnum_id(sample_key)
 
     if sample_key not in entity_dict:
-        entity_dict[sample_key] = doc.create_sample(sample_id, condition, src_samples)
+        entity_dict[sample_key] = doc.create_sample(sample_id, condition, custom, src_samples)
     
     return entity_dict[sample_key]
 
@@ -165,11 +165,14 @@ def load_src_sample(sample_data, doc, entity_dict):
         try:
             src_sample_data = sample_data['sample']['source']
         except:
-            src_sample_data = sample_data['src']
+            try:
+                src_sample_data = sample_data['resource']
+            except:
+                src_sample_data = sample_data['src']
     
     return load_sample(src_sample_data, doc, entity_dict)
 
-def load_dest_samples(sample_data, doc, entity_dict, src_sample, condition=None):
+def load_dest_samples(sample_data, doc, entity_dict, src_sample, condition=None, custom=[]):
     try:
         dest_sample_data = sample_data['destination']
     except:
@@ -179,21 +182,21 @@ def load_dest_samples(sample_data, doc, entity_dict, src_sample, condition=None)
             dest_sample_data = sample_data['dest']
 
     if isinstance(dest_sample_data, str):
-        load_sample(dest_sample_data, doc, entity_dict, condition, [src_sample])
+        load_sample(dest_sample_data, doc, entity_dict, condition, custom, [src_sample])
     else:
         for dest_sample_datum in dest_sample_data:
-            load_sample(dest_sample_datum, doc, entity_dict, condition, [src_sample])
+            load_sample(dest_sample_datum, doc, entity_dict, condition, custom, [src_sample])
         
-def load_src_dest_samples(sample_data, doc, entity_dict, condition=None):
+def load_src_dest_samples(sample_data, doc, entity_dict, condition=None, custom=[]):
     src_sample = load_src_sample(sample_data, doc, entity_dict)
 
     try:
-        load_dest_samples(sample_data, doc, entity_dict, src_sample, condition)
+        load_dest_samples(sample_data, doc, entity_dict, src_sample, condition, custom)
     except:
         dest_sample_data = sample_data['dests']
 
         for dest_sample_datum in dest_sample_data:
-            load_sample(dest_sample_datum['dest'], doc, entity_dict, condition, [src_sample])
+            load_sample(dest_sample_datum['dest'], doc, entity_dict, condition, custom, [src_sample])
 
 def load_strains(condition_data, doc, entity_dict):
     strain_id = load_alnum_id(condition_data['strain'])
@@ -311,10 +314,17 @@ def load_operator_entities(operator_data, doc, entity_dict, unit_dict, om):
         else:
             condition = load_condition(entity_data[i], doc, entity_dict, unit_dict, om)
 
+        custom = []
         try:
-            load_src_dest_samples(entity_data[i], doc, entity_dict, condition)
+            custom.append(entity_data[i]['od'])
+            custom.append('od')
         except:
-            load_sample(entity_data[i], doc, entity_dict, condition)
+            pass
+
+        try:
+            load_src_dest_samples(entity_data[i], doc, entity_dict, condition, custom)
+        except:
+            load_sample(entity_data[i], doc, entity_dict, condition, custom)
 
 def load_step_entities(step_data, doc, exp, attachs, entity_dict, unit_dict, om):
     operator_data = step_data['operator']

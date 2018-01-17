@@ -14,7 +14,6 @@
                 "name": "Streak Single Colonies", 
                 "samples": [
                     {
-                        "plate": "YPAD-plate_1", 
                         "resource": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/STOCK01", 
                         "sample": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/A01"
                     }
@@ -40,7 +39,9 @@
             "name": "Step 2", 
             "operator": {
                 "description": "Innoculate, from: YPAD-plate_1, to: 96_flat_1, media: 200 uL SC - take 6 replicates", 
-                "distribute": [
+                "id": 2, 
+                "name": "Pick Operator", 
+                "transfer": [
                     {
                         "destination": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/2/A01_1", 
                         "source": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/A01"
@@ -66,8 +67,6 @@
                         "source": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/A01"
                     }
                 ], 
-                "id": 2, 
-                "name": "Pick Operator", 
                 "type": "pick"
             }
         }, 

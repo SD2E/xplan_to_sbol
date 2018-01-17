@@ -218,11 +218,18 @@ Add 3 wells of 300 uL spherotech calibration beads to 96 flat 2
     <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_A01"/>
     <sbol:version>1.0.0</sbol:version>
   </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_1_STOCK01/1.0.0">
+    <dcterms:title>biofab_sample_yeast_gates_q0_1_1_STOCK01</dcterms:title>
+    <sbol:displayId>biofab_sample_yeast_gates_q0_1_1_STOCK01</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_STOCK01"/>
+    <sbol:version>1.0.0</sbol:version>
+  </sd2:Implementation>
   <sd2:Implementation rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0">
     <dcterms:title>biofab_sample_yeast_gates_q0_1_2_A01_1</dcterms:title>
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_2_A01_1</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_1"/>
     <sbol:version>1.0.0</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
     <prov:wasGeneratedBy rdf:resource="http://sift.net/2_pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
   </sd2:Implementation>
   <sd2:Implementation rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_2/1.0.0">
@@ -270,6 +277,8 @@ Add 3 wells of 300 uL spherotech calibration beads to 96 flat 2
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_3_A01_1_1</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_3_A01_1_1"/>
     <sbol:version>1.0.0</sbol:version>
+    <sd2:od>600</sd2:od>
+    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
     <prov:wasGeneratedBy rdf:resource="http://sift.net/5_dilute_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0"/>
   </sd2:Implementation>
   <sd2:Implementation rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0">
@@ -277,12 +286,13 @@ Add 3 wells of 300 uL spherotech calibration beads to 96 flat 2
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_4_A01_1_1</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1"/>
     <sbol:version>1.0.0</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0"/>
     <prov:wasGeneratedBy rdf:resource="http://sift.net/7_transfer_biofab_sample_yeast_gates_q0_1_3_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
   </sd2:Implementation>
-  <sd2:Experiment rdf:about="http://sift.net/f82e79b_e18c_457e_8c5c_ed605acc94cd/1.0.0">
+  <sd2:Experiment rdf:about="http://sift.net/df82e79b_e18c_457e_8c5c_ed605acc94cd/1.0.0">
     <dcterms:title>Yeast Gates Q0 Plan</dcterms:title>
-    <sbol:displayId>f82e79b_e18c_457e_8c5c_ed605acc94cd</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/f82e79b_e18c_457e_8c5c_ed605acc94cd"/>
+    <sbol:displayId>df82e79b_e18c_457e_8c5c_ed605acc94cd</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/df82e79b_e18c_457e_8c5c_ed605acc94cd"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:experimentalData rdf:resource="http://sift.net/11_biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry/1.0.0"/>
     <sd2:experimentalData rdf:resource="http://sift.net/4_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry/1.0.0"/>
