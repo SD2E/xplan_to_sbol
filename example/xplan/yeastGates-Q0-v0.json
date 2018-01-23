@@ -183,13 +183,13 @@
             "dest": "124679-1-6"
           },
           {
-            "src": "124679",
+            "src": "124680",
             "inducer": {
               "compound": "Beta-estradiol",
               "amount": 0,
               "units": "nM"
             },
-            "dest": "124679-1-1"
+            "dest": "124680-1-1"
           },
           {
             "src": "124680",
@@ -399,13 +399,13 @@
             "dest": "124679-2-6"
           },
           {
-            "src": "124679",
+            "src": "124680",
             "inducer": {
               "compound": "Beta-estradiol",
               "amount": 0,
               "units": "nM"
             },
-            "dest": "124679-2-1"
+            "dest": "124680-2-1"
           },
           {
             "src": "124680",

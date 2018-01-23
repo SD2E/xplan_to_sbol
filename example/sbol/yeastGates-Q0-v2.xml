@@ -4,13 +4,13 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:sbol="http://sbols.org/v2#"
    xmlns:sd2="http://sd2e.org#">
-  <prov:Activity rdf:about="http://sift.net/0_streak_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0">
+  <prov:Activity rdf:about="http://sift.net/0_streak_biofab_sample_yeast_gates_q0_1_1_STOCK01_to_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0">
     <dcterms:title>Streak Single Colonies</dcterms:title>
-    <sbol:displayId>0_streak_biofab_sample_yeast_gates_q0_1_1_A01</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/0_streak_biofab_sample_yeast_gates_q0_1_1_A01"/>
+    <sbol:displayId>0_streak_biofab_sample_yeast_gates_q0_1_1_STOCK01_to_biofab_sample_yeast_gates_q0_1_1_A01</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/0_streak_biofab_sample_yeast_gates_q0_1_1_STOCK01_to_biofab_sample_yeast_gates_q0_1_1_A01"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#streak"/>
-    <prov:used rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:used rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_STOCK01/1.0.0"/>
   </prov:Activity>
   <prov:Activity rdf:about="http://sift.net/10_mix_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0">
     <dcterms:description>96 flat 2 mix well by pipetting up and down to avoid settling before flow cytometry</dcterms:description>
@@ -19,7 +19,7 @@
     <sbol:persistentIdentity rdf:resource="http://sift.net/10_mix_biofab_sample_yeast_gates_q0_1_4_A01_1_1"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#mix"/>
-    <prov:wasInformedBy rdf:resource="http://sift.net/8_mix_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
+    <prov:wasInformedBy rdf:resource="http://sift.net/9_spectrophotometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_9_biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry/1.0.0"/>
   </prov:Activity>
   <sd2:ExperimentalData rdf:about="http://sift.net/11_biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry/1.0.0">
     <dcterms:title>11_biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry</dcterms:title>
@@ -41,13 +41,6 @@
     <sd2:operatorType rdf:resource="http://sd2e.org#flowCytometry"/>
     <prov:wasInformedBy rdf:resource="http://sift.net/10_mix_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
   </prov:Activity>
-  <sd2:Attachment rdf:about="http://sift.net/11_sample_biofab_yeast_gates_q0_1_5_instrument_output_A01_1_1_fcs/1.0.0">
-    <dcterms:title>sample_biofab_yeast_gates_q0_1_5_instrument_output_A01_1_1_fcs</dcterms:title>
-    <sbol:displayId>11_sample_biofab_yeast_gates_q0_1_5_instrument_output_A01_1_1_fcs</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/11_sample_biofab_yeast_gates_q0_1_5_instrument_output_A01_1_1_fcs"/>
-    <sbol:version>1.0.0</sbol:version>
-    <sd2:source rdf:resource="agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/5/instrument_output/A01_1_1.fcs"/>
-  </sd2:Attachment>
   <prov:Activity rdf:about="http://sift.net/1_incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0">
     <dcterms:description>Incubate (30C, 2 days), YPAD-plate_1</dcterms:description>
     <dcterms:title>Incubate Operator</dcterms:title>
@@ -55,7 +48,7 @@
     <sbol:persistentIdentity rdf:resource="http://sift.net/1_incubate_biofab_sample_yeast_gates_q0_1_1_A01"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#incubate"/>
-    <prov:wasInformedBy rdf:resource="http://sift.net/0_streak_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:used rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
   </prov:Activity>
   <prov:Activity rdf:about="http://sift.net/2_pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0">
     <dcterms:description>Innoculate, from: YPAD-plate_1, to: 96_flat_1, media: 200 uL SC - take 6 replicates</dcterms:description>
@@ -111,13 +104,13 @@
     <sd2:operatorType rdf:resource="http://sd2e.org#pick"/>
     <prov:wasInformedBy rdf:resource="http://sift.net/1_incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/3_incubate_biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0">
+  <prov:Activity rdf:about="http://sift.net/3_mix_biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0">
     <dcterms:description>Incubate 96 flat 1 30C, 1h, 800rpm, 3mm throw OR mix well with liquid handler</dcterms:description>
-    <dcterms:title>Incubate Operator</dcterms:title>
-    <sbol:displayId>3_incubate_biofab_sample_yeast_gates_q0_1_2_A01_1</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/3_incubate_biofab_sample_yeast_gates_q0_1_2_A01_1"/>
+    <dcterms:title>Mix Operator</dcterms:title>
+    <sbol:displayId>3_mix_biofab_sample_yeast_gates_q0_1_2_A01_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_mix_biofab_sample_yeast_gates_q0_1_2_A01_1"/>
     <sbol:version>1.0.0</sbol:version>
-    <sd2:operatorType rdf:resource="http://sd2e.org#incubate"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#mix"/>
     <prov:used rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
   </prov:Activity>
   <sd2:ExperimentalData rdf:about="http://sift.net/4_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry/1.0.0">
@@ -129,23 +122,15 @@
     <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
     <prov:wasGeneratedBy rdf:resource="http://sift.net/4_spectrophotometry_biofab_sample_yeast_gates_q0_1_2_A01_1_to_4_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry/1.0.0"/>
   </sd2:ExperimentalData>
-  <sd2:Attachment rdf:about="http://sift.net/4_sample_biofab_yeast_gates_q0_1_2_instrument_output_A01_1_od/1.0.0">
-    <dcterms:title>sample_biofab_yeast_gates_q0_1_2_instrument_output_A01_1_od</dcterms:title>
-    <sbol:displayId>4_sample_biofab_yeast_gates_q0_1_2_instrument_output_A01_1_od</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/4_sample_biofab_yeast_gates_q0_1_2_instrument_output_A01_1_od"/>
-    <sbol:version>1.0.0</sbol:version>
-    <sd2:source rdf:resource="agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/2/instrument_output/A01_1.od"/>
-  </sd2:Attachment>
   <prov:Activity rdf:about="http://sift.net/4_spectrophotometry_biofab_sample_yeast_gates_q0_1_2_A01_1_to_4_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry/1.0.0">
     <dcterms:description>96 flat 1 measure OD600 - OD conversion determined cellometer or flow cytometer</dcterms:description>
     <dcterms:title>Spectrophotometry Operator</dcterms:title>
     <sbol:displayId>4_spectrophotometry_biofab_sample_yeast_gates_q0_1_2_A01_1_to_4_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/4_spectrophotometry_biofab_sample_yeast_gates_q0_1_2_A01_1_to_4_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry"/>
     <sbol:version>1.0.0</sbol:version>
-    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/sample/biofab/instruments/spectrophotometer/5539/11272017/spectrophotometer_configuration.json"/>
     <sd2:manifest rdf:resource="agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/2/manifest/manifest.json"/>
     <sd2:operatorType rdf:resource="http://sd2e.org#spectrophotometry"/>
-    <prov:wasInformedBy rdf:resource="http://sift.net/3_incubate_biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
+    <prov:wasInformedBy rdf:resource="http://sift.net/3_mix_biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
   </prov:Activity>
   <prov:Activity rdf:about="http://sift.net/5_dilute_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0">
     <dcterms:description>96 flat 1 dilute (at constant volume (TX), OD defined average volume (BF), OD defined well volume (GB) trying to hit about OD 600 0.0003, 0.00015, 0.000075) into 96 deep 1 with 1mL SC media</dcterms:description>
@@ -154,7 +139,7 @@
     <sbol:persistentIdentity rdf:resource="http://sift.net/5_dilute_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_3_A01_1_1"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#dilute"/>
-    <prov:wasInformedBy rdf:resource="http://sift.net/3_incubate_biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
+    <prov:wasInformedBy rdf:resource="http://sift.net/4_spectrophotometry_biofab_sample_yeast_gates_q0_1_2_A01_1_to_4_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry/1.0.0"/>
   </prov:Activity>
   <prov:Activity rdf:about="http://sift.net/6_incubate_biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0">
     <dcterms:description>Incubate 96 deep 1 30C, 16h, 800rpm, 3mm throw</dcterms:description>
@@ -192,13 +177,6 @@
     <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
     <prov:wasGeneratedBy rdf:resource="http://sift.net/9_spectrophotometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_9_biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry/1.0.0"/>
   </sd2:ExperimentalData>
-  <sd2:Attachment rdf:about="http://sift.net/9_sample_biofab_yeast_gates_q0_1_4_instrument_output_A01_1_1_od/1.0.0">
-    <dcterms:title>sample_biofab_yeast_gates_q0_1_4_instrument_output_A01_1_1_od</dcterms:title>
-    <sbol:displayId>9_sample_biofab_yeast_gates_q0_1_4_instrument_output_A01_1_1_od</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/9_sample_biofab_yeast_gates_q0_1_4_instrument_output_A01_1_1_od"/>
-    <sbol:version>1.0.0</sbol:version>
-    <sd2:source rdf:resource="agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/4/instrument_output/A01_1_1.od"/>
-  </sd2:Attachment>
   <prov:Activity rdf:about="http://sift.net/9_spectrophotometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_9_biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry/1.0.0">
     <dcterms:description>96 flat 2 measure OD600, GFP
 Add 3 wells of 300 uL spherotech calibration beads to 96 flat 2
@@ -207,7 +185,6 @@ Add 3 wells of 300 uL spherotech calibration beads to 96 flat 2
     <sbol:displayId>9_spectrophotometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_9_biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/9_spectrophotometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_9_biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry"/>
     <sbol:version>1.0.0</sbol:version>
-    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/sample/biofab/instruments/spectrophotometer/5539/11272017/spectrophotometer_configuration.json"/>
     <sd2:manifest rdf:resource="agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/4/manifest/manifest.json"/>
     <sd2:operatorType rdf:resource="http://sd2e.org#spectrophotometry"/>
     <prov:wasInformedBy rdf:resource="http://sift.net/8_mix_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
@@ -217,6 +194,8 @@ Add 3 wells of 300 uL spherotech calibration beads to 96 flat 2
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_1_A01</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_A01"/>
     <sbol:version>1.0.0</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_STOCK01/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://sift.net/0_streak_biofab_sample_yeast_gates_q0_1_1_STOCK01_to_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
   </sd2:Implementation>
   <sd2:Implementation rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_1_STOCK01/1.0.0">
     <dcterms:title>biofab_sample_yeast_gates_q0_1_1_STOCK01</dcterms:title>
@@ -277,7 +256,7 @@ Add 3 wells of 300 uL spherotech calibration beads to 96 flat 2
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_3_A01_1_1</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_3_A01_1_1"/>
     <sbol:version>1.0.0</sbol:version>
-    <sd2:od>600</sd2:od>
+    <sd2:od600>0.003000</sd2:od600>
     <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
     <prov:wasGeneratedBy rdf:resource="http://sift.net/5_dilute_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0"/>
   </sd2:Implementation>
@@ -286,6 +265,7 @@ Add 3 wells of 300 uL spherotech calibration beads to 96 flat 2
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_4_A01_1_1</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1"/>
     <sbol:version>1.0.0</sbol:version>
+    <sd2:volume rdf:resource="300:microliter"/>
     <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0"/>
     <prov:wasGeneratedBy rdf:resource="http://sift.net/7_transfer_biofab_sample_yeast_gates_q0_1_3_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
   </sd2:Implementation>

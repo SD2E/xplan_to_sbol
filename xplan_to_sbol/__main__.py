@@ -12,60 +12,36 @@ def load_alnum_id(id_data):
 
         return parsed_uri.path[1:].replace('/', '_').replace('-', '_').replace('.', '_')
 
-def load_activity(src_entity_data, doc, operator, replicate_id, entity_dict, act_dict, act_name=None, act_desc=None, dest_entity_data=None, custom=[]):
+def load_build_activity(src_sample_key, doc, operator, replicate_id, entity_dict, act_dict, act_name=None, act_desc=None, dest_sample_key=None, custom=[]):
     try:
-        src_entity_key = src_entity_data['sample']
+        src_sample = act_dict[src_sample_key]
     except:
-        src_entity_key = src_entity_data
+        src_sample = entity_dict[src_sample_key]
 
-    try:
-        src_entity = act_dict[src_entity_key]
-    except:
-        src_entity = entity_dict[src_entity_key]
-
-    if dest_entity_data is None:
-        act_dict[src_entity_key] = doc.create_activity(operator, replicate_id, [src_entity], act_name, act_desc, custom)
+    if dest_sample_key is None:
+            act_dict[src_sample_key] = doc.create_activity(operator, replicate_id, [src_sample], act_name, act_desc, custom)
     else:
-        try:
-            dest_entity_key = dest_entity_data['uri']
-        except:
-            try:
-                dest_entity_key = dest_entity_data['dest']
-            except:
-                dest_entity_key = dest_entity_data
-        
-        dest_entity = entity_dict[dest_entity_key]
+        dest_sample = entity_dict[dest_sample_key]
 
-        doc.create_activity(operator, replicate_id, [src_entity], act_name, act_desc, custom, dest_entity)
+        doc.create_activity(operator, replicate_id, [src_sample], act_name, act_desc, custom, dest_sample)
 
-def load_src_dest_activity(entity_data, doc, operator, replicate_id, entity_dict, act_dict, act_name=None, act_desc=None):
-    try:
-        src_entity_data = entity_data['source']
-    except:
-        try:
-            src_entity_data = entity_data['sample']['source']
-        except:
-            src_entity_data = entity_data['src']
+def load_src_dest_build_activity(sample_data, doc, operator, replicate_id, entity_dict, act_dict, act_name=None, act_desc=None):
+    src_sample_data = load_src_sample_data(sample_data)
 
-    try:
-        try:
-            dest_entity_data = entity_data['destination']
-        except:
-            try:
-                dest_entity_data = entity_data['sample']['destination']
-            except:
-                dest_entity_data = entity_data['dest']
+    dest_sample_data = load_dest_sample_data(sample_data)
 
-        if isinstance(dest_entity_data, str):
-            load_activity(src_entity_data, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, dest_entity_data)
-        else:
-            for dest_entity_datum in dest_entity_data:
-                load_activity(src_entity_data, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, dest_entity_datum)
-    except:
-        dest_entity_data = entity_data['dests']
-
-        for dest_entity_datum in dest_entity_data:
-            load_activity(src_entity_data, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, dest_entity_datum)
+    if isinstance(src_sample_data, str) and isinstance(dest_sample_data, str):
+        load_build_activity(src_sample_data, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, dest_sample_data)
+    elif isinstance(src_sample_data, str):
+        for dest_sample_datum in dest_sample_data:
+            load_build_activity(src_sample_data, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, load_dest_sample_key(dest_sample_datum))
+    elif isinstance(dest_sample_data, str):
+        for src_entity_datum in src_sample_data:
+            load_build_activity(src_entity_datum, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, dest_sample_data)
+    else:
+        for src_entity_datum in src_sample_data:
+            for dest_sample_datum in dest_sample_data:
+                load_build_activity(src_entity_datum, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, load_dest_sample_key(dest_sample_datum))
 
 def load_operator_activities(operator_data, doc, replicate_id, entity_dict, act_dict):
     operator = operator_data['type'].replace('-', '_')
@@ -74,64 +50,82 @@ def load_operator_activities(operator_data, doc, replicate_id, entity_dict, act_
         act_name = operator_data['name']
     except:
         act_name = None
-
     try:
         act_desc = operator_data['description']
     except:
         act_desc = None
 
-    try:
-        entity_data = operator_data['samples']
-    except:
-        try:
-            entity_data = operator_data['transfer']
-        except:
-            entity_data = operator_data['distribute']
+    sample_data = load_sample_data(operator_data)
 
-    for entity_datum in entity_data:
+    for sample_datum in sample_data:
         try:
-            load_src_dest_activity(entity_datum, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc)
+            load_src_dest_build_activity(sample_datum, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc)
         except:
-            load_activity(entity_datum, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc)
+            load_build_activity(load_src_sample_key(sample_datum), doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc)
+
+def load_channels(operator_data):
+    channel_data = operator_data['channels']
+
+    channels = []
+
+    for channel_datum in channel_data:
+        channel = {}
+        channel['display_id'] = load_alnum_id(channel_datum.calibration_file)
+        channel['calibration_file'] = channel_datum.calibration_file
+        channel['name'] = channel_datum.name
+
+    return channels
 
 def load_upload_activity(operator_data, doc, replicate_id, entity_dict, act_dict):
     operator = operator_data['type'].replace('-', '_')
+
+    if operator == 'uploadData':
+        entity_data = operator_data['samples']
+    else:
+        entity_data = load_measure_data(operator_data)
 
     try:
         act_name = operator_data['name']
     except:
         act_name = None
-
     try:
         act_desc = operator_data['description']
     except:
         act_desc = None
 
-    if operator == 'uploadData':
-        entity_data = operator_data['samples']
-
-        source_key = 'dest'
-    else:
-        entity_data = operator_data['measure']
-
-        source_key = 'uri'
-
     custom = []
-
     try:
         custom.append(operator_data['manifest'])
         custom.append('manifest')
     except:
         pass
-
     try:
         custom.append(operator_data['instrument_configuration'])
         custom.append('instrument_configuration')
     except:
         pass
 
+    try:
+        channels = load_channels(operator_data)
+    except:
+        channels = []
+
     for entity_datum in entity_data:
-        activity = load_activity(entity_datum, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, entity_datum, custom)
+        src_sample_key = load_src_sample_key(entity_datum)
+
+        try:
+            src_sample = act_dict[src_sample_key]
+        except:
+            src_sample = entity_dict[src_sample_key]
+
+        file_paths = load_file_paths(entity_datum)
+
+        dest_entity = entity_dict[file_paths[0]]
+
+        if len(channels) > 0:
+            act_dict[src_sample_key] = doc.create_flow_cytometry_activity(operator, channels, replicate_id, [src_sample], act_name, act_desc, custom, dest_entity)
+        else:
+            act_dict[src_sample_key] = doc.create_activity(operator, replicate_id, [src_sample], act_name, act_desc, custom, dest_entity)
 
 def load_step_activities(step_data, doc, entity_dict, act_dict):
     operator_data = step_data['operator']
@@ -143,60 +137,96 @@ def load_step_activities(step_data, doc, entity_dict, act_dict):
     except:
         load_operator_activities(operator_data, doc, replicate_id, entity_dict, act_dict)
 
-def load_sample(sample_data, doc, entity_dict, condition=None, custom=[], src_samples=[]):
+def load_src_sample_key(sample_data):
     try:
-        sample_key = sample_data['sample']
+        sample_key = sample_data['source']
+    except:
+        try:
+            sample_key = sample_data['sample']
+        except:
+            sample_key = sample_data
 
-        sample_id = load_alnum_id(sample_key)
+    return sample_key
+
+def load_dest_sample_key(sample_data):
+    try:
+        sample_key = sample_data['dest']
     except:
         sample_key = sample_data
 
-        sample_id = load_alnum_id(sample_key)
+    return sample_key
+
+def load_sample(sample_key, doc, entity_dict, condition=None, custom=[], src_samples=[]):
+    sample_id = load_alnum_id(sample_key)
 
     if sample_key not in entity_dict:
         entity_dict[sample_key] = doc.create_sample(sample_id, condition, custom, src_samples)
     
     return entity_dict[sample_key]
 
-def load_src_sample(sample_data, doc, entity_dict):
+def load_src_sample_data(sample_data):
     try:
-        src_sample_data = sample_data['source']
+        src_sample_data = sample_data['sources']
     except:
         try:
-            src_sample_data = sample_data['sample']['source']
+            src_sample_data = sample_data['source']
         except:
             try:
                 src_sample_data = sample_data['resource']
             except:
-                src_sample_data = sample_data['src']
-    
-    return load_sample(src_sample_data, doc, entity_dict)
+                try:
+                    src_sample_data = sample_data['sample']['source']
+                except:
+                    src_sample_data = sample_data['src']
 
-def load_dest_samples(sample_data, doc, entity_dict, src_sample, condition=None, custom=[]):
+    return src_sample_data
+
+def load_dest_sample_data(sample_data):
     try:
-        dest_sample_data = sample_data['destination']
+        dest_sample_data = sample_data['destinations']
     except:
         try:
-            dest_sample_data = sample_data['sample']['destination']
+            dest_sample_data = sample_data['destination']
         except:
-            dest_sample_data = sample_data['dest']
+            try:
+                dest_sample_data = sample_data['sample']['destination']
+            except:
+                try:
+                    dest_sample_data = sample_data['sample']
+                except:
+                    try:
+                        dest_sample_data = sample_data['dests']
+                    except:
+                        dest_sample_data = sample_data['dest'] 
+
+    return dest_sample_data
+
+def load_src_samples(sample_data, doc, entity_dict):
+    src_samples = []
+
+    src_sample_data = load_src_sample_data(sample_data)
+
+    if isinstance(src_sample_data, str):
+        src_samples.append(load_sample(src_sample_data, doc, entity_dict))
+    else:
+        for src_sample_datum in src_sample_data:
+            src_samples.append(load_sample(src_sample_datum, doc, entity_dict))
+
+    return src_samples
+
+def load_dest_samples(sample_data, doc, entity_dict, src_samples, condition=None, custom=[]):
+    dest_sample_data = load_dest_sample_data(sample_data)
 
     if isinstance(dest_sample_data, str):
-        load_sample(dest_sample_data, doc, entity_dict, condition, custom, [src_sample])
+        load_sample(dest_sample_data, doc, entity_dict, condition, custom, src_samples)
     else:
         for dest_sample_datum in dest_sample_data:
-            load_sample(dest_sample_datum, doc, entity_dict, condition, custom, [src_sample])
+            load_sample(load_dest_sample_key(dest_sample_datum), doc, entity_dict, condition, custom, src_samples)
         
 def load_src_dest_samples(sample_data, doc, entity_dict, condition=None, custom=[]):
-    src_sample = load_src_sample(sample_data, doc, entity_dict)
+    src_samples = load_src_samples(sample_data, doc, entity_dict)
 
-    try:
-        load_dest_samples(sample_data, doc, entity_dict, src_sample, condition, custom)
-    except:
-        dest_sample_data = sample_data['dests']
-
-        for dest_sample_datum in dest_sample_data:
-            load_sample(dest_sample_datum['dest'], doc, entity_dict, condition, custom, [src_sample])
+    load_dest_samples(sample_data, doc, entity_dict, src_samples, condition, custom)
 
 def load_strains(condition_data, doc, entity_dict):
     strain_id = load_alnum_id(condition_data['strain'])
@@ -224,18 +254,25 @@ def load_plasmids(condition_data, doc):
     return plasmids
 
 def load_inducers(condition_data, doc, unit_dict, om, mags, units):
-    mags.append(repr(condition_data['amount']))
+    # try:
+    inducer_data = condition_data['inducer']
 
-    symbol = condition_data['units']
+    mags.append(repr(inducer_data['amount']))
+
+    symbol = inducer_data['units']
 
     if symbol not in unit_dict:
         unit_dict[symbol] = doc.create_unit(symbol, om)
 
     units.append(unit_dict[symbol])
 
-    inducer_id = load_alnum_id(condition_data['compound'])
+    inducer_id = load_alnum_id(inducer_data['compound'])
 
     return [doc.create_inducer(inducer_id, inducer_id)]
+    # except:
+    #     inducer_data = condition_data['resources']
+
+    #     for inducer_datum in inducer_data:
 
 def load_condition(condition_data, doc, entity_dict, unit_dict, om, plasmid=None):
     try:
@@ -250,81 +287,133 @@ def load_condition(condition_data, doc, entity_dict, unit_dict, om, plasmid=None
             for plasm in plasmid:
                 devices.append(plasm)
 
+    sub_systems = []
     try:
-        src_sample = load_src_sample(condition_data, doc, entity_dict)
+        src_samples = load_src_samples(condition_data, doc, entity_dict)
 
-        sub_systems = doc.get_systems(src_sample.built)
+        for src_sample in src_samples:
+            for sub_system in doc.get_systems(src_sample.built):
+                sub_systems.append(sub_system)
     except:
-        sub_systems = []
+        pass
 
     mags = []
     units = []
 
     try:
-        inputs = load_inducers(condition_data['inducer'], doc, unit_dict, om, mags, units)
+        inputs = load_inducers(condition_data, doc, unit_dict, om, mags, units)
     except:
         inputs = []
 
-    if len(devices) > 0 or len(sub_systems) > 0 or len(inputs) > 0:
+    if len(sub_systems) == 1 and len(devices) == 0 and len(inputs) == 0:
+        return sub_systems[0]
+    elif len(devices) > 0 or len(sub_systems) > 1 or len(inputs) > 0:
         return doc.create_system(devices, sub_systems, inputs, mags, units)
     else:
         return None
+
+def load_file_paths(entity_data):
+    try:
+        file_paths = entity_data['files']
+    except:
+        try:
+            file_paths = entity_data['uris']
+        except:
+            file_paths = []
+
+            try:
+                file_paths.append(entity_data['file'])
+            except:
+                try:
+                    file_paths.append(entity_data['uri'])
+                except:
+                    file_paths.append(entity_data['dest'])
+
+    return file_paths
+
+def load_measure_data(operator_data):
+    try:
+        measure_data = operator_data['measurements']
+    except:
+        measure_data = operator_data['measure']
+
+    return measure_data
 
 def load_experimental_data(operator_data, doc, exp, replicate_id, attachs, entity_dict):
     operator = operator_data['type'].replace('-', '_')
 
     if operator == 'uploadData':
         entity_data = operator_data['samples']
-
-        source_key = 'dest'
     else:
-        entity_data = operator_data['measure']
-
-        source_key = 'uri'
+        entity_data = load_measure_data(operator_data)
 
     for entity_datum in entity_data:
-        source = entity_datum[source_key]
+        sample = load_sample(load_src_sample_key(entity_datum), doc, entity_dict)
 
-        if source not in entity_dict:
-            sample = load_sample(entity_datum, doc, entity_dict)
+        file_paths = load_file_paths(entity_datum)
 
-            attach_id = load_alnum_id(source)
+        temp_attachs = []
 
-            attachs.append(doc.create_attachment(attach_id, attach_id, source, replicate_id))
+        for file_path in file_paths:
+            attach_id = load_alnum_id(file_path)
 
-            entity_dict[source] = doc.create_experimental_data([attachs[-1]], sample, exp, operator, replicate_id)
+            temp_attachs.append(doc.create_attachment(attach_id, attach_id, file_path, replicate_id))
 
-def load_operator_entities(operator_data, doc, entity_dict, unit_dict, om):
+        exp_data = doc.create_experimental_data(temp_attachs, sample, exp, operator, replicate_id)
+
+        if exp_data.identity.get() not in entity_dict:
+            entity_dict[file_paths[0]] = exp_data
+
+            for attach in temp_attachs:
+                attachs.append
+
+def load_sample_data(operator_data):
     try:
-        entity_data = operator_data['samples']
+        entity_data = operator_data['transformations']
     except:
         try:
-            entity_data = operator_data['transfer']
+            entity_data = operator_data['samples']
         except:
-            entity_data = operator_data['distribute']
+            try:
+                entity_data = operator_data['transfer']
+            except:
+                try:
+                    entity_data = operator_data['distribute']
+                except:
+                    entity_data = operator_data['transform']
+
+    return entity_data
+
+def load_operator_samples(operator_data, doc, entity_dict, unit_dict, om):
+    sample_data = load_sample_data(operator_data)
 
     try:
         plasmids = load_plasmids(operator_data, doc)
     except:
         plasmids = []
 
-    for i in range(0, len(entity_data)):
+    for i in range(0, len(sample_data)):
         if i < len(plasmids):
-            condition = load_condition(entity_data[i], doc, entity_dict, unit_dict, om, plasmids[i])
+            condition = load_condition(sample_data[i], doc, entity_dict, unit_dict, om, plasmids[i])
         else:
-            condition = load_condition(entity_data[i], doc, entity_dict, unit_dict, om)
+            condition = load_condition(sample_data[i], doc, entity_dict, unit_dict, om)
 
         custom = []
         try:
-            custom.append(entity_data[i]['od'])
-            custom.append('od')
+            custom.append(sample_data[i]['od600'])
+            custom.append('od600')
+        except:
+            pass
+        try:
+            custom.append(sample_data[i]['volume'])
+            custom.append('volume')
         except:
             pass
 
         try:
-            load_src_dest_samples(entity_data[i], doc, entity_dict, condition, custom)
+            load_src_dest_samples(sample_data[i], doc, entity_dict, condition, custom)
         except:
-            load_sample(entity_data[i], doc, entity_dict, condition, custom)
+            load_sample(load_src_sample_key(sample_data[i]), doc, entity_dict, condition, custom)
 
 def load_step_entities(step_data, doc, exp, attachs, entity_dict, unit_dict, om):
     operator_data = step_data['operator']
@@ -332,7 +421,7 @@ def load_step_entities(step_data, doc, exp, attachs, entity_dict, unit_dict, om)
     try:
         load_experimental_data(operator_data, doc, exp, repr(step_data['id']), attachs, entity_dict)
     except:
-        load_operator_entities(operator_data, doc, entity_dict, unit_dict, om)
+        load_operator_samples(operator_data, doc, entity_dict, unit_dict, om)
 
 def load_experiment(plan_data, doc):
     exp_id = load_alnum_id(plan_data['id'])
@@ -371,7 +460,6 @@ def main(args=None):
 
     doc.add_top_levels([exp])
     doc.add_top_levels(attachs)
-    # doc.add_top_levels(exp_data)
     doc.add_top_levels(list(entity_dict.values()))
     doc.add_top_levels(list(unit_dict.values()))
     
