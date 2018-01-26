@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2#"
    xmlns:prov="http://www.w3.org/ns/prov#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:sbol="http://sbols.org/v2#"
@@ -256,7 +257,15 @@ Add 3 wells of 300 uL spherotech calibration beads to 96 flat 2
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_3_A01_1_1</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_3_A01_1_1"/>
     <sbol:version>1.0.0</sbol:version>
-    <sd2:od600>0.003000</sd2:od600>
+    <sd2:measure>
+      <om:Measure rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_3_A01_1_1/od600/1.0.0">
+        <dcterms:title>od600</dcterms:title>
+        <sbol:displayId>od600</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_3_A01_1_1/od600"/>
+        <sbol:version>1.0.0</sbol:version>
+        <om:hasNumericalValue>0.003</om:hasNumericalValue>
+      </om:Measure>
+    </sd2:measure>
     <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
     <prov:wasGeneratedBy rdf:resource="http://sift.net/5_dilute_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0"/>
   </sd2:Implementation>
@@ -265,7 +274,16 @@ Add 3 wells of 300 uL spherotech calibration beads to 96 flat 2
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_4_A01_1_1</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1"/>
     <sbol:version>1.0.0</sbol:version>
-    <sd2:volume rdf:resource="300:microliter"/>
+    <sd2:measure>
+      <om:Measure rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1/volume/1.0.0">
+        <dcterms:title>volume</dcterms:title>
+        <sbol:displayId>volume</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1/volume"/>
+        <sbol:version>1.0.0</sbol:version>
+        <om:hasNumericalValue>300</om:hasNumericalValue>
+        <om:hasUnit rdf:resource="http://sift.net/microlitre/1.0.0"/>
+      </om:Measure>
+    </sd2:measure>
     <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0"/>
     <prov:wasGeneratedBy rdf:resource="http://sift.net/7_transfer_biofab_sample_yeast_gates_q0_1_3_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
   </sd2:Implementation>
@@ -278,4 +296,12 @@ Add 3 wells of 300 uL spherotech calibration beads to 96 flat 2
     <sd2:experimentalData rdf:resource="http://sift.net/4_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry/1.0.0"/>
     <sd2:experimentalData rdf:resource="http://sift.net/9_biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry/1.0.0"/>
   </sd2:Experiment>
+  <om:Unit rdf:about="http://sift.net/microlitre/1.0.0">
+    <dcterms:title>microliter</dcterms:title>
+    <sbol:displayId>microlitre</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/microlitre"/>
+    <sbol:version>1.0.0</sbol:version>
+    <om:symbol>μl</om:symbol>
+    <prov:wasDerivedFrom rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/microlitre"/>
+  </om:Unit>
 </rdf:RDF>

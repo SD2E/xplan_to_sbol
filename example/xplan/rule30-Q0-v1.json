@@ -1,0 +1,3366 @@
+{
+    "experimentId": "1",
+    "experimentLab": "transcriptic",
+    "experimentSet": "rule-30_q0",
+    "id": "b7cf7a75-9769-4d54-a807-ac81b92fb0af",
+    "initialState": [
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A01",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201",
+                    "Transcript_Reference": "agave://sd2e-community/reference/Q0/SD2_Rule_30_transcripts_ref_cds.fasta"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A02",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A03",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 1
+                },
+                {
+                    "Is_Blank": true
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A04",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A05",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A06",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A07",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A08",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A09",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B01",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B02",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B03",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B04",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B05",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B06",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B07",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B08",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B09",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C01",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C02",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C03",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C04",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C05",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C06",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C07",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C08",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C09",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D01",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D02",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D03",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D04",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D05",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D06",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D07",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D08",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "0"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D09",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E01",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E02",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E03",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E04",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E05",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E06",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E07",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E08",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E09",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F01",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F02",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F03",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F04",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F05",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F06",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F07",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F08",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F09",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G01",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G02",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G03",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G04",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G05",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G06",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G07",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G08",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "0"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G09",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H01",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H02",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H03",
+            "Strains": [
+                {
+                    "Control": "negative",
+                    "Strain Id": "http://sd2e.org#pAN1201"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H04",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H05",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H06",
+            "Strains": [
+                {
+                    "Strain Id": "http://sd2e.org#pAN3928"
+                },
+                {
+                    "Strain Id": "http://sd2e.org#pAN4036"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 1
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H07",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 2
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H08",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "IPTG_measure": "1"
+                },
+                {
+                    "Larabinose_measure": "5"
+                },
+                {
+                    "aTc_measure": "0.002"
+                },
+                {
+                    "Biological Replicate": 3
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H09",
+            "Strains": [
+                {
+                    "Control": "positive",
+                    "Strain Id": "http://sd2e.org#pAN1717"
+                }
+            ]
+        },
+        {
+            "Conditions": [
+                {
+                    "bead_model": "SpheroTech URCP-38-2K"
+                },
+                {
+                    "bead_batch": "Lot AJ02"
+                }
+            ],
+            "Sample Id": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/beadcontrol"
+        }
+    ],
+    "name": "Rule30 Q0 Plan",
+    "steps": [
+        {
+            "id": 0,
+            "name": "Step 0",
+            "operator": {
+                "_comment": "Resource should be a streak plate",
+                "description": "Miniprep (QIAprep Spin Miniprep Kit ) and isolate plasmids pAN3928, pAN4036, pAN1201, and pAN1717  from provided plate streaks",
+                "id": 0,
+                "name": "Prepare Plasmids",
+                "transformations": [
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/pAN3928",
+                        "source": "http://sd2e.org#pAN3928"
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/pAN4036",
+                        "source": "http://sd2e.org#pAN4036"
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/pAN1201",
+                        "source": "http://sd2e.org#pAN1201"
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/pAN1717",
+                        "source": "http://sd2e.org#pAN1717"
+                    }
+                ],
+                "type": "prepare_plasmids"
+            }
+        },
+        {
+            "id": 1,
+            "name": "Step 1",
+            "operator": {
+                "_comment": "",
+                "description": "3 Transformations (one time - keeping plates for isolates)",
+                "id": 1,
+                "name": "Transform Plasmids",
+                "transformations": [
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036",
+                        "source": [
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/pAN3928",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/pAN4036",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201",
+                        "source": [
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/pAN1201",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717",
+                        "source": [
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/pAN1717",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta"
+                        ]
+                    }
+                ],
+                "type": "transform"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Step 2",
+            "operator": {
+                "_comment": "",
+                "description": "The day after transformation, pick single colonies and inoculate into 200 \u03bcl of M9 glucose with appropriate antibiotics in a V-bottom 96-well plate (Nunc, Roskilde, Denmark, 249952). ",
+                "id": 2,
+                "name": "Pick",
+                "transformations": [
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_1",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036"
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_1",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201"
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_1",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717"
+                    }
+                ],
+                "type": "pick"
+            }
+        },
+        {
+            "id": 3,
+            "name": "Step 3",
+            "operator": {
+                "_comment": "",
+                "description": "Grow single colonies in sealed (Excel Scientific, Inc., AeraSeal, BS-25) V-bottom 96-well plates overnight (16 hours) at 37\u00b0C and 1000 RPM in an ELMI Digital Thermos Microplates shaker incubator (Elmi Ltd, Riga, Latvia).",
+                "id": 3,
+                "name": "Incubate",
+                "samples": [
+                    "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_1",
+                    "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_1",
+                    "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_1"
+                ],
+                "type": "incubate"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Step 4",
+            "operator": {
+                "_comment": "Need to break this into steps for each dilution. Need units.",
+                "description": "The next day, dilute the overnight cultures 178-fold by adding 15 \u03bcL of culture into 185  \u03bcL M9 glucose media, and then 15 \u03bcL of that dilution into 185 \u03bcL 50 \u03bcg/mL kanamycin and 50 \u03bcg/mL spectinomycin in a V-bottom 96-well plate.",
+                "id": 4,
+                "name": "Dilute",
+                "transformations": [
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_2",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_1",
+                        "volume": "15:microliter"
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_2",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_1",
+                        "volume": "15:microliter"
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_2",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_1",
+                        "volume": "15:microliter"
+                    }
+                ],
+                "type": "dilute"
+            }
+        },
+        {
+            "id": 5,
+            "name": "Step 5",
+            "operator": {
+                "_comment": "",
+                "description": "Grow the diluted cultures in an ELMI shaker incubator at 37 \u00b0C and 1000 RPM for three hours.",
+                "id": 5,
+                "name": "Incubate",
+                "samples": [
+                    "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_2",
+                    "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_2",
+                    "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_2"
+                ],
+                "type": "incubate"
+            }
+        },
+        {
+            "id": 6,
+            "name": "Step 6",
+            "operator": {
+                "_comment": "",
+                "description": "Branch 1 -> Flow cytometry: Dilute the cultures from Step 6 by adding 15 \u03bcL of culture into 185 \u03bcL of M9 glucose media.",
+                "id": 6,
+                "name": "Dilute",
+                "transformations": [
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_2",
+                        "volume": "15:microliter"
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_2",
+                        "volume": "15:microliter"
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_2",
+                        "volume": "15:microliter"
+                    }
+                ],
+                "type": "dilute"
+            }
+        },
+        {
+            "id": 7,
+            "name": "Step 7",
+            "operator": {
+                "description": "Branch 1 -> Flow cytometry: Take 3 \u03bcL of that dilution and distribute into eight wells with 145 \u03bcL inducer-containing M9 glucose media with 50 \u03bcg/mL kanamycin and 50 \u03bcg/mL spectinomycin in a V-bottom 96-well plate. The eight wells correspond to the inducer conditions (\u2014/\u2014/\u2014), (\u2014/\u2014/+), (\u2014/+/\u2014), (\u2014 /+/+), (+/\u2014/\u2014), (+/\u2014/+), (+/+/\u2014), and (+/+/+). Each \u2014 or + corresponds to the absence or presence of 5 mM L-arabinose (Sigma-Aldrich, MO, A3256), 2 ng/mL aTc (anhydrotetracycline hydrochloride; Sigma-Aldrich, MO, 37919), and 1 mM IPTG (isopropyl \u03b2-D-1- thiogalactopyranoside; Sigma-Aldrich, MO, I6758).",
+                "id": 7,
+                "name": "Transfer",
+                "transformations": [
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A01",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A02",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A03",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A04",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A05",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A06",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A07",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A08",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A09",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B01",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B02",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B03",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B04",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B05",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B06",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B07",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B08",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B09",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C01",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C02",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C03",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C04",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C05",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C06",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C07",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C08",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C09",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D01",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D02",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D03",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D04",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D05",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D06",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D07",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D08",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D09",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "0"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E01",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E02",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E03",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E04",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E05",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E06",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E07",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E08",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E09",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F01",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F02",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F03",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F04",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F05",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F06",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F07",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F08",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F09",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G01",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G02",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G03",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G04",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G05",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G06",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G07",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G08",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G09",
+                        "source": [
+                            {
+                                "IPTG_measure": "0"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H01",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H02",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H03",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H04",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H05",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H06",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN3928_pAN4036_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H07",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H08",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    },
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H09",
+                        "source": [
+                            {
+                                "IPTG_measure": "1"
+                            },
+                            {
+                                "Larabinose_measure": "5"
+                            },
+                            {
+                                "aTc_measure": "0.002"
+                            },
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1717_3"
+                        ]
+                    }
+                ],
+                "type": "transfer"
+            }
+        },
+        {
+            "id": 3,
+            "name": "Step 3",
+            "operator": {
+                "channels": [
+                    {
+                        "calibration_file": "",
+                        "name": "BL1-A"
+                    }
+                ],
+                "id": 3,
+                "instrument_configuration": "agave://data-sd2e-community/transcriptic/instruments/cytometer_configuration.json",
+                "manifest": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/manifest/09242017-manifest.json",
+                "measurements": [
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A12.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/beadcontrol"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A1.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A01"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A2.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A02"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A3.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A03"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A4.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A04"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A5.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A05"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A6.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A06"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A7.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A07"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A8.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A08"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A9.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/A09"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B1.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B01"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B2.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B02"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B3.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B03"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B4.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B04"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B5.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B05"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B6.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B06"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B7.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B07"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B8.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B08"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B9.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/B09"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C1.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C01"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C2.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C02"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C3.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C03"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C4.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C04"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C5.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C05"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C6.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C06"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C7.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C07"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C8.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C08"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C9.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/C09"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D1.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D01"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D2.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D02"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D3.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D03"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D4.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D04"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D5.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D05"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D6.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D06"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D7.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D07"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D8.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D08"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D9.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/D09"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E1.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E01"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E2.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E02"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E3.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E03"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E4.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E04"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E5.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E05"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E6.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E06"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E7.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E07"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E8.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E08"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E9.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/E09"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F1.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F01"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F2.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F02"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F3.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F03"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F4.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F04"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F5.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F05"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F6.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F06"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F7.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F07"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F8.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F08"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F9.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/F09"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G1.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G01"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G2.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G02"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G3.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G03"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G4.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G04"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G5.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G05"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G6.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G06"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G7.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G07"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G8.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G08"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G9.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/G09"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H1.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H01"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H2.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H02"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H3.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H03"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H4.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H04"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H5.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H05"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H6.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H06"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H7.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H07"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H8.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H08"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H9.fcs",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/H09"
+                    }
+                ],
+                "name": "Flow Operator",
+                "type": "flowCytometry"
+            }
+        },
+        {
+            "id": 8,
+            "name": "Step 8",
+            "operator": {
+                "_comment": "",
+                "description": "Dilute the cultures from Step 6 by transferring 4.56 \u03bcL of culture into 8 Falcon tubes (14 mL round-bottom polypropylene tubes; Corning, MA, 352059) each containing 3 mL of M9 glucose media with appropriate inducers and with 50 \u03bcg/mL kanamycin and 50 \u03bcg/mL spectinomycin. The inducer conditions have been described above in section 7c. ",
+                "id": 6,
+                "name": "Dilute",
+                "transformations": [
+                    {
+                        "destination": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/A01",
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/NEB_10-beta_pAN1201_3",
+                        "volume": "4.56:microliter"
+                    }
+                ],
+                "type": "dilute"
+            }
+        },
+        {
+            "id": 9,
+            "name": "Step 9",
+            "operator": {
+                "description": "Grow the cultures containing inducer in an Innova 44 shaker (Eppendorf, CT) at 370C and 250 RPM for five hours.",
+                "id": 9,
+                "name": "Incubate",
+                "samples": [
+                    "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/A01"
+                ],
+                "type": "incubate"
+            }
+        },
+        {
+            "id": 10,
+            "name": "Step 10",
+            "operator": {
+                "description": "8.c-dd of https://docs.google.com/document/d/1WiTOQPM9ylZqIGz86UWsODVydNsDSqJHlEZnSvkQYcs/edit?usp=sharing",
+                "id": 10,
+                "measurements": [
+                    {
+                        "file": [
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L001_R1_001.fastq.gz",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L001_R2_001.fastq.gz",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L002_R1_001.fastq.gz",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L002_R2_001.fastq.gz",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L003_R1_001.fastq.gz",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L003_R2_001.fastq.gz",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L004_R1_001.fastq.gz",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L004_R2_001.fastq.gz"
+                        ],
+                        "source": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/A01"
+                    }
+                ],
+                "name": "RNASeq Operator",
+                "type": "rnaSeq"
+            }
+        }
+    ]
+}

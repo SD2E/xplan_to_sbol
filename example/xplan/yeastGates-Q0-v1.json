@@ -110,7 +110,6 @@
                 "name": "Dilute operator", 
                 "samples": [
                     {
-                        "od": 600, 
                         "sample": {
                             "destination": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/3/A01_1_1", 
                             "source": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/2/A01_1"

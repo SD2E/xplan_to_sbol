@@ -49,6 +49,6 @@ Run the following from the xplan_to_sbol directory:
 
 .. code-block:: powershell
 
-    xplan_to_sbol -hm http://sift.net -op example/om/om-2.0.rdf -xp example/xplan/yeastGates-Q0.json -sp example/sbol/yeastGates-Q0.xml 
+    xplan_to_sbol -hm http://sift.net -op example/om/om-2.0.rdf -xp example/xplan/yeastGates-Q0-v2.json -sp example/sbol/yeastGates-Q0-v2.xml 
 
 An example of importing xplan_to_sbol can be found in the Jupyter notebook xplan_to_sbol.ipynb.

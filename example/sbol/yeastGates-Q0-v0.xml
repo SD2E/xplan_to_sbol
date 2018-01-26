@@ -10788,11 +10788,13 @@
     <sd2:experimentalData rdf:resource="http://sift.net/10_124681_2_6_3_uploadData/1.0.0"/>
   </sd2:Experiment>
   <om:Unit rdf:about="http://sift.net/nanomolair/1.0.0">
+    <dcterms:description>The nanomolair is a unit of amount of substance concentration defined as 1.0e-9 molair.</dcterms:description>
     <dcterms:title>nanomolair</dcterms:title>
     <sbol:displayId>nanomolair</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/nanomolair"/>
     <sbol:version>1.0.0</sbol:version>
     <om:symbol>nM</om:symbol>
+    <prov:wasDerivedFrom rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/nanomolair"/>
   </om:Unit>
   <sbol:ComponentDefinition rdf:about="http://sift.net/strain_124674/1.0.0">
     <dcterms:title>strain_124674</dcterms:title>
