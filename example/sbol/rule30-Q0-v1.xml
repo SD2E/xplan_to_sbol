@@ -5,45 +5,41 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:sbol="http://sbols.org/v2#"
    xmlns:sd2="http://sd2e.org#">
-  <sd2:Implementation rdf:about="http://sift.net//1.0.0">
-    <sbol:persistentIdentity rdf:resource="http://sift.net/"/>
-    <sbol:version>1.0.0</sbol:version>
-  </sd2:Implementation>
-  <prov:Activity rdf:about="http://sift.net/0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN1201/1.0.0">
+  <prov:Activity rdf:about="http://sift.net/0_prepare_plasmids_pAN1201_to_transcriptic_rule_30_q0_1_09242017_pAN1201/1.0.0">
     <dcterms:description>Miniprep (QIAprep Spin Miniprep Kit ) and isolate plasmids pAN3928, pAN4036, pAN1201, and pAN1717  from provided plate streaks</dcterms:description>
     <dcterms:title>Prepare Plasmids</dcterms:title>
-    <sbol:displayId>0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN1201</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN1201"/>
+    <sbol:displayId>0_prepare_plasmids_pAN1201_to_transcriptic_rule_30_q0_1_09242017_pAN1201</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/0_prepare_plasmids_pAN1201_to_transcriptic_rule_30_q0_1_09242017_pAN1201"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#prepare_plasmids"/>
-    <prov:used rdf:resource="http://sift.net//1.0.0"/>
+    <prov:used rdf:resource="http://sift.net/pAN1201/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN1717/1.0.0">
+  <prov:Activity rdf:about="http://sift.net/0_prepare_plasmids_pAN1717_to_transcriptic_rule_30_q0_1_09242017_pAN1717/1.0.0">
     <dcterms:description>Miniprep (QIAprep Spin Miniprep Kit ) and isolate plasmids pAN3928, pAN4036, pAN1201, and pAN1717  from provided plate streaks</dcterms:description>
     <dcterms:title>Prepare Plasmids</dcterms:title>
-    <sbol:displayId>0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN1717</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN1717"/>
+    <sbol:displayId>0_prepare_plasmids_pAN1717_to_transcriptic_rule_30_q0_1_09242017_pAN1717</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/0_prepare_plasmids_pAN1717_to_transcriptic_rule_30_q0_1_09242017_pAN1717"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#prepare_plasmids"/>
-    <prov:used rdf:resource="http://sift.net//1.0.0"/>
+    <prov:used rdf:resource="http://sift.net/pAN1717/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN3928/1.0.0">
+  <prov:Activity rdf:about="http://sift.net/0_prepare_plasmids_pAN3928_to_transcriptic_rule_30_q0_1_09242017_pAN3928/1.0.0">
     <dcterms:description>Miniprep (QIAprep Spin Miniprep Kit ) and isolate plasmids pAN3928, pAN4036, pAN1201, and pAN1717  from provided plate streaks</dcterms:description>
     <dcterms:title>Prepare Plasmids</dcterms:title>
-    <sbol:displayId>0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN3928</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN3928"/>
+    <sbol:displayId>0_prepare_plasmids_pAN3928_to_transcriptic_rule_30_q0_1_09242017_pAN3928</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/0_prepare_plasmids_pAN3928_to_transcriptic_rule_30_q0_1_09242017_pAN3928"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#prepare_plasmids"/>
-    <prov:used rdf:resource="http://sift.net//1.0.0"/>
+    <prov:used rdf:resource="http://sift.net/pAN3928/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN4036/1.0.0">
+  <prov:Activity rdf:about="http://sift.net/0_prepare_plasmids_pAN4036_to_transcriptic_rule_30_q0_1_09242017_pAN4036/1.0.0">
     <dcterms:description>Miniprep (QIAprep Spin Miniprep Kit ) and isolate plasmids pAN3928, pAN4036, pAN1201, and pAN1717  from provided plate streaks</dcterms:description>
     <dcterms:title>Prepare Plasmids</dcterms:title>
-    <sbol:displayId>0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN4036</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN4036"/>
+    <sbol:displayId>0_prepare_plasmids_pAN4036_to_transcriptic_rule_30_q0_1_09242017_pAN4036</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/0_prepare_plasmids_pAN4036_to_transcriptic_rule_30_q0_1_09242017_pAN4036"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#prepare_plasmids"/>
-    <prov:used rdf:resource="http://sift.net//1.0.0"/>
+    <prov:used rdf:resource="http://sift.net/pAN4036/1.0.0"/>
   </prov:Activity>
   <prov:Activity rdf:about="http://sift.net/10_rnaSeq_transcriptic_rule_30_q0_1_171009_TS004_TP01_A01_to_10_transcriptic_rule_30_q0_1_171009_TS004_TP01_A01_rnaSeq/1.0.0">
     <dcterms:description>8.c-dd of https://docs.google.com/document/d/1WiTOQPM9ylZqIGz86UWsODVydNsDSqJHlEZnSvkQYcs/edit?usp=sharing</dcterms:description>
@@ -70,67 +66,91 @@
     <prov:wasDerivedFrom rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_171009_TS004_TP01_A01/1.0.0"/>
     <prov:wasGeneratedBy rdf:resource="http://sift.net/10_rnaSeq_transcriptic_rule_30_q0_1_171009_TS004_TP01_A01_to_10_transcriptic_rule_30_q0_1_171009_TS004_TP01_A01_rnaSeq/1.0.0"/>
   </sd2:ExperimentalData>
-  <prov:Activity rdf:about="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201/1.0.0">
+  <sd2:Attachment rdf:about="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L001_R1_001_fastq_gz/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L001_R1_001_fastq_gz</dcterms:title>
+    <sbol:displayId>10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L001_R1_001_fastq_gz</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L001_R1_001_fastq_gz"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L001_R1_001.fastq.gz"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L001_R2_001_fastq_gz/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L001_R2_001_fastq_gz</dcterms:title>
+    <sbol:displayId>10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L001_R2_001_fastq_gz</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L001_R2_001_fastq_gz"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L001_R2_001.fastq.gz"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L002_R1_001_fastq_gz/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L002_R1_001_fastq_gz</dcterms:title>
+    <sbol:displayId>10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L002_R1_001_fastq_gz</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L002_R1_001_fastq_gz"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L002_R1_001.fastq.gz"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L002_R2_001_fastq_gz/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L002_R2_001_fastq_gz</dcterms:title>
+    <sbol:displayId>10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L002_R2_001_fastq_gz</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L002_R2_001_fastq_gz"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L002_R2_001.fastq.gz"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L003_R1_001_fastq_gz/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L003_R1_001_fastq_gz</dcterms:title>
+    <sbol:displayId>10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L003_R1_001_fastq_gz</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L003_R1_001_fastq_gz"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L003_R1_001.fastq.gz"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L003_R2_001_fastq_gz/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L003_R2_001_fastq_gz</dcterms:title>
+    <sbol:displayId>10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L003_R2_001_fastq_gz</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L003_R2_001_fastq_gz"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L003_R2_001.fastq.gz"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L004_R1_001_fastq_gz/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L004_R1_001_fastq_gz</dcterms:title>
+    <sbol:displayId>10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L004_R1_001_fastq_gz</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L004_R1_001_fastq_gz"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L004_R1_001.fastq.gz"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L004_R2_001_fastq_gz/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L004_R2_001_fastq_gz</dcterms:title>
+    <sbol:displayId>10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L004_R2_001_fastq_gz</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/10_transcriptic_rule_30_q0_1_171009_TS004_TP01_instrument_output_A1_S2_L004_R2_001_fastq_gz"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L004_R2_001.fastq.gz"/>
+  </sd2:Attachment>
+  <prov:Activity rdf:about="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN1201_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201/1.0.0">
     <dcterms:description>3 Transformations (one time - keeping plates for isolates)</dcterms:description>
     <dcterms:title>Transform Plasmids</dcterms:title>
-    <sbol:displayId>1_transform_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201"/>
+    <sbol:displayId>1_transform_transcriptic_rule_30_q0_1_09242017_pAN1201_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN1201_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#transform"/>
     <prov:used rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_NEB_10_beta/1.0.0"/>
-  </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1717/1.0.0">
-    <dcterms:description>3 Transformations (one time - keeping plates for isolates)</dcterms:description>
-    <dcterms:title>Transform Plasmids</dcterms:title>
-    <sbol:displayId>1_transform_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1717</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1717"/>
-    <sbol:version>1.0.0</sbol:version>
-    <sd2:operatorType rdf:resource="http://sd2e.org#transform"/>
-    <prov:used rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_NEB_10_beta/1.0.0"/>
-  </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036/1.0.0">
-    <dcterms:description>3 Transformations (one time - keeping plates for isolates)</dcterms:description>
-    <dcterms:title>Transform Plasmids</dcterms:title>
-    <sbol:displayId>1_transform_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036"/>
-    <sbol:version>1.0.0</sbol:version>
-    <sd2:operatorType rdf:resource="http://sd2e.org#transform"/>
-    <prov:used rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_NEB_10_beta/1.0.0"/>
-  </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN1201_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201/1.0.0">
-    <dcterms:description>3 Transformations (one time - keeping plates for isolates)</dcterms:description>
-    <dcterms:title>Transform Plasmids</dcterms:title>
-    <sbol:displayId>1_transform_transcriptic_rule_30_q0_1_09242017_pAN1201_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN1201_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201"/>
-    <sbol:version>1.0.0</sbol:version>
-    <sd2:operatorType rdf:resource="http://sd2e.org#transform"/>
     <prov:used rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_pAN1201/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN1717_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1717/1.0.0">
+  <prov:Activity rdf:about="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN1717_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1717/1.0.0">
     <dcterms:description>3 Transformations (one time - keeping plates for isolates)</dcterms:description>
     <dcterms:title>Transform Plasmids</dcterms:title>
-    <sbol:displayId>1_transform_transcriptic_rule_30_q0_1_09242017_pAN1717_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1717</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN1717_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1717"/>
+    <sbol:displayId>1_transform_transcriptic_rule_30_q0_1_09242017_pAN1717_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1717</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN1717_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1717"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#transform"/>
+    <prov:used rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_NEB_10_beta/1.0.0"/>
     <prov:used rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_pAN1717/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN3928_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036/1.0.0">
+  <prov:Activity rdf:about="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN3928_transcriptic_rule_30_q0_1_09242017_pAN4036_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036/1.0.0">
     <dcterms:description>3 Transformations (one time - keeping plates for isolates)</dcterms:description>
     <dcterms:title>Transform Plasmids</dcterms:title>
-    <sbol:displayId>1_transform_transcriptic_rule_30_q0_1_09242017_pAN3928_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN3928_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036"/>
+    <sbol:displayId>1_transform_transcriptic_rule_30_q0_1_09242017_pAN3928_transcriptic_rule_30_q0_1_09242017_pAN4036_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN3928_transcriptic_rule_30_q0_1_09242017_pAN4036_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#transform"/>
+    <prov:used rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_NEB_10_beta/1.0.0"/>
     <prov:used rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_pAN3928/1.0.0"/>
-  </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN4036_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036/1.0.0">
-    <dcterms:description>3 Transformations (one time - keeping plates for isolates)</dcterms:description>
-    <dcterms:title>Transform Plasmids</dcterms:title>
-    <sbol:displayId>1_transform_transcriptic_rule_30_q0_1_09242017_pAN4036_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN4036_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036"/>
-    <sbol:version>1.0.0</sbol:version>
-    <sd2:operatorType rdf:resource="http://sd2e.org#transform"/>
     <prov:used rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_pAN4036/1.0.0"/>
   </prov:Activity>
   <prov:Activity rdf:about="http://sift.net/2_pick_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201_1/1.0.0">
@@ -1574,6 +1594,517 @@
     <prov:wasDerivedFrom rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_beadcontrol/1.0.0"/>
     <prov:wasGeneratedBy rdf:resource="http://sift.net/3_flowCytometry_transcriptic_rule_30_q0_1_09242017_beadcontrol_to_3_transcriptic_rule_30_q0_1_09242017_beadcontrol_flowCytometry/1.0.0"/>
   </sd2:ExperimentalData>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_09242017_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A12_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_09242017_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A12_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_09242017_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A12_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_09242017_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A12_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/09242017/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A12.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A1_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A1_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A1_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A2_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A2_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A2_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A2_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A2.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A3_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A3_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A3_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A3_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A3.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A4_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A4_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A4_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A4_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A4.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A5_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A5_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A5_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A5_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A5.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A6_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A6_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A6_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A6_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A6.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A7_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A7_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A7_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A7_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A7.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A8_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A8_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A8_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A8_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A8.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A9_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A9_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A9_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_A9_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A9.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B1_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B1_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B1_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B2_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B2_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B2_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B2_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B2.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B3_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B3_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B3_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B3_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B3.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B4_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B4_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B4_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B4_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B4.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B5_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B5_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B5_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B5_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B5.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B6_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B6_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B6_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B6_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B6.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B7_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B7_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B7_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B7_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B7.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B8_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B8_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B8_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B8_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B8.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B9_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B9_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B9_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_B9_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B9.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C1_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C1_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C1_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C2_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C2_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C2_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C2_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C2.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C3_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C3_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C3_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C3_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C3.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C4_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C4_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C4_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C4_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C4.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C5_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C5_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C5_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C5_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C5.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C6_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C6_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C6_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C6_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C6.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C7_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C7_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C7_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C7_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C7.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C8_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C8_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C8_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C8_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C8.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C9_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C9_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C9_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_C9_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C9.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D1_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D1_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D1_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D2_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D2_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D2_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D2_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D2.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D3_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D3_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D3_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D3_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D3.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D4_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D4_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D4_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D4_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D4.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D5_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D5_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D5_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D5_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D5.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D6_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D6_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D6_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D6_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D6.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D7_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D7_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D7_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D7_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D7.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D8_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D8_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D8_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D8_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D8.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D9_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D9_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D9_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_D9_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D9.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E1_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E1_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E1_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E2_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E2_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E2_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E2_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E2.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E3_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E3_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E3_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E3_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E3.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E4_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E4_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E4_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E4_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E4.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E5_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E5_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E5_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E5_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E5.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E6_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E6_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E6_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E6_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E6.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E7_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E7_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E7_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E7_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E7.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E8_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E8_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E8_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E8_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E8.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E9_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E9_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E9_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_E9_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E9.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F1_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F1_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F1_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F2_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F2_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F2_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F2_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F2.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F3_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F3_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F3_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F3_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F3.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F4_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F4_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F4_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F4_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F4.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F5_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F5_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F5_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F5_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F5.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F6_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F6_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F6_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F6_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F6.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F7_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F7_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F7_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F7_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F7.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F8_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F8_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F8_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F8_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F8.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F9_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F9_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F9_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_F9_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F9.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G1_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G1_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G1_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G2_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G2_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G2_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G2_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G2.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G3_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G3_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G3_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G3_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G3.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G4_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G4_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G4_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G4_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G4.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G5_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G5_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G5_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G5_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G5.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G6_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G6_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G6_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G6_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G6.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G7_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G7_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G7_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G7_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G7.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G8_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G8_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G8_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G8_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G8.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G9_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G9_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G9_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_G9_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G9.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H1_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H1_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H1_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H2_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H2_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H2_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H2_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H2.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H3_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H3_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H3_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H3_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H3.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H4_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H4_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H4_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H4_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H4.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H5_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H5_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H5_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H5_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H5.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H6_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H6_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H6_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H6_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H6.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H7_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H7_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H7_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H7_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H7.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H8_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H8_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H8_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H8_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H8.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H9_fcs/1.0.0">
+    <dcterms:title>transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H9_fcs</dcterms:title>
+    <sbol:displayId>3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H9_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/3_transcriptic_rule_30_q0_1_instrument_output_SD30_09242017_SD30_09242017_Rule30Plate_H9_fcs"/>
+    <sbol:version>1.0.0</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H9.fcs"/>
+  </sd2:Attachment>
   <prov:Activity rdf:about="http://sift.net/4_dilute_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201_1_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201_2/1.0.0">
     <dcterms:description>The next day, dilute the overnight cultures 178-fold by adding 15 μL of culture into 185  μL M9 glucose media, and then 15 μL of that dilution into 185 μL 50 μg/mL kanamycin and 50 μg/mL spectinomycin in a V-bottom 96-well plate.</dcterms:description>
     <dcterms:title>Dilute</dcterms:title>
@@ -2409,6 +2940,30 @@
     <om:symbol>μl</om:symbol>
     <prov:wasDerivedFrom rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/microlitre"/>
   </om:Unit>
+  <sd2:Implementation rdf:about="http://sift.net/pAN1201/1.0.0">
+    <dcterms:title>pAN1201</dcterms:title>
+    <sbol:displayId>pAN1201</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/pAN1201"/>
+    <sbol:version>1.0.0</sbol:version>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://sift.net/pAN1717/1.0.0">
+    <dcterms:title>pAN1717</dcterms:title>
+    <sbol:displayId>pAN1717</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/pAN1717"/>
+    <sbol:version>1.0.0</sbol:version>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://sift.net/pAN3928/1.0.0">
+    <dcterms:title>pAN3928</dcterms:title>
+    <sbol:displayId>pAN3928</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/pAN3928"/>
+    <sbol:version>1.0.0</sbol:version>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://sift.net/pAN4036/1.0.0">
+    <dcterms:title>pAN4036</dcterms:title>
+    <sbol:displayId>pAN4036</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://sift.net/pAN4036"/>
+    <sbol:version>1.0.0</sbol:version>
+  </sd2:Implementation>
   <sd2:Implementation rdf:about="http://sift.net/transcriptic_rule_30_q0_1_09242017_A01/1.0.0">
     <dcterms:title>transcriptic_rule_30_q0_1_09242017_A01</dcterms:title>
     <sbol:displayId>transcriptic_rule_30_q0_1_09242017_A01</sbol:displayId>
@@ -2998,8 +3553,7 @@
     <sbol:version>1.0.0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_NEB_10_beta/1.0.0"/>
     <prov:wasDerivedFrom rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_pAN1201/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN1201_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN1201_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201/1.0.0"/>
   </sd2:Implementation>
   <sd2:Implementation rdf:about="http://sift.net/transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201_1/1.0.0">
     <dcterms:title>transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1201_1</dcterms:title>
@@ -3052,8 +3606,7 @@
     <sbol:version>1.0.0</sbol:version>
     <prov:wasDerivedFrom rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_NEB_10_beta/1.0.0"/>
     <prov:wasDerivedFrom rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_pAN1717/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1717/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN1717_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1717/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN1717_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1717/1.0.0"/>
   </sd2:Implementation>
   <sd2:Implementation rdf:about="http://sift.net/transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1717_1/1.0.0">
     <dcterms:title>transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN1717_1</dcterms:title>
@@ -3107,9 +3660,7 @@
     <prov:wasDerivedFrom rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_NEB_10_beta/1.0.0"/>
     <prov:wasDerivedFrom rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_pAN3928/1.0.0"/>
     <prov:wasDerivedFrom rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_pAN4036/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN3928_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN4036_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://sift.net/1_transform_transcriptic_rule_30_q0_1_09242017_pAN3928_transcriptic_rule_30_q0_1_09242017_pAN4036_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_to_transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036/1.0.0"/>
   </sd2:Implementation>
   <sd2:Implementation rdf:about="http://sift.net/transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036_1/1.0.0">
     <dcterms:title>transcriptic_rule_30_q0_1_09242017_NEB_10_beta_pAN3928_pAN4036_1</dcterms:title>
@@ -3166,32 +3717,32 @@
     <sbol:displayId>transcriptic_rule_30_q0_1_09242017_pAN1201</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_pAN1201"/>
     <sbol:version>1.0.0</sbol:version>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net//1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN1201/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://sift.net/pAN1201/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://sift.net/0_prepare_plasmids_pAN1201_to_transcriptic_rule_30_q0_1_09242017_pAN1201/1.0.0"/>
   </sd2:Implementation>
   <sd2:Implementation rdf:about="http://sift.net/transcriptic_rule_30_q0_1_09242017_pAN1717/1.0.0">
     <dcterms:title>transcriptic_rule_30_q0_1_09242017_pAN1717</dcterms:title>
     <sbol:displayId>transcriptic_rule_30_q0_1_09242017_pAN1717</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_pAN1717"/>
     <sbol:version>1.0.0</sbol:version>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net//1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN1717/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://sift.net/pAN1717/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://sift.net/0_prepare_plasmids_pAN1717_to_transcriptic_rule_30_q0_1_09242017_pAN1717/1.0.0"/>
   </sd2:Implementation>
   <sd2:Implementation rdf:about="http://sift.net/transcriptic_rule_30_q0_1_09242017_pAN3928/1.0.0">
     <dcterms:title>transcriptic_rule_30_q0_1_09242017_pAN3928</dcterms:title>
     <sbol:displayId>transcriptic_rule_30_q0_1_09242017_pAN3928</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_pAN3928"/>
     <sbol:version>1.0.0</sbol:version>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net//1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN3928/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://sift.net/pAN3928/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://sift.net/0_prepare_plasmids_pAN3928_to_transcriptic_rule_30_q0_1_09242017_pAN3928/1.0.0"/>
   </sd2:Implementation>
   <sd2:Implementation rdf:about="http://sift.net/transcriptic_rule_30_q0_1_09242017_pAN4036/1.0.0">
     <dcterms:title>transcriptic_rule_30_q0_1_09242017_pAN4036</dcterms:title>
     <sbol:displayId>transcriptic_rule_30_q0_1_09242017_pAN4036</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://sift.net/transcriptic_rule_30_q0_1_09242017_pAN4036"/>
     <sbol:version>1.0.0</sbol:version>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net//1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/0_prepare_plasmids__to_transcriptic_rule_30_q0_1_09242017_pAN4036/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://sift.net/pAN4036/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://sift.net/0_prepare_plasmids_pAN4036_to_transcriptic_rule_30_q0_1_09242017_pAN4036/1.0.0"/>
   </sd2:Implementation>
   <sd2:Implementation rdf:about="http://sift.net/transcriptic_rule_30_q0_1_171009_TS004_TP01_A01/1.0.0">
     <dcterms:title>transcriptic_rule_30_q0_1_171009_TS004_TP01_A01</dcterms:title>

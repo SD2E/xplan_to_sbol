@@ -21,20 +21,28 @@ def load_alnum_id(id_data):
         else:
             return fragment
 
-def load_build_activity(src_sample_key, doc, operator, replicate_id, entity_dict, act_dict, act_name=None, act_desc=None, sample_measures=[], dest_sample_key=None, custom=[]):
-    try:
-        src_sample = act_dict[src_sample_key]
-    except:
-        src_sample = entity_dict[src_sample_key]
+def load_build_activity(src_entity_keys, doc, operator, replicate_id, entity_dict, act_dict, act_name=None, act_desc=None, sample_measures=[], dest_sample_key=None, custom=[]):
+    src_entities = []
+
+    temp_act_dict = {}
+
+    for src_entity_key in src_entity_keys:
+        if isinstance(src_entity_key, str):
+            try:
+                if src_entity_key not in temp_act_dict:
+                    src_entities.append(act_dict[src_entity_key])
+                    temp_act_dict[src_entity_key] = src_entities[-1]
+            except:
+                src_entities.append(entity_dict[src_entity_key])
 
     if dest_sample_key is None:
-            act_dict[src_sample_key] = doc.create_activity(operator, replicate_id, [src_sample], act_name, act_desc, custom)
+            act_dict[src_entity_key] = doc.create_activity(operator, replicate_id, src_entities, act_name, act_desc, custom)
     else:
         dest_sample = entity_dict[dest_sample_key]
 
         doc.add_measures(dest_sample, sample_measures)
 
-        doc.create_activity(operator, replicate_id, [src_sample], act_name, act_desc, custom, dest_sample)
+        doc.create_activity(operator, replicate_id, src_entities, act_name, act_desc, custom, dest_sample)
 
 def load_src_dest_build_activity(sample_data, doc, operator, replicate_id, entity_dict, act_dict, act_name=None, act_desc=None, sample_measures=[]):
     src_sample_data = load_src_sample_data(sample_data)
@@ -42,19 +50,15 @@ def load_src_dest_build_activity(sample_data, doc, operator, replicate_id, entit
     dest_sample_data = load_dest_sample_data(sample_data)
 
     if isinstance(src_sample_data, str) and isinstance(dest_sample_data, str):
-        load_build_activity(src_sample_data, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures, dest_sample_data)
+        load_build_activity([src_sample_data], doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures, dest_sample_data)
     elif isinstance(src_sample_data, str):
         for dest_sample_datum in dest_sample_data:
-            load_build_activity(src_sample_data, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures, load_dest_sample_key(dest_sample_datum))
+            load_build_activity([src_sample_data], doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures, load_dest_sample_key(dest_sample_datum))
     elif isinstance(dest_sample_data, str):
-        for src_entity_datum in src_sample_data:
-            if isinstance(src_entity_datum, str):
-                load_build_activity(src_entity_datum, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures, dest_sample_data)
+        load_build_activity(src_sample_data, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures, dest_sample_data)
     else:
-        for src_entity_datum in src_sample_data:
-            if isinstance(src_entity_datum, str):
-                for dest_sample_datum in dest_sample_data:
-                    load_build_activity(src_entity_datum, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures, load_dest_sample_key(dest_sample_datum))
+        for dest_sample_datum in dest_sample_data:
+            load_build_activity(src_sample_data, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures, load_dest_sample_key(dest_sample_datum))
 
 def load_operator_activities(operator_data, doc, replicate_id, entity_dict, act_dict, unit_dict, om):
     operator = operator_data['type'].replace('-', '_')
@@ -76,7 +80,7 @@ def load_operator_activities(operator_data, doc, replicate_id, entity_dict, act_
         try:
             load_src_dest_build_activity(sample_datum, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures)
         except:
-            load_build_activity(load_src_sample_key(sample_datum), doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures)
+            load_build_activity([load_src_sample_key(sample_datum)], doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures)
 
 def load_channels(operator_data):
     channel_data = operator_data['channels']
@@ -389,8 +393,8 @@ def load_experimental_data(operator_data, doc, exp, replicate_id, attachs, entit
         if exp_data.identity.get() not in entity_dict:
             entity_dict[file_paths[0]] = exp_data
 
-            for attach in temp_attachs:
-                attachs.append
+            for temp_attach in temp_attachs:
+                attachs.append(temp_attach)
 
 def load_sample_data(operator_data):
     try:
