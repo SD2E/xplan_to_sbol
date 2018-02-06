@@ -21,7 +21,7 @@ def load_alnum_id(id_data):
         else:
             return fragment
 
-def load_build_activity(src_entity_keys, doc, operator, replicate_id, entity_dict, act_dict, act_name=None, act_desc=None, sample_measures=[], dest_sample_key=None, custom=[]):
+def load_build_activity(src_entity_keys, doc, operator, entity_dict, act_dict, act_name=None, act_desc=None, sample_measures=[], dest_sample_key=None, custom=[]):
     src_entities = []
 
     temp_act_dict = {}
@@ -36,31 +36,31 @@ def load_build_activity(src_entity_keys, doc, operator, replicate_id, entity_dic
                 src_entities.append(entity_dict[src_entity_key])
 
     if dest_sample_key is None:
-            act_dict[src_entity_key] = doc.create_activity(operator, replicate_id, src_entities, act_name, act_desc, custom)
+            act_dict[src_entity_key] = doc.create_activity(operator, src_entities, act_name, act_desc, custom)
     else:
         dest_sample = entity_dict[dest_sample_key]
 
         doc.add_measures(dest_sample, sample_measures)
 
-        doc.create_activity(operator, replicate_id, src_entities, act_name, act_desc, custom, dest_sample)
+        doc.create_activity(operator, src_entities, act_name, act_desc, custom, dest_sample)
 
-def load_src_dest_build_activity(sample_data, doc, operator, replicate_id, entity_dict, act_dict, act_name=None, act_desc=None, sample_measures=[]):
+def load_src_dest_build_activity(sample_data, doc, operator, entity_dict, act_dict, act_name=None, act_desc=None, sample_measures=[]):
     src_sample_data = load_src_sample_data(sample_data)
 
     dest_sample_data = load_dest_sample_data(sample_data)
 
     if isinstance(src_sample_data, str) and isinstance(dest_sample_data, str):
-        load_build_activity([src_sample_data], doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures, dest_sample_data)
+        load_build_activity([src_sample_data], doc, operator, entity_dict, act_dict, act_name, act_desc, sample_measures, dest_sample_data)
     elif isinstance(src_sample_data, str):
         for dest_sample_datum in dest_sample_data:
-            load_build_activity([src_sample_data], doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures, load_dest_sample_key(dest_sample_datum))
+            load_build_activity([src_sample_data], doc, operator, entity_dict, act_dict, act_name, act_desc, sample_measures, load_dest_sample_key(dest_sample_datum))
     elif isinstance(dest_sample_data, str):
-        load_build_activity(src_sample_data, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures, dest_sample_data)
+        load_build_activity(src_sample_data, doc, operator, entity_dict, act_dict, act_name, act_desc, sample_measures, dest_sample_data)
     else:
         for dest_sample_datum in dest_sample_data:
-            load_build_activity(src_sample_data, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures, load_dest_sample_key(dest_sample_datum))
+            load_build_activity(src_sample_data, doc, operator, entity_dict, act_dict, act_name, act_desc, sample_measures, load_dest_sample_key(dest_sample_datum))
 
-def load_operator_activities(operator_data, doc, replicate_id, entity_dict, act_dict, unit_dict, om):
+def load_operator_activities(operator_data, doc, entity_dict, act_dict, unit_dict, om):
     operator = operator_data['type'].replace('-', '_')
 
     try:
@@ -78,9 +78,9 @@ def load_operator_activities(operator_data, doc, replicate_id, entity_dict, act_
         sample_measures = load_sample_measures(sample_datum, doc, ['od600', 'volume'], unit_dict, om)
 
         try:
-            load_src_dest_build_activity(sample_datum, doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures)
+            load_src_dest_build_activity(sample_datum, doc, operator, entity_dict, act_dict, act_name, act_desc, sample_measures)
         except:
-            load_build_activity([load_src_sample_key(sample_datum)], doc, operator, replicate_id, entity_dict, act_dict, act_name, act_desc, sample_measures)
+            load_build_activity([load_src_sample_key(sample_datum)], doc, operator, entity_dict, act_dict, act_name, act_desc, sample_measures)
 
 def load_channels(operator_data):
     channel_data = operator_data['channels']
@@ -95,7 +95,7 @@ def load_channels(operator_data):
 
     return channels
 
-def load_upload_activity(operator_data, doc, replicate_id, entity_dict, act_dict):
+def load_upload_activity(operator_data, doc, entity_dict, act_dict):
     operator = operator_data['type'].replace('-', '_')
 
     if operator == 'uploadData':
@@ -142,19 +142,17 @@ def load_upload_activity(operator_data, doc, replicate_id, entity_dict, act_dict
         dest_entity = entity_dict[file_paths[0]]
 
         if len(channels) > 0:
-            act_dict[src_sample_key] = doc.create_flow_cytometry_activity(operator, channels, replicate_id, [src_sample], act_name, act_desc, custom, dest_entity)
+            act_dict[src_sample_key] = doc.create_flow_cytometry_activity(operator, channels, [src_sample], act_name, act_desc, custom, dest_entity)
         else:
-            act_dict[src_sample_key] = doc.create_activity(operator, replicate_id, [src_sample], act_name, act_desc, custom, dest_entity)
+            act_dict[src_sample_key] = doc.create_activity(operator, [src_sample], act_name, act_desc, custom, dest_entity)
 
 def load_step_activities(step_data, doc, entity_dict, act_dict, unit_dict, om):
     operator_data = step_data['operator']
-    
-    replicate_id = repr(step_data['id'])
 
     try:
-        load_upload_activity(operator_data, doc, replicate_id, entity_dict, act_dict)
+        load_upload_activity(operator_data, doc, entity_dict, act_dict)
     except:
-        load_operator_activities(operator_data, doc, replicate_id, entity_dict, act_dict, unit_dict, om)
+        load_operator_activities(operator_data, doc, entity_dict, act_dict, unit_dict, om)
 
 def load_src_sample_key(sample_data):
     try:
@@ -386,7 +384,7 @@ def load_experimental_data(operator_data, doc, exp, replicate_id, attachs, entit
         for file_path in file_paths:
             attach_id = load_alnum_id(file_path)
 
-            temp_attachs.append(doc.create_attachment(attach_id, attach_id, file_path, replicate_id))
+            temp_attachs.append(doc.create_attachment(attach_id, attach_id, file_path))
 
         exp_data = doc.create_experimental_data(temp_attachs, sample, exp, operator, replicate_id)
 
@@ -466,7 +464,7 @@ def load_experiment(plan_data, doc):
 
     return doc.create_experiment(exp_id, plan_data['name'])
 
-def convert_xplan_to_sbol(homespace, om_path, xplan_path, sbol_path, validate):
+def convert_xplan_to_sbol(homespace, om_path, xplan_path, validate, sbol_path=None, sbh_address=None, sbh_email=None, sbh_password=None):
     doc = XDocument()
 
     doc.configure_options(homespace, validate, False)
@@ -497,7 +495,12 @@ def convert_xplan_to_sbol(homespace, om_path, xplan_path, sbol_path, validate):
 
     doc.add_top_levels(list(unit_dict.values()))
 
-    doc.write(sbol_path)
+    if sbol_path is not None:
+        doc.write(sbol_path)
+
+    if sbh_address is not None and sbh_email is not None and sbh_password is not None:
+        print('hi')
+        doc.upload(sbh_address, sbh_email, sbh_password)
 
     print('done')
 
@@ -509,11 +512,14 @@ def main(args=None):
     parser.add_argument('-hm', '--homespace')
     parser.add_argument('-op', '--om_path')
     parser.add_argument('-xp', '--xplan_path')
-    parser.add_argument('-sp', '--sbol_path')
+    parser.add_argument('-sp', '--sbol_path', nargs='?', default=None)
+    parser.add_argument('-sb', '--sbh_address', nargs='?', default=None)
+    parser.add_argument('-em', '--sbh_email', nargs='?', default=None)
+    parser.add_argument('-ps', '--sbh_password', nargs='?', default=None)
     parser.add_argument('-va', '--validate', action='store_true')
     args = parser.parse_args(args)
 
-    convert_xplan_to_sbol(args.homespace, args.om_path, args.xplan_path, args.sbol_path, args.validate)
+    convert_xplan_to_sbol(args.homespace, args.om_path, args.xplan_path, args.validate, args.sbol_path, args.sbh_address, args.sbh_email, args.sbh_password)
 
 if __name__ == '__main__':
     main()
