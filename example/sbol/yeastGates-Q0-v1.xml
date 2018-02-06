@@ -4,290 +4,290 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:sbol="http://sbols.org/v2#"
    xmlns:sd2="http://sd2e.org#">
-  <sd2:Implementation rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0">
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0">
     <dcterms:title>biofab_sample_yeast_gates_q0_1_1_A01</dcterms:title>
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_1_A01</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_A01"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_1_A01"/>
     <sbol:version>1.0.0</sbol:version>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_STOCK01/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/streak_biofab_sample_yeast_gates_q0_1_1_STOCK01_to_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_1_STOCK01/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/streak_biofab_sample_yeast_gates_q0_1_1_STOCK01_to_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
   </sd2:Implementation>
-  <sd2:Implementation rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_1_STOCK01/1.0.0">
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_1_STOCK01/1.0.0">
     <dcterms:title>biofab_sample_yeast_gates_q0_1_1_STOCK01</dcterms:title>
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_1_STOCK01</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_STOCK01"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_1_STOCK01"/>
     <sbol:version>1.0.0</sbol:version>
   </sd2:Implementation>
-  <sd2:Implementation rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0">
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0">
     <dcterms:title>biofab_sample_yeast_gates_q0_1_2_A01_1</dcterms:title>
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_2_A01_1</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_1"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_1"/>
     <sbol:version>1.0.0</sbol:version>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
   </sd2:Implementation>
-  <sd2:ExperimentalData rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4/1.0.0">
+  <sd2:ExperimentalData rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4/1.0.0">
     <dcterms:title>biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4</dcterms:title>
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4"/>
     <sbol:version>1.0.0</sbol:version>
-    <sd2:attachment rdf:resource="http://sift.net/sample_biofab_yeast_gates_q0_1_2_instrument_output_A01_1_od/1.0.0"/>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/spectrophotometry_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4/1.0.0"/>
+    <sd2:attachment rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/sample_biofab_yeast_gates_q0_1_2_instrument_output_A01_1_od/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/spectrophotometry_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4/1.0.0"/>
   </sd2:ExperimentalData>
-  <sd2:Implementation rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_2/1.0.0">
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_2/1.0.0">
     <dcterms:title>biofab_sample_yeast_gates_q0_1_2_A01_2</dcterms:title>
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_2_A01_2</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_2"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_2"/>
     <sbol:version>1.0.0</sbol:version>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_2/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_2/1.0.0"/>
   </sd2:Implementation>
-  <sd2:Implementation rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_3/1.0.0">
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_3/1.0.0">
     <dcterms:title>biofab_sample_yeast_gates_q0_1_2_A01_3</dcterms:title>
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_2_A01_3</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_3"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_3"/>
     <sbol:version>1.0.0</sbol:version>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_3/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_3/1.0.0"/>
   </sd2:Implementation>
-  <sd2:Implementation rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_4/1.0.0">
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_4/1.0.0">
     <dcterms:title>biofab_sample_yeast_gates_q0_1_2_A01_4</dcterms:title>
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_2_A01_4</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_4"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_4"/>
     <sbol:version>1.0.0</sbol:version>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_4/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_4/1.0.0"/>
   </sd2:Implementation>
-  <sd2:Implementation rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_5/1.0.0">
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_5/1.0.0">
     <dcterms:title>biofab_sample_yeast_gates_q0_1_2_A01_5</dcterms:title>
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_2_A01_5</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_5"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_5"/>
     <sbol:version>1.0.0</sbol:version>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_5/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_5/1.0.0"/>
   </sd2:Implementation>
-  <sd2:Implementation rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_6/1.0.0">
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_6/1.0.0">
     <dcterms:title>biofab_sample_yeast_gates_q0_1_2_A01_6</dcterms:title>
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_2_A01_6</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_6"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_6"/>
     <sbol:version>1.0.0</sbol:version>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_6/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_6/1.0.0"/>
   </sd2:Implementation>
-  <sd2:Implementation rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0">
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0">
     <dcterms:title>biofab_sample_yeast_gates_q0_1_3_A01_1_1</dcterms:title>
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_3_A01_1_1</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_3_A01_1_1"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_3_A01_1_1"/>
     <sbol:version>1.0.0</sbol:version>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/dilute_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/dilute_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0"/>
   </sd2:Implementation>
-  <sd2:Implementation rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0">
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0">
     <dcterms:title>biofab_sample_yeast_gates_q0_1_4_A01_1_1</dcterms:title>
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_4_A01_1_1</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_4_A01_1_1"/>
     <sbol:version>1.0.0</sbol:version>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/transfer_biofab_sample_yeast_gates_q0_1_3_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/transfer_biofab_sample_yeast_gates_q0_1_3_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
   </sd2:Implementation>
-  <sd2:ExperimentalData rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry_11/1.0.0">
+  <sd2:ExperimentalData rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry_11/1.0.0">
     <dcterms:title>biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry_11</dcterms:title>
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry_11</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry_11"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry_11"/>
     <sbol:version>1.0.0</sbol:version>
-    <sd2:attachment rdf:resource="http://sift.net/sample_biofab_yeast_gates_q0_1_5_instrument_output_A01_1_1_fcs/1.0.0"/>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/flowCytometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry_11/1.0.0"/>
+    <sd2:attachment rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/sample_biofab_yeast_gates_q0_1_5_instrument_output_A01_1_1_fcs/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/flowCytometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry_11/1.0.0"/>
   </sd2:ExperimentalData>
-  <sd2:ExperimentalData rdf:about="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry_9/1.0.0">
+  <sd2:ExperimentalData rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry_9/1.0.0">
     <dcterms:title>biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry_9</dcterms:title>
     <sbol:displayId>biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry_9</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry_9"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry_9"/>
     <sbol:version>1.0.0</sbol:version>
-    <sd2:attachment rdf:resource="http://sift.net/sample_biofab_yeast_gates_q0_1_4_instrument_output_A01_1_1_od/1.0.0"/>
-    <prov:wasDerivedFrom rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
-    <prov:wasGeneratedBy rdf:resource="http://sift.net/spectrophotometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry_9/1.0.0"/>
+    <sd2:attachment rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/sample_biofab_yeast_gates_q0_1_4_instrument_output_A01_1_1_od/1.0.0"/>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/spectrophotometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry_9/1.0.0"/>
   </sd2:ExperimentalData>
-  <sd2:Experiment rdf:about="http://sift.net/df82e79b_e18c_457e_8c5c_ed605acc94cd/1.0.0">
+  <sd2:Experiment rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/df82e79b_e18c_457e_8c5c_ed605acc94cd/1.0.0">
     <dcterms:title>Yeast Gates Q0 Plan</dcterms:title>
     <sbol:displayId>df82e79b_e18c_457e_8c5c_ed605acc94cd</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/df82e79b_e18c_457e_8c5c_ed605acc94cd"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/df82e79b_e18c_457e_8c5c_ed605acc94cd"/>
     <sbol:version>1.0.0</sbol:version>
-    <sd2:experimentalData rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4/1.0.0"/>
-    <sd2:experimentalData rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry_11/1.0.0"/>
-    <sd2:experimentalData rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry_9/1.0.0"/>
+    <sd2:experimentalData rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4/1.0.0"/>
+    <sd2:experimentalData rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry_11/1.0.0"/>
+    <sd2:experimentalData rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry_9/1.0.0"/>
   </sd2:Experiment>
-  <prov:Activity rdf:about="http://sift.net/dilute_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/dilute_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0">
     <dcterms:description>96 flat 1 dilute (at constant volume (TX), OD defined average volume (BF), OD defined well volume (GB) trying to hit about OD 600 0.0003, 0.00015, 0.000075) into 96 deep 1 with 1mL SC media</dcterms:description>
     <dcterms:title>Dilute operator</dcterms:title>
     <sbol:displayId>dilute_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_3_A01_1_1</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/dilute_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_3_A01_1_1"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/dilute_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_3_A01_1_1"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#dilute"/>
-    <prov:wasInformedBy rdf:resource="http://sift.net/spectrophotometry_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4/1.0.0"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/spectrophotometry_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/flowCytometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry_11/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/flowCytometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry_11/1.0.0">
     <dcterms:description>96 flat 2 measure on flow quickly</dcterms:description>
     <dcterms:title>Flow Operator</dcterms:title>
     <sbol:displayId>flowCytometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry_11</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/flowCytometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry_11"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/flowCytometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1_flowCytometry_11"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/sample/biofab/instruments/accurri/5539/11272017/cytometer_configuration.json"/>
     <sd2:manifest rdf:resource="agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/5/manifest/manifest.json"/>
     <sd2:operatorType rdf:resource="http://sd2e.org#flowCytometry"/>
-    <prov:wasInformedBy rdf:resource="http://sift.net/mix_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/mix_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0">
     <dcterms:description>Incubate (30C, 2 days), YPAD-plate_1</dcterms:description>
     <dcterms:title>Incubate Operator</dcterms:title>
     <sbol:displayId>incubate_biofab_sample_yeast_gates_q0_1_1_A01</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/incubate_biofab_sample_yeast_gates_q0_1_1_A01"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/incubate_biofab_sample_yeast_gates_q0_1_1_A01"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#incubate"/>
-    <prov:used rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:used rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/incubate_biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/incubate_biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0">
     <dcterms:description>Incubate 96 flat 1 30C, 1h, 800rpm, 3mm throw OR mix well with liquid handler</dcterms:description>
     <dcterms:title>Incubate Operator</dcterms:title>
     <sbol:displayId>incubate_biofab_sample_yeast_gates_q0_1_2_A01_1</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/incubate_biofab_sample_yeast_gates_q0_1_2_A01_1"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/incubate_biofab_sample_yeast_gates_q0_1_2_A01_1"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#incubate"/>
-    <prov:used rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
+    <prov:used rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/incubate_biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/incubate_biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0">
     <dcterms:description>Incubate 96 deep 1 30C, 16h, 800rpm, 3mm throw</dcterms:description>
     <dcterms:title>Incubate Operator</dcterms:title>
     <sbol:displayId>incubate_biofab_sample_yeast_gates_q0_1_3_A01_1_1</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/incubate_biofab_sample_yeast_gates_q0_1_3_A01_1_1"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/incubate_biofab_sample_yeast_gates_q0_1_3_A01_1_1"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#incubate"/>
-    <prov:used rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0"/>
+    <prov:used rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/mix_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/mix_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0">
     <dcterms:description>96 flat 2 mix well by pipetting up and down to avoid settling before OD measurement</dcterms:description>
     <dcterms:title>Mix Operator</dcterms:title>
     <sbol:displayId>mix_biofab_sample_yeast_gates_q0_1_4_A01_1_1</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/mix_biofab_sample_yeast_gates_q0_1_4_A01_1_1"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/mix_biofab_sample_yeast_gates_q0_1_4_A01_1_1"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#mix"/>
-    <prov:used rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
+    <prov:used rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0">
     <dcterms:description>Innoculate, from: YPAD-plate_1, to: 96_flat_1, media: 200 uL SC - take 6 replicates</dcterms:description>
     <dcterms:title>Pick Operator</dcterms:title>
     <sbol:displayId>pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_1</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_1"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_1"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#pick"/>
-    <prov:wasInformedBy rdf:resource="http://sift.net/incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_2/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_2/1.0.0">
     <dcterms:description>Innoculate, from: YPAD-plate_1, to: 96_flat_1, media: 200 uL SC - take 6 replicates</dcterms:description>
     <dcterms:title>Pick Operator</dcterms:title>
     <sbol:displayId>pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_2</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_2"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_2"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#pick"/>
-    <prov:wasInformedBy rdf:resource="http://sift.net/incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_3/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_3/1.0.0">
     <dcterms:description>Innoculate, from: YPAD-plate_1, to: 96_flat_1, media: 200 uL SC - take 6 replicates</dcterms:description>
     <dcterms:title>Pick Operator</dcterms:title>
     <sbol:displayId>pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_3</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_3"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_3"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#pick"/>
-    <prov:wasInformedBy rdf:resource="http://sift.net/incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_4/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_4/1.0.0">
     <dcterms:description>Innoculate, from: YPAD-plate_1, to: 96_flat_1, media: 200 uL SC - take 6 replicates</dcterms:description>
     <dcterms:title>Pick Operator</dcterms:title>
     <sbol:displayId>pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_4</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_4"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_4"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#pick"/>
-    <prov:wasInformedBy rdf:resource="http://sift.net/incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_5/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_5/1.0.0">
     <dcterms:description>Innoculate, from: YPAD-plate_1, to: 96_flat_1, media: 200 uL SC - take 6 replicates</dcterms:description>
     <dcterms:title>Pick Operator</dcterms:title>
     <sbol:displayId>pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_5</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_5"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_5"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#pick"/>
-    <prov:wasInformedBy rdf:resource="http://sift.net/incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_6/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_6/1.0.0">
     <dcterms:description>Innoculate, from: YPAD-plate_1, to: 96_flat_1, media: 200 uL SC - take 6 replicates</dcterms:description>
     <dcterms:title>Pick Operator</dcterms:title>
     <sbol:displayId>pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_6</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_6"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/pick_biofab_sample_yeast_gates_q0_1_1_A01_to_biofab_sample_yeast_gates_q0_1_2_A01_6"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#pick"/>
-    <prov:wasInformedBy rdf:resource="http://sift.net/incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/incubate_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0"/>
   </prov:Activity>
-  <sd2:Attachment rdf:about="http://sift.net/sample_biofab_yeast_gates_q0_1_2_instrument_output_A01_1_od/1.0.0">
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/sample_biofab_yeast_gates_q0_1_2_instrument_output_A01_1_od/1.0.0">
     <dcterms:title>sample_biofab_yeast_gates_q0_1_2_instrument_output_A01_1_od</dcterms:title>
     <sbol:displayId>sample_biofab_yeast_gates_q0_1_2_instrument_output_A01_1_od</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/sample_biofab_yeast_gates_q0_1_2_instrument_output_A01_1_od"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/sample_biofab_yeast_gates_q0_1_2_instrument_output_A01_1_od"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:source rdf:resource="agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/2/instrument_output/A01_1.od"/>
   </sd2:Attachment>
-  <sd2:Attachment rdf:about="http://sift.net/sample_biofab_yeast_gates_q0_1_4_instrument_output_A01_1_1_od/1.0.0">
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/sample_biofab_yeast_gates_q0_1_4_instrument_output_A01_1_1_od/1.0.0">
     <dcterms:title>sample_biofab_yeast_gates_q0_1_4_instrument_output_A01_1_1_od</dcterms:title>
     <sbol:displayId>sample_biofab_yeast_gates_q0_1_4_instrument_output_A01_1_1_od</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/sample_biofab_yeast_gates_q0_1_4_instrument_output_A01_1_1_od"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/sample_biofab_yeast_gates_q0_1_4_instrument_output_A01_1_1_od"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:source rdf:resource="agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/4/instrument_output/A01_1_1.od"/>
   </sd2:Attachment>
-  <sd2:Attachment rdf:about="http://sift.net/sample_biofab_yeast_gates_q0_1_5_instrument_output_A01_1_1_fcs/1.0.0">
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/sample_biofab_yeast_gates_q0_1_5_instrument_output_A01_1_1_fcs/1.0.0">
     <dcterms:title>sample_biofab_yeast_gates_q0_1_5_instrument_output_A01_1_1_fcs</dcterms:title>
     <sbol:displayId>sample_biofab_yeast_gates_q0_1_5_instrument_output_A01_1_1_fcs</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/sample_biofab_yeast_gates_q0_1_5_instrument_output_A01_1_1_fcs"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/sample_biofab_yeast_gates_q0_1_5_instrument_output_A01_1_1_fcs"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:source rdf:resource="agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/5/instrument_output/A01_1_1.fcs"/>
   </sd2:Attachment>
-  <prov:Activity rdf:about="http://sift.net/spectrophotometry_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/spectrophotometry_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4/1.0.0">
     <dcterms:description>96 flat 1 measure OD600 - OD conversion determined cellometer or flow cytometer</dcterms:description>
     <dcterms:title>Spectrophotometry Operator</dcterms:title>
     <sbol:displayId>spectrophotometry_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/spectrophotometry_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/spectrophotometry_biofab_sample_yeast_gates_q0_1_2_A01_1_to_biofab_sample_yeast_gates_q0_1_2_A01_1_spectrophotometry_4"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/sample/biofab/instruments/spectrophotometer/5539/11272017/spectrophotometer_configuration.json"/>
     <sd2:manifest rdf:resource="agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/2/manifest/manifest.json"/>
     <sd2:operatorType rdf:resource="http://sd2e.org#spectrophotometry"/>
-    <prov:wasInformedBy rdf:resource="http://sift.net/incubate_biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/incubate_biofab_sample_yeast_gates_q0_1_2_A01_1/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/spectrophotometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry_9/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/spectrophotometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry_9/1.0.0">
     <dcterms:description>96 flat 2 measure OD600, GFP
 Add 3 wells of 300 uL spherotech calibration beads to 96 flat 2
 96 flat 2 mix well by pipetting up and down to avoid settling before flow cytometry</dcterms:description>
     <dcterms:title>Spectrophotometry Operator</dcterms:title>
     <sbol:displayId>spectrophotometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry_9</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/spectrophotometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry_9"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/spectrophotometry_biofab_sample_yeast_gates_q0_1_4_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1_spectrophotometry_9"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/sample/biofab/instruments/spectrophotometer/5539/11272017/spectrophotometer_configuration.json"/>
     <sd2:manifest rdf:resource="agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/4/manifest/manifest.json"/>
     <sd2:operatorType rdf:resource="http://sd2e.org#spectrophotometry"/>
-    <prov:wasInformedBy rdf:resource="http://sift.net/mix_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/mix_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/streak_biofab_sample_yeast_gates_q0_1_1_STOCK01_to_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/streak_biofab_sample_yeast_gates_q0_1_1_STOCK01_to_biofab_sample_yeast_gates_q0_1_1_A01/1.0.0">
     <dcterms:title>Streak Single Colonies</dcterms:title>
     <sbol:displayId>streak_biofab_sample_yeast_gates_q0_1_1_STOCK01_to_biofab_sample_yeast_gates_q0_1_1_A01</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/streak_biofab_sample_yeast_gates_q0_1_1_STOCK01_to_biofab_sample_yeast_gates_q0_1_1_A01"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/streak_biofab_sample_yeast_gates_q0_1_1_STOCK01_to_biofab_sample_yeast_gates_q0_1_1_A01"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#streak"/>
-    <prov:used rdf:resource="http://sift.net/biofab_sample_yeast_gates_q0_1_1_STOCK01/1.0.0"/>
+    <prov:used rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/biofab_sample_yeast_gates_q0_1_1_STOCK01/1.0.0"/>
   </prov:Activity>
-  <prov:Activity rdf:about="http://sift.net/transfer_biofab_sample_yeast_gates_q0_1_3_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0">
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/transfer_biofab_sample_yeast_gates_q0_1_3_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1/1.0.0">
     <dcterms:description>96 deep 1 300uL into 96 flat 2. Add 3 wells of 300 uL SC media to 96 flat 2 as blank measurements 96 flat 2 mix well by pipetting up and down to avoid settling before OD measurement</dcterms:description>
     <dcterms:title>Plate Transfer Operator</dcterms:title>
     <sbol:displayId>transfer_biofab_sample_yeast_gates_q0_1_3_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1</sbol:displayId>
-    <sbol:persistentIdentity rdf:resource="http://sift.net/transfer_biofab_sample_yeast_gates_q0_1_3_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1"/>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/transfer_biofab_sample_yeast_gates_q0_1_3_A01_1_1_to_biofab_sample_yeast_gates_q0_1_4_A01_1_1"/>
     <sbol:version>1.0.0</sbol:version>
     <sd2:operatorType rdf:resource="http://sd2e.org#transfer"/>
-    <prov:wasInformedBy rdf:resource="http://sift.net/incubate_biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/nicholasroehner/yeast_gates_test/incubate_biofab_sample_yeast_gates_q0_1_3_A01_1_1/1.0.0"/>
   </prov:Activity>
 </rdf:RDF>
