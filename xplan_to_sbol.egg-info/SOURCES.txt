@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+xplan_to_sbol/__init__.py
+xplan_to_sbol/__main__.py
+xplan_to_sbol.egg-info/PKG-INFO
+xplan_to_sbol.egg-info/SOURCES.txt
+xplan_to_sbol.egg-info/dependency_links.txt
+xplan_to_sbol.egg-info/entry_points.txt
+xplan_to_sbol.egg-info/not-zip-safe
+xplan_to_sbol.egg-info/requires.txt
+xplan_to_sbol.egg-info/top_level.txt
