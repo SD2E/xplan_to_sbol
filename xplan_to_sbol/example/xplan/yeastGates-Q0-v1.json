@@ -1,0 +1,214 @@
+{
+    "experimentId": "1", 
+    "experimentLab": "biofab", 
+    "experimentSet": "yeast-gates_q0", 
+    "id": "df82e79b-e18c-457e-8c5c-ed605acc94cd", 
+    "name": "Yeast Gates Q0 Plan", 
+    "steps": [
+        {
+            "description": "Streak (single colonies), from: glycerol_stock, to: YPAD-plate_1", 
+            "id": 0, 
+            "name": "Step 0", 
+            "operator": {
+                "id": 0, 
+                "name": "Streak Single Colonies", 
+                "samples": [
+                    {
+                        "resource": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/STOCK01", 
+                        "sample": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/A01"
+                    }
+                ], 
+                "type": "streak"
+            }
+        }, 
+        {
+            "id": 1, 
+            "name": "Step 1", 
+            "operator": {
+                "description": "Incubate (30C, 2 days), YPAD-plate_1", 
+                "id": 1, 
+                "name": "Incubate Operator", 
+                "samples": [
+                    "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/A01"
+                ], 
+                "type": "incubate"
+            }
+        }, 
+        {
+            "id": 2, 
+            "name": "Step 2", 
+            "operator": {
+                "description": "Innoculate, from: YPAD-plate_1, to: 96_flat_1, media: 200 uL SC - take 6 replicates", 
+                "id": 2, 
+                "name": "Pick Operator", 
+                "transfer": [
+                    {
+                        "destination": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/2/A01_1", 
+                        "source": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/A01"
+                    }, 
+                    {
+                        "destination": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/2/A01_2", 
+                        "source": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/A01"
+                    }, 
+                    {
+                        "destination": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/2/A01_3", 
+                        "source": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/A01"
+                    }, 
+                    {
+                        "destination": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/2/A01_4", 
+                        "source": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/A01"
+                    }, 
+                    {
+                        "destination": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/2/A01_5", 
+                        "source": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/A01"
+                    }, 
+                    {
+                        "destination": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/2/A01_6", 
+                        "source": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/A01"
+                    }
+                ], 
+                "type": "pick"
+            }
+        }, 
+        {
+            "id": 3, 
+            "name": "Step 3", 
+            "operator": {
+                "description": "Incubate 96 flat 1 30C, 1h, 800rpm, 3mm throw OR mix well with liquid handler", 
+                "id": 3, 
+                "name": "Incubate Operator", 
+                "samples": [
+                    "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/2/A01_1"
+                ], 
+                "type": "incubate"
+            }
+        }, 
+        {
+            "id": 4, 
+            "name": "Step 4", 
+            "operator": {
+                "description": "96 flat 1 measure OD600 - OD conversion determined cellometer or flow cytometer", 
+                "id": 4, 
+                "instrument_configuration": "agave://data-sd2e-community/sample/biofab/instruments/spectrophotometer/5539/11272017/spectrophotometer_configuration.json", 
+                "manifest": "agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/2/manifest/manifest.json", 
+                "measure": [
+                    {
+                        "sample": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/2/A01_1", 
+                        "uri": "agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/2/instrument_output/A01_1.od"
+                    }
+                ], 
+                "name": "Spectrophotometry Operator", 
+                "type": "spectrophotometry"
+            }
+        }, 
+        {
+            "id": 5, 
+            "name": "Step 5", 
+            "operator": {
+                "description": "96 flat 1 dilute (at constant volume (TX), OD defined average volume (BF), OD defined well volume (GB) trying to hit about OD 600 0.0003, 0.00015, 0.000075) into 96 deep 1 with 1mL SC media", 
+                "id": 5, 
+                "name": "Dilute operator", 
+                "samples": [
+                    {
+                        "sample": {
+                            "destination": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/3/A01_1_1", 
+                            "source": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/2/A01_1"
+                        }
+                    }
+                ], 
+                "type": "dilute"
+            }
+        }, 
+        {
+            "id": 6, 
+            "name": "Step 6", 
+            "operator": {
+                "description": "Incubate 96 deep 1 30C, 16h, 800rpm, 3mm throw", 
+                "id": 6, 
+                "name": "Incubate Operator", 
+                "samples": [
+                    "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/3/A01_1_1"
+                ], 
+                "type": "incubate"
+            }
+        }, 
+        {
+            "id": 7, 
+            "name": "Step 7", 
+            "operator": {
+                "description": "96 deep 1 300uL into 96 flat 2. Add 3 wells of 300 uL SC media to 96 flat 2 as blank measurements 96 flat 2 mix well by pipetting up and down to avoid settling before OD measurement", 
+                "id": 7, 
+                "name": "Plate Transfer Operator", 
+                "transfer": [
+                    {
+                        "destination": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/4/A01_1_1", 
+                        "source": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/3/A01_1_1"
+                    }
+                ], 
+                "type": "transfer"
+            }
+        }, 
+        {
+            "id": 8, 
+            "name": "Step 8", 
+            "operator": {
+                "description": "96 flat 2 mix well by pipetting up and down to avoid settling before OD measurement", 
+                "id": 8, 
+                "name": "Mix Operator", 
+                "samples": [
+                    "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/4/A01_1_1"
+                ], 
+                "type": "mix"
+            }
+        }, 
+        {
+            "id": 9, 
+            "name": "Step 9", 
+            "operator": {
+                "description": "96 flat 2 measure OD600, GFP\nAdd 3 wells of 300 uL spherotech calibration beads to 96 flat 2\n96 flat 2 mix well by pipetting up and down to avoid settling before flow cytometry", 
+                "id": 9, 
+                "instrument_configuration": "agave://data-sd2e-community/sample/biofab/instruments/spectrophotometer/5539/11272017/spectrophotometer_configuration.json", 
+                "manifest": "agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/4/manifest/manifest.json", 
+                "measure": [
+                    {
+                        "sample": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/4/A01_1_1", 
+                        "uri": "agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/4/instrument_output/A01_1_1.od"
+                    }
+                ], 
+                "name": "Spectrophotometry Operator", 
+                "type": "spectrophotometry"
+            }
+        }, 
+        {
+            "id": 10, 
+            "name": "Step 10", 
+            "operator": {
+                "description": "96 flat 2 mix well by pipetting up and down to avoid settling before flow cytometry", 
+                "id": 10, 
+                "name": "Mix Operator", 
+                "samples": [
+                    "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/4/A01_1_1"
+                ], 
+                "type": "mix"
+            }
+        }, 
+        {
+            "id": 11, 
+            "name": "Step 11", 
+            "operator": {
+                "description": "96 flat 2 measure on flow quickly", 
+                "id": 7, 
+                "instrument_configuration": "agave://data-sd2e-community/sample/biofab/instruments/accurri/5539/11272017/cytometer_configuration.json", 
+                "manifest": "agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/5/manifest/manifest.json", 
+                "measure": [
+                    {
+                        "sample": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/4/A01_1_1", 
+                        "uri": "agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/5/instrument_output/A01_1_1.fcs"
+                    }
+                ], 
+                "name": "Flow Operator", 
+                "type": "flowCytometry"
+            }
+        }
+    ]
+}
