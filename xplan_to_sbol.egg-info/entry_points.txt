@@ -1,3 +1,0 @@
-[console_scripts]
-xplan_to_sbol = xplan_to_sbol.__main__:main
-
