@@ -1,15 +1,15 @@
 import json
 import pySBOLx
 import unittest
-import hypothesis
+# import hypothesis
 
 from tests.XplanDataParser import XplanDataParser
 
 import xplan_to_sbol.__main__ as xbol
 from sbol import *
 
-from hypothesis import given
-import hypothesis.strategies as st
+# from hypothesis import given
+# import hypothesis.strategies as st
 
 class testPySBOLx(unittest.TestCase):
 	
@@ -27,9 +27,9 @@ class testPySBOLx(unittest.TestCase):
 		self.assertEqual('Hello', 'Hello')
 
 	# Property base testing - setup test1 for input ordering
-	@given(st.integers(), st.integers())
-	def test_3(self,x,y):
-		assert(x+y == y+x)
+	# @given(st.integers(), st.integers())
+	# def test_3(self,x,y):
+	# 	assert(x+y == y+x)
 
 	def test_JSON_objs(self):
 		path = 'example/xplan/'
@@ -62,7 +62,7 @@ class testPySBOLx(unittest.TestCase):
 						#TODO: This assert will fail because 
 						# yeastGates-Q0-v2 has a step:id = 11 and an operator:id=7
 						# rule30-Q0-v2 has a step:id = 8 and an operator:id=6
-						# self.assertEqual(step_obj.get_id(), oper_obj.get_id())
+						self.assertEqual(step_obj.get_id(), oper_obj.get_id())
 						self.assertIsNotNone(oper_obj.get_id())
 						self.assertIsNotNone(oper_obj.get_name())
 						self.assertTrue(set(oper_obj.get_keys()).issubset(set(expected_operKeys)))
