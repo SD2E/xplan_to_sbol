@@ -21,7 +21,7 @@ def load_alnum_id(id_data):
         else:
             return fragment
 
-def load_build_activity(src_entity_keys, doc, operator, entity_dict, act_dict, act_name=None, act_desc=None, sample_measures=[], dest_sample_key=None, custom=[]):
+def load_build_activity(src_entity_keys, doc, operator, exp_collect, entity_dict, act_dict, act_name=None, act_desc=None, sample_measures=[], dest_sample_key=None, custom=[]):
     src_entities = []
 
     temp_act_dict = {}
@@ -36,31 +36,35 @@ def load_build_activity(src_entity_keys, doc, operator, entity_dict, act_dict, a
                 src_entities.append(entity_dict[src_entity_key])
 
     if dest_sample_key is None:
-            act_dict[src_entity_key] = doc.create_activity(operator, src_entities, act_name, act_desc, custom)
+            act = doc.create_activity(operator, src_entities, act_name, act_desc, custom)
+
+            act_dict[src_entity_key] = act
     else:
         dest_sample = entity_dict[dest_sample_key]
 
         doc.add_measures(dest_sample, sample_measures)
 
-        doc.create_activity(operator, src_entities, act_name, act_desc, custom, dest_sample)
+        act = doc.create_activity(operator, src_entities, act_name, act_desc, custom, dest_sample)
 
-def load_src_dest_build_activity(sample_data, doc, operator, entity_dict, act_dict, act_name=None, act_desc=None, sample_measures=[]):
+    doc.add_member(act, exp_collect)
+
+def load_src_dest_build_activity(sample_data, doc, operator, exp_collect, entity_dict, act_dict, act_name=None, act_desc=None, sample_measures=[]):
     src_sample_data = load_src_sample_data(sample_data)
 
     dest_sample_data = load_dest_sample_data(sample_data)
 
     if isinstance(src_sample_data, str) and isinstance(dest_sample_data, str):
-        load_build_activity([src_sample_data], doc, operator, entity_dict, act_dict, act_name, act_desc, sample_measures, dest_sample_data)
+        load_build_activity([src_sample_data], doc, operator, exp_collect, entity_dict, act_dict, act_name, act_desc, sample_measures, dest_sample_data)
     elif isinstance(src_sample_data, str):
         for dest_sample_datum in dest_sample_data:
-            load_build_activity([src_sample_data], doc, operator, entity_dict, act_dict, act_name, act_desc, sample_measures, load_dest_sample_key(dest_sample_datum))
+            load_build_activity([src_sample_data], doc, operator, exp_collect, entity_dict, act_dict, act_name, act_desc, sample_measures, load_dest_sample_key(dest_sample_datum))
     elif isinstance(dest_sample_data, str):
-        load_build_activity(src_sample_data, doc, operator, entity_dict, act_dict, act_name, act_desc, sample_measures, dest_sample_data)
+        load_build_activity(src_sample_data, doc, operator, exp_collect, entity_dict, act_dict, act_name, act_desc, sample_measures, dest_sample_data)
     else:
         for dest_sample_datum in dest_sample_data:
-            load_build_activity(src_sample_data, doc, operator, entity_dict, act_dict, act_name, act_desc, sample_measures, load_dest_sample_key(dest_sample_datum))
+            load_build_activity(src_sample_data, doc, operator, exp_collect, entity_dict, act_dict, act_name, act_desc, sample_measures, load_dest_sample_key(dest_sample_datum))
 
-def load_operator_activities(operator_data, doc, entity_dict, act_dict, unit_dict, om):
+def load_operator_activities(operator_data, doc, exp_collect, entity_dict, act_dict, unit_dict, om):
     operator = operator_data['type'].replace('-', '_')
 
     try:
@@ -78,9 +82,9 @@ def load_operator_activities(operator_data, doc, entity_dict, act_dict, unit_dic
         sample_measures = load_sample_measures(sample_datum, doc, ['od600', 'volume'], unit_dict, om)
 
         try:
-            load_src_dest_build_activity(sample_datum, doc, operator, entity_dict, act_dict, act_name, act_desc, sample_measures)
+            load_src_dest_build_activity(sample_datum, doc, operator, exp_collect, entity_dict, act_dict, act_name, act_desc, sample_measures)
         except:
-            load_build_activity([load_src_sample_key(sample_datum)], doc, operator, entity_dict, act_dict, act_name, act_desc, sample_measures)
+            load_build_activity([load_src_sample_key(sample_datum)], doc, operator, exp_collect, entity_dict, act_dict, act_name, act_desc, sample_measures)
 
 def load_channels(operator_data):
     channel_data = operator_data['channels']
@@ -95,7 +99,7 @@ def load_channels(operator_data):
 
     return channels
 
-def load_upload_activity(operator_data, doc, entity_dict, act_dict):
+def load_upload_activity(operator_data, doc, exp_collect, entity_dict, act_dict):
     operator = operator_data['type'].replace('-', '_')
 
     if operator == 'uploadData':
@@ -137,22 +141,22 @@ def load_upload_activity(operator_data, doc, entity_dict, act_dict):
         except:
             src_sample = entity_dict[src_sample_key]
 
-        file_paths = load_file_paths(entity_datum)
-
-        dest_entity = entity_dict[file_paths[0]]
+        dest_entity = entity_dict[repr(load_file_paths(entity_datum))]
 
         if len(channels) > 0:
             act_dict[src_sample_key] = doc.create_flow_cytometry_activity(operator, channels, [src_sample], act_name, act_desc, custom, dest_entity)
         else:
             act_dict[src_sample_key] = doc.create_activity(operator, [src_sample], act_name, act_desc, custom, dest_entity)
 
-def load_step_activities(step_data, doc, entity_dict, act_dict, unit_dict, om):
+        doc.add_member(act_dict[src_sample_key], exp_collect)
+
+def load_step_activities(step_data, doc, exp_collect, entity_dict, act_dict, unit_dict, om):
     operator_data = step_data['operator']
 
     try:
-        load_upload_activity(operator_data, doc, entity_dict, act_dict)
+        load_upload_activity(operator_data, doc, exp_collect, entity_dict, act_dict)
     except:
-        load_operator_activities(operator_data, doc, entity_dict, act_dict, unit_dict, om)
+        load_operator_activities(operator_data, doc, exp_collect, entity_dict, act_dict, unit_dict, om)
 
 def load_src_sample_key(sample_data):
     try:
@@ -366,7 +370,7 @@ def load_measurement_data(operator_data):
 
     return measure_data
 
-def load_experimental_data(operator_data, doc, exp, replicate_id, attachs, entity_dict):
+def load_experimental_data(operator_data, doc, replicate_id, attachs, entity_dict):
     operator = operator_data['type'].replace('-', '_')
 
     if operator == 'uploadData':
@@ -386,10 +390,10 @@ def load_experimental_data(operator_data, doc, exp, replicate_id, attachs, entit
 
             temp_attachs.append(doc.create_attachment(attach_id, attach_id, file_path))
 
-        exp_data = doc.create_experimental_data(temp_attachs, sample, exp, operator, replicate_id)
+        file_key = repr(file_paths)
 
-        if exp_data.identity.get() not in entity_dict:
-            entity_dict[file_paths[0]] = exp_data
+        if file_key not in entity_dict:
+            entity_dict[file_key] = doc.create_experimental_data(temp_attachs, sample, exp, operator, replicate_id)
 
             for temp_attach in temp_attachs:
                 attachs.append(temp_attach)
@@ -432,7 +436,7 @@ def load_sample_measures(sample_data, doc, measure_ids, unit_dict, om):
 
     return measures
 
-def load_operator_samples(operator_data, doc, entity_dict, unit_dict, om):
+def load_operator_samples(operator_data, doc, exp_collect, entity_dict, unit_dict, om):
     sample_data = load_sample_data(operator_data)
 
     try:
@@ -446,26 +450,43 @@ def load_operator_samples(operator_data, doc, entity_dict, unit_dict, om):
         else:
             condition = load_condition(sample_data[i], doc, entity_dict, unit_dict, om)
 
+        doc.add_member(condition, exp_collect)
+
         try:
             load_src_dest_samples(sample_data[i], doc, entity_dict, condition)
         except:
             load_sample(load_src_sample_key(sample_data[i]), doc, entity_dict, condition)
 
-def load_step_entities(step_data, doc, exp, attachs, entity_dict, unit_dict, om):
+def load_step_entities(step_data, doc, exp_collect, attachs, entity_dict, unit_dict, om):
     operator_data = step_data['operator']
 
     try:
-        load_experimental_data(operator_data, doc, exp, repr(step_data['id']), attachs, entity_dict)
+        load_experimental_data(operator_data, doc, repr(step_data['id']), attachs, entity_dict)
     except:
-        load_operator_samples(operator_data, doc, entity_dict, unit_dict, om)
+        load_operator_samples(operator_data, doc, exp_collect, entity_dict, unit_dict, om)
 
-def load_experiment(plan_data, doc):
-    exp_id = load_alnum_id(plan_data['id'])
+# def load_experiment(plan_data, doc):
+#     exp_id = load_alnum_id(plan_data['id'])
 
-    return doc.create_experiment(exp_id, plan_data['name'])
+#     return doc.create_experiment(exp_id, plan_data['name'])
 
-def convert_xplan_to_sbol(homespace, om_path, xplan_path, validate, sbol_path=None, sbh_address=None, sbh_email=None, sbh_password=None):
+def load_experiment_collection(plan_data, doc, entity_dict):
+    exp_collect_id = load_alnum_id(plan_data['id'])
+
+    exp_collect = doc.create_collection(exp_collect_id, plan_data['name'])
+
+    for entity in doc.get_collection_members(exp_collect):
+        entity_dict[entity.identity.get()] = entity
+    
+    return exp_collect
+
+def convert_xplan_to_sbol(homespace, om_path, xplan_path, validate, sbol_path=None, sbol_reference=None, sbh_address=None, sbh_email=None, sbh_password=None):
     doc = XDocument()
+
+    try:
+        doc.read(sbol_reference)
+    except:
+        pass
 
     doc.configure_options(homespace, validate, False)
 
@@ -473,27 +494,29 @@ def convert_xplan_to_sbol(homespace, om_path, xplan_path, validate, sbol_path=No
 
     plan_data = json.loads(open(xplan_path).read())
 
-    exp = load_experiment(plan_data, doc)
+    # exp = load_experiment(plan_data, doc)
 
     attachs = []
 
     entity_dict = {}
     unit_dict = {}
+
+    exp_collect = load_experiment_collection(plan_data, doc, entity_dict)
     
     for step_data in plan_data['steps']:
-        load_step_entities(step_data, doc, exp, attachs, entity_dict, unit_dict, om)
+        load_step_entities(step_data, doc, exp_collect, attachs, entity_dict, unit_dict, om)
 
-    doc.add_top_levels([exp])
-    doc.add_top_levels(attachs)
-    doc.add_top_levels(list(entity_dict.values()))
-    doc.add_top_levels(list(unit_dict.values()))
+    doc.add_top_levels([exp], exp_collect)
+    doc.add_top_levels(attachs, exp_collect)
+    doc.add_top_levels(list(entity_dict.values()), exp_collect)
+    doc.add_top_levels(list(unit_dict.values()), exp_collect)
     
     act_dict = {}
 
     for step_data in plan_data['steps']:
-        load_step_activities(step_data, doc, entity_dict, act_dict, unit_dict, om)
+        load_step_activities(step_data, doc, exp_collect, entity_dict, act_dict, unit_dict, om)
 
-    doc.add_top_levels(list(unit_dict.values()))
+    doc.add_top_levels(list(unit_dict.values()), exp_collect)
 
     if sbol_path is not None:
         doc.write(sbol_path)
@@ -513,13 +536,14 @@ def main(args=None):
     parser.add_argument('-op', '--om_path')
     parser.add_argument('-xp', '--xplan_path')
     parser.add_argument('-sp', '--sbol_path', nargs='?', default=None)
+    parser.add_argument('-sr', '--sbol_reference', nargs='?', default=None)
     parser.add_argument('-sb', '--sbh_address', nargs='?', default=None)
     parser.add_argument('-em', '--sbh_email', nargs='?', default=None)
     parser.add_argument('-ps', '--sbh_password', nargs='?', default=None)
     parser.add_argument('-va', '--validate', action='store_true')
     args = parser.parse_args(args)
 
-    convert_xplan_to_sbol(args.homespace, args.om_path, args.xplan_path, args.validate, args.sbol_path, args.sbh_address, args.sbh_email, args.sbh_password)
+    convert_xplan_to_sbol(args.homespace, args.om_path, args.xplan_path, args.validate, args.sbol_path, args.sbol_reference, args.sbh_address, args.sbh_email, args.sbh_password)
 
 if __name__ == '__main__':
     main()
