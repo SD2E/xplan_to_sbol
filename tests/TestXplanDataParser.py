@@ -15,8 +15,9 @@ class TestXplanDataParser(unittest.TestCase):
 	""" 
 	This class will perform unit testing on XPlanDataParser.
 
-	To run this file, enter in the following command from the xplan_to_sbol directory:
-		python -m unittest tests/SBOLTestSuite.py
+	There are 2 options to run this test module:
+		1. Run this module independently from other test modules: python -m unittest TestXplanDataParser
+		2. Run this module as a test suite: python tests/SBOLTestSuite.py
 	"""
 	@classmethod
 	def setUpClass(cls):

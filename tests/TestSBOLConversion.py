@@ -18,8 +18,9 @@ class testPySBOLx(unittest.TestCase):
 	""" 
 	This class will perform unit testing on xplan's JSON to SBOL2 conversion
 
-	To run this file, enter in the following command from the xplan_to_sbol directory:
-		python -m unittest tests/test_SBOLConversion.py
+	There are 2 options to run this test module:
+		1. Run this module independently from other test modules: python -m unittest TestSBOLConversion.py
+		2. Run this module as a test suite: python tests/SBOLTestSuite.py
 	"""
 
 	@classmethod
