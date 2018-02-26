@@ -1,12 +1,12 @@
 import json 
 
-from tests.step import step
-from tests.operator import operator
-from tests.channel import channel
-from tests.sample import sample
-from tests.source import source
-from tests.measurement import measurement
-from tests.transformation import transformation
+from step import step
+from xplanoperator import xplanoperator
+from channel import channel
+from sample import sample
+from source import source
+from measurement import measurement
+from transformation import transformation
 
 ''' This module is used to parse xplan's data that was generated for DARPA's TA1-SD2E project.
 	
@@ -50,7 +50,7 @@ class XplanDataParser():
 	def operatParser(self, data, step_id, step_obj):
 		currIndex = 0
 		# Note: There will only be one operator per step
-		oper_obj = operator(data)
+		oper_obj = xplanoperator(data)
 		if 'transformations' in data:
 			self.transParser(data['transformations'], step_id, oper_obj)
 		if 'measurements' in data:
