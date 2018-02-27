@@ -455,9 +455,7 @@ def load_experiment(plan_data, doc):
 
 #     return prob_doc.create_collection(exp_collect_id, plan_data['name'])
 
-def convert_xplan_to_sbol(exp_space, xplan_path, om_path, validate, exp_path=None, design_space=None, design_path=None, sbh_url=None, sbh_email=None, sbh_password=None):
-    plan_data = json.loads(open(xplan_path).read())
-    
+def convert_xplan_to_sbol(plan_data, exp_space, om_path, validate):
     exp_doc = XDocument()
 
     om = exp_doc.read_om(om_path)
@@ -476,21 +474,15 @@ def convert_xplan_to_sbol(exp_space, xplan_path, om_path, validate, exp_path=Non
     for step_data in plan_data['steps']:
         load_step_activities(step_data, exp_doc, exp_data_dict, act_dict, om)
 
-    if exp_path is not None:
-        exp_doc.write(exp_path)
-
-    if sbh_url is not None and sbh_email is not None and sbh_password is not None:
-        exp_doc.upload(sbh_url, sbh_email, sbh_password)
-
-    print('done')
+    return exp_doc
 
 def main(args=None):
     if args is None:
         args = sys.argv[1:]
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-es', '--exp_space')
     parser.add_argument('-xp', '--xplan_path')
+    parser.add_argument('-es', '--exp_space')
     parser.add_argument('-op', '--om_path')
     parser.add_argument('-va', '--validate', action='store_true')
     parser.add_argument('-ep', '--exp_path', nargs='?', default=None)
@@ -502,7 +494,17 @@ def main(args=None):
     
     args = parser.parse_args(args)
 
-    convert_xplan_to_sbol(args.exp_space, args.xplan_path, args.om_path, args.validate, args.exp_path, args.design_space, args.design_path, args.sbh_url, args.sbh_email, args.sbh_password)
+    plan_data = json.loads(open(args.xplan_path).read())
+
+    exp_doc = convert_xplan_to_sbol(plan_data, args.exp_space, args.om_path, args.validate)
+
+    if args.exp_path is not None:
+        exp_doc.write(args.exp_path)
+
+    if args.sbh_url is not None and args.sbh_email is not None and args.sbh_password is not None:
+        exp_doc.upload(args.sbh_url, args.sbh_email, args.sbh_password)
+
+    print('done')
 
 if __name__ == '__main__':
     main()
