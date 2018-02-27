@@ -113,7 +113,7 @@ class TestXplanDataParser(unittest.TestCase):
 						unique_ids.append(step_obj.get_id())
 					else:
 						duplic_ids.append(step_obj.get_id())
-				print(duplic_ids)
+				# Warning! this assert will fail because rule30 example has duplicate id = 3
 				self.assertEqual(len(duplic_ids), 0)
 
 	def test_StepOperator_Ids(self):
@@ -122,7 +122,7 @@ class TestXplanDataParser(unittest.TestCase):
 			with open(f) as xplanFile:
 				jsonData = json.load(xplanFile)
 				xplan_data = XplanDataParser(jsonData)
-				
+				# Warning! This assert will fail because step id and operator id are not symmetrical at id = 3
 				for step_obj in xplan_data.get_stepsList():
 					for oper_obj in step_obj.get_operatorList():
 						self.assertEqual(step_obj.get_id(), oper_obj.get_id())

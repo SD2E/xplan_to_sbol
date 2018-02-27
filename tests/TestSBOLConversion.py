@@ -30,13 +30,19 @@ class testPySBOLx(unittest.TestCase):
 	def test_SBOLFiles_diff(self):
 		self.assertEqual(True, True)
 		rule30_json = 'example/xplan/rule30-Q0-v2.json'		
-		rule30_sbol = "example/sbol/rule30-Q0-v2.xml"
+		rule30_sbol = 'example/sbol/rule30-Q0-v2.xml'
+		om_path = 'example/om/om-2.0.rdf'
 
-		sbolDoc = Document()
-		sbolDoc.read(rule30_sbol)
+		file_sbol = Document()
+		file_sbol.read(rule30_sbol)
 
-		# convert_xplan_to_sbol
+		jsonData = json.loads(open(rule30_json).read())
+		exp_space = 'http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017'
+		validate = True
+		converted_sbol = xbol.convert_xplan_to_sbol(jsonData, exp_space, om_path, validate)
 
+		sbolDiff_res = SearchQuery.compare(file_sbol, converted_sbol)
+		self.assertTrue(sbolDiff_res == 1)
 
 
 if __name__ == '__main__':
