@@ -27,25 +27,17 @@ class testPySBOLx(unittest.TestCase):
 	def setUpClass(cls):
 		print("Running " + cls.__name__)
 
-	def test_ModDef(self):
+	def test_SBOLFiles_diff(self):
 		self.assertEqual(True, True)
+		rule30_json = 'example/xplan/rule30-Q0-v2.json'		
+		rule30_sbol = "example/sbol/rule30-Q0-v2.xml"
 
-	# def test_SBOL_files(self):
-	# 	sbolFile = 'example/sbol/yeastGates-Q0-v2.xml'
-	# 	sbolDoc = Document()
-	# 	sbolDoc.read(sbolFile)
-		# TODO: This assert will fail because you must set SBOL homespace or it will set it set it to http://examples.org when reading in a file
-		# self.assertTrue(hasHomespace())
-		# self.assertEqual(getHomespace(), defaultSBOLURI)
-		# for md in sbolDoc.moduleDefinitions:
-		# 	print('------ModuleDefinitions')
-		# 	print(md.identity.get())
-		# 	for fc in md.functionalComponents:
-		# 		print('------FunctionalComponent')
-		# 		print(fc)
-		# for cd in sbolDoc.componentDefinitions:
-		# 	print('------ComponentDefinitions')
-		# 	print(cd.identity.get())
+		sbolDoc = Document()
+		sbolDoc.read(rule30_sbol)
+
+		# convert_xplan_to_sbol
+
+
 
 if __name__ == '__main__':
 	unittest.main()
