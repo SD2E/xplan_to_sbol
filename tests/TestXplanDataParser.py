@@ -15,9 +15,7 @@ class TestXplanDataParser(unittest.TestCase):
 	""" 
 	This class will perform unit testing on XPlanDataParser.
 
-	There are 2 options to run this test module:
-		1. Run this module independently from other test modules: python -m unittest TestXplanDataParser
-		2. Run this module as a test suite: python tests/SBOLTestSuite.py
+	Run this module as a test suite from the xplan_to_sbol directory: python tests/SBOLTestSuite.py
 	"""
 	@classmethod
 	def setUpClass(cls):
@@ -50,10 +48,6 @@ class TestXplanDataParser(unittest.TestCase):
 
 					expected_operKeys = ['id', 'name', 'transformations', 'description', 'samples', 'manifest', 'measurements', 'type', 'instrument_configuration', '_comment', 'channels']
 					for oper_obj in step_obj.get_operatorList():
-						#TODO: This assert will fail because 
-						# yeastGates-Q0-v2 has a step:id = 11 and an operator:id=7
-						# rule30-Q0-v2 has a step:id = 8 and an operator:id=6
-						# self.assertEqual(step_obj.get_id(), oper_obj.get_id())
 						self.assertIsNotNone(oper_obj.get_id())
 						self.assertIsNotNone(oper_obj.get_name())
 						self.assertTrue(set(oper_obj.get_keys()).issubset(set(expected_operKeys)))

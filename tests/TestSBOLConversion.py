@@ -18,9 +18,7 @@ class testPySBOLx(unittest.TestCase):
 	""" 
 	This class will perform unit testing on xplan's JSON to SBOL2 conversion
 
-	There are 2 options to run this test module:
-		1. Run this module independently from other test modules: python -m unittest TestSBOLConversion.py
-		2. Run this module as a test suite: python tests/SBOLTestSuite.py
+	Run this module as a test suite from the xplan_to_sbol directory: python tests/SBOLTestSuite.py
 	"""
 
 	@classmethod
@@ -41,8 +39,35 @@ class testPySBOLx(unittest.TestCase):
 		validate = True
 		converted_sbol = xbol.convert_xplan_to_sbol(jsonData, exp_space, om_path, validate)
 
-		sbolDiff_res = SearchQuery.compare(file_sbol, converted_sbol)
+		rule30_sbol2 = 'example/sbol/convertedResult.xml'
+		converted_sbol.write(rule30_sbol2)
+		file2_sbol = Document()
+		file2_sbol.read(rule30_sbol2)
+
+		# Warning! This test case will fail if the SBOL Document produced from xplan2sbol conversion 
+		# has not been written to an .xml file
+		# sbolDiff_res = SearchQuery.compare(file_sbol, converted_sbol)
+		sbolDiff_res = SearchQuery.compare(file_sbol, file2_sbol)
 		self.assertTrue(sbolDiff_res == 1)
+
+		# Warning! Code below prints two Activities description that has unicodes that will show the difference of 
+		# what unicode is stored as when reading from an SBOLDocument versus looking at an unicdoe before writing
+		# to an .xml document
+		# DC_NS = "http://purl.org/dc/terms/"
+		# DESCRIPTION_NS = DC_NS + 'description'
+
+		# uri1 = "http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/dilute_NEB_10_beta_pAN1201_1_to_NEB_10_beta_pAN1201_2/1.0.0"
+		# uri2 = "http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/transfer_NEB_10_beta_pAN1717_3_to_E08/1.0.0"
+		
+		# for a1 in file_sbol.activities:
+		# 	if a1.identity == uri1 or a1.identity == uri2:
+		# 		print(a1.getAnnotation(DESCRIPTION_NS))
+
+
+		# for a2 in converted_sbol.activities:
+		# 	if a2.identity == uri1 or a2.identity == uri2:
+		# 		print(a2.getAnnotation(DESCRIPTION_NS))
+
 
 
 if __name__ == '__main__':
