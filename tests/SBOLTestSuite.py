@@ -5,7 +5,7 @@ import TestXplanDataParser
 import TestRule30
 
 ''' 
-	This module is a test suite used to execute all test modules that had been converted into the SBOL data model
+	This module is used to create test suites for running test modules related to the SBOL Data model
 	
 	To run this file, enter in the following command from the xplan_to_sbol directory:
 		python tests/SBOLTestSuite.py

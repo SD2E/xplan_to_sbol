@@ -36,9 +36,8 @@ class TestRule30(unittest.TestCase):
 				cls.xplan_data = XplanDataParser(jsonData)
 
 	def test_Activities_Props(self):
-
 		PURL_NS = 'http://purl.org/dc/terms/'
 		TITLE_NS = PURL_NS + 'title'
 		
-		for a in self.sbolDoc.activities:
-			print(a)
+		# for a in self.sbolDoc.activities:
+		# 	print(a)
