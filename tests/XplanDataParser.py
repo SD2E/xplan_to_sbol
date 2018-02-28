@@ -122,6 +122,10 @@ class XplanDataParser():
 			oper_obj.add_transformation(transf_obj)
 			currIndex = currIndex + 1
 
+	# Return the step object that corresponds to the given step id
+	def get_step(self, id):
+		return self.__stepsList[id]
+
 	# Return a list of steps object
 	def get_stepsList(self):
 		return self.__stepsList

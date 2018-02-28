@@ -12,6 +12,10 @@ class step:
 	def add_operator(self, operator):
 		self.__step_operator.append(operator)
 
+	# Returns the first operator object found in this step. Otherwise, None is returned.
+	def get_firstOperator(self):
+		return self.__step_operator[0] if len(self.__step_operator) > 0 else None
+
 	# Returns the id assigned to this step object
 	def get_id(self):
 		return self.__step_id
