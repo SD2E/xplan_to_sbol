@@ -494,15 +494,16 @@ def main(args=None):
     
     args = parser.parse_args(args)
 
-    plan_data = json.loads(open(args.xplan_path).read())
+    with open(args.xplan_path) as plan_file:
+        plan_data = json.load(plan_file)
 
-    exp_doc = convert_xplan_to_sbol(plan_data, args.exp_space, args.om_path, args.validate)
+        exp_doc = convert_xplan_to_sbol(plan_data, args.exp_space, args.om_path, args.validate)
 
-    if args.exp_path is not None:
-        exp_doc.write(args.exp_path)
+        if args.exp_path is not None:
+            exp_doc.write(args.exp_path)
 
-    if args.sbh_url is not None and args.sbh_email is not None and args.sbh_password is not None:
-        exp_doc.upload(args.sbh_url, args.sbh_email, args.sbh_password)
+        if args.sbh_url is not None and args.sbh_email is not None and args.sbh_password is not None:
+            exp_doc.upload(args.sbh_url, args.sbh_email, args.sbh_password)
 
     print('done')
 
