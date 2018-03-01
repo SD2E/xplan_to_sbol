@@ -15,10 +15,10 @@ import TestRule30
 
 # Returns a test suite that has all test modules categorized as xplan2sbol 
 def Xplan2SBOLTestSuite():
-	# s1 = unittest.TestLoader().loadTestsFromModule(TestSBOLConversion)
-	# s2 = unittest.TestLoader().loadTestsFromModule(TestXplanDataParser)
+	s1 = unittest.TestLoader().loadTestsFromModule(TestSBOLConversion)
+	s2 = unittest.TestLoader().loadTestsFromModule(TestXplanDataParser)
 	s3 = unittest.TestLoader().loadTestsFromModule(TestRule30)
-	xplan2sbol_testSuite = unittest.TestSuite((s3))
+	xplan2sbol_testSuite = unittest.TestSuite((s1, s2, s3))
 	return xplan2sbol_testSuite
 
 

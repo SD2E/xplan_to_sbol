@@ -2,6 +2,7 @@ import json
 import pySBOLx
 import unittest
 
+from ConversionUtil import *
 from XplanDataParser import XplanDataParser
 
 import xplan_to_sbol.__main__ as xbol
@@ -18,7 +19,9 @@ class testPySBOLx(unittest.TestCase):
 	""" 
 	This class will perform unit testing on xplan's JSON to SBOL2 conversion
 
-	Run this module as a test suite from the xplan_to_sbol directory: python tests/SBOLTestSuite.py
+	There are two options to run this module from the xplan_to_sbol directory:
+    1. Run module as a standalone: python tests/TestSBOLConversion.py
+    2. Run this module as a test suite : python tests/SBOLTestSuite.py
 	"""
 
 	@classmethod
@@ -34,10 +37,10 @@ class testPySBOLx(unittest.TestCase):
 		file_sbol = Document()
 		file_sbol.read(rule30_sbol)
 
+		# with open(rule30_json) as jsonData:
 		jsonData = json.loads(open(rule30_json).read())
-		exp_space = 'http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017'
 		validate = True
-		converted_sbol = xbol.convert_xplan_to_sbol(jsonData, exp_space, om_path, validate)
+		converted_sbol = xbol.convert_xplan_to_sbol(jsonData, SBOLNamespace.HTTPS_HS, om_path, validate)
 
 		rule30_sbol2 = 'example/sbol/convertedResult.xml'
 		converted_sbol.write(rule30_sbol2)
@@ -46,11 +49,11 @@ class testPySBOLx(unittest.TestCase):
 
 		# Warning! This test case will fail if the SBOL Document produced from xplan2sbol conversion 
 		# has not been written to an .xml file
-		# sbolDiff_res = SearchQuery.compare(file_sbol, converted_sbol)
-		sbolDiff_res = SearchQuery.compare(file_sbol, file2_sbol)
-		self.assertTrue(sbolDiff_res == 1)
+		sbolDiff_res = SearchQuery.compare(file_sbol, converted_sbol)
+		# sbolDiff_res = SearchQuery.compare(file_sbol, file2_sbol)
+		# self.assertTrue(sbolDiff_res == 1)
 
-		# Warning! Code below prints two Activities description that has unicodes that will show the difference of 
+		# Warning! Code below prints two Activities description that will show the difference of 
 		# what unicode is stored as when reading from an SBOLDocument versus looking at an unicdoe before writing
 		# to an .xml document
 		# DC_NS = "http://purl.org/dc/terms/"

@@ -19,14 +19,14 @@
     <sbol:displayId>A01_1</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/A01_1"/>
     <sbol:version>1</sbol:version>
+    <om:hasNumericalValue>4.560000</om:hasNumericalValue>
+    <om:hasUnit rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/microlitre/1"/>
     <om:measure>
       <om:Measure rdf:about="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/A01_1/volume/1">
         <dcterms:title>volume</dcterms:title>
         <sbol:displayId>volume</sbol:displayId>
         <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/A01_1/volume"/>
         <sbol:version>1</sbol:version>
-        <om:hasNumericalValue>4.560000</om:hasNumericalValue>
-        <om:hasUnit rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/microlitre/1"/>
       </om:Measure>
     </om:measure>
     <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1201_3/1"/>
@@ -1292,14 +1292,14 @@
     <sbol:displayId>NEB_10_beta_pAN1201_2</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1201_2"/>
     <sbol:version>1</sbol:version>
+    <om:hasNumericalValue>15.000000</om:hasNumericalValue>
+    <om:hasUnit rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/microlitre/1"/>
     <om:measure>
       <om:Measure rdf:about="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1201_2/volume/1">
         <dcterms:title>volume</dcterms:title>
         <sbol:displayId>volume</sbol:displayId>
         <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1201_2/volume"/>
         <sbol:version>1</sbol:version>
-        <om:hasNumericalValue>15.000000</om:hasNumericalValue>
-        <om:hasUnit rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/microlitre/1"/>
       </om:Measure>
     </om:measure>
     <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1201_1/1"/>
@@ -1310,14 +1310,14 @@
     <sbol:displayId>NEB_10_beta_pAN1201_3</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1201_3"/>
     <sbol:version>1</sbol:version>
+    <om:hasNumericalValue>15.000000</om:hasNumericalValue>
+    <om:hasUnit rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/microlitre/1"/>
     <om:measure>
       <om:Measure rdf:about="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1201_3/volume/1">
         <dcterms:title>volume</dcterms:title>
         <sbol:displayId>volume</sbol:displayId>
         <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1201_3/volume"/>
         <sbol:version>1</sbol:version>
-        <om:hasNumericalValue>15.000000</om:hasNumericalValue>
-        <om:hasUnit rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/microlitre/1"/>
       </om:Measure>
     </om:measure>
     <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1201_2/1"/>
@@ -1345,14 +1345,14 @@
     <sbol:displayId>NEB_10_beta_pAN1717_2</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1717_2"/>
     <sbol:version>1</sbol:version>
+    <om:hasNumericalValue>15.000000</om:hasNumericalValue>
+    <om:hasUnit rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/microlitre/1"/>
     <om:measure>
       <om:Measure rdf:about="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1717_2/volume/1">
         <dcterms:title>volume</dcterms:title>
         <sbol:displayId>volume</sbol:displayId>
         <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1717_2/volume"/>
         <sbol:version>1</sbol:version>
-        <om:hasNumericalValue>15.000000</om:hasNumericalValue>
-        <om:hasUnit rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/microlitre/1"/>
       </om:Measure>
     </om:measure>
     <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1717_1/1"/>
@@ -1363,14 +1363,14 @@
     <sbol:displayId>NEB_10_beta_pAN1717_3</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1717_3"/>
     <sbol:version>1</sbol:version>
+    <om:hasNumericalValue>15.000000</om:hasNumericalValue>
+    <om:hasUnit rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/microlitre/1"/>
     <om:measure>
       <om:Measure rdf:about="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1717_3/volume/1">
         <dcterms:title>volume</dcterms:title>
         <sbol:displayId>volume</sbol:displayId>
         <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1717_3/volume"/>
         <sbol:version>1</sbol:version>
-        <om:hasNumericalValue>15.000000</om:hasNumericalValue>
-        <om:hasUnit rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/microlitre/1"/>
       </om:Measure>
     </om:measure>
     <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1717_2/1"/>
@@ -1399,14 +1399,14 @@
     <sbol:displayId>NEB_10_beta_pAN3928_pAN4036_2</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN3928_pAN4036_2"/>
     <sbol:version>1</sbol:version>
+    <om:hasNumericalValue>15.000000</om:hasNumericalValue>
+    <om:hasUnit rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/microlitre/1"/>
     <om:measure>
       <om:Measure rdf:about="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN3928_pAN4036_2/volume/1">
         <dcterms:title>volume</dcterms:title>
         <sbol:displayId>volume</sbol:displayId>
         <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN3928_pAN4036_2/volume"/>
         <sbol:version>1</sbol:version>
-        <om:hasNumericalValue>15.000000</om:hasNumericalValue>
-        <om:hasUnit rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/microlitre/1"/>
       </om:Measure>
     </om:measure>
     <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN3928_pAN4036_1/1"/>
@@ -1417,14 +1417,14 @@
     <sbol:displayId>NEB_10_beta_pAN3928_pAN4036_3</sbol:displayId>
     <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN3928_pAN4036_3"/>
     <sbol:version>1</sbol:version>
+    <om:hasNumericalValue>15.000000</om:hasNumericalValue>
+    <om:hasUnit rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/microlitre/1"/>
     <om:measure>
       <om:Measure rdf:about="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN3928_pAN4036_3/volume/1">
         <dcterms:title>volume</dcterms:title>
         <sbol:displayId>volume</sbol:displayId>
         <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN3928_pAN4036_3/volume"/>
         <sbol:version>1</sbol:version>
-        <om:hasNumericalValue>15.000000</om:hasNumericalValue>
-        <om:hasUnit rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/microlitre/1"/>
       </om:Measure>
     </om:measure>
     <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN3928_pAN4036_2/1"/>

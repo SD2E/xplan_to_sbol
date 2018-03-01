@@ -1275,7 +1275,7 @@
             }
         },
         {
-            "id": 3,
+            "id": 11,
             "name": "Step 3",
             "operator": {
                 "channels": [
@@ -1284,7 +1284,7 @@
                         "name": "BL1-A"
                     }
                 ],
-                "id": 3,
+                "id": 11,
                 "instrument_configuration": "agave://data-sd2e-community/transcriptic/instruments/cytometer_configuration.json",
                 "manifest": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/manifest/09242017-manifest.json",
                 "measurements": [
@@ -1591,7 +1591,7 @@
             "operator": {
                 "_comment": "",
                 "description": "Dilute the cultures from Step 6 by transferring 4.56 \u03bcL of culture into 8 Falcon tubes (14 mL round-bottom polypropylene tubes; Corning, MA, 352059) each containing 3 mL of M9 glucose media with appropriate inducers and with 50 \u03bcg/mL kanamycin and 50 \u03bcg/mL spectinomycin. The inducer conditions have been described above in section 7c. ",
-                "id": 6,
+                "id": 8,
                 "name": "Dilute",
                 "transformations": [
                     {

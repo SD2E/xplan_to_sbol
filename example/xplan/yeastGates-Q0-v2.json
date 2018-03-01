@@ -195,7 +195,7 @@
             "name": "Step 11", 
             "operator": {
                 "description": "96 flat 2 measure on flow quickly", 
-                "id": 7, 
+                "id": 11, 
                 "instrument_configuration": "agave://data-sd2e-community/sample/biofab/instruments/accurri/5539/11272017/cytometer_configuration.json", 
                 "manifest": "agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/5/manifest/manifest.json", 
                 "measurements": [
