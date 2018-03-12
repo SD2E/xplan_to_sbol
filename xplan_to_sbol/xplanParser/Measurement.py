@@ -1,4 +1,4 @@
-class measurement:
+class Measurement:
 	''' Each measurements object found in xplan are stored as pyton measurements objects '''
 
 	def __init__(self, measData):

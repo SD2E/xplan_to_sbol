@@ -1,4 +1,4 @@
-class xplanoperator:
+class XplanOperator:
 	''' Each operator in the xplan data are stored as a python operator object '''
 
 	def __init__(self, operatorData):

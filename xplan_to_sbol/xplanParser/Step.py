@@ -1,4 +1,4 @@
-class step:
+class Step:
 	''' Each step in the xplan data are stored as a step object '''
 
 	def __init__(self, stepData):

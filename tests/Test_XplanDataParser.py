@@ -2,7 +2,7 @@ import json
 import unittest
 import os
 
-from XplanDataParser import XplanDataParser
+from xplan_to_sbol.xplanParser.XplanDataParser import XplanDataParser
 
 ''' 
     This module is used to test xplan's data for the DARPA's SD2E project.
@@ -16,7 +16,7 @@ class TestXplanDataParser(unittest.TestCase):
     This class will perform unit testing on XPlanDataParser.
     
     There are two options to run this module from the xplan_to_sbol directory:
-    1. Run module as a standalone: python tests/TestXplanDataParser.py
+    1. Run module as a standalone: python -m unittest tests/Test_XplanDataParser.py
     2. Run this module as a test suite : python tests/SBOLTestSuite.py
     
     """

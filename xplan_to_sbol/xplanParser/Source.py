@@ -1,4 +1,4 @@
-class source:
+class Source:
 
 	def __init__(self):
 		# This will be used to track IPTG, Larabinose, aTc measurements

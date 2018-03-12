@@ -1,5 +1,5 @@
 
-class channel:
+class Channel:
 
 	def __init__(self, chanData):
 		self.__channels_keys = chanData.keys()

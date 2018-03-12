@@ -1,4 +1,4 @@
-class transformation:
+class Transformation:
 	''' Each transformations object found in xplan are stored as pyton transformations objects '''
 
 	def __init__(self, transData):

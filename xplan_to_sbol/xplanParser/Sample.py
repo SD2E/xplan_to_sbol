@@ -1,4 +1,4 @@
-class sample:
+class Sample:
 	''' Each samples found in the xplan data will be stored as a python samples object '''
 
 	def __init__(self):

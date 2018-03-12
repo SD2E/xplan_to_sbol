@@ -1,22 +1,23 @@
 import json 
 
-from step import step
-from xplanoperator import xplanoperator
-from channel import channel
-from sample import sample
-from source import source
-from measurement import measurement
-from transformation import transformation
+from xplan_to_sbol.xplanParser.XplanOperator import XplanOperator
+from xplan_to_sbol.xplanParser.Step import Step
+from xplan_to_sbol.xplanParser.Channel import Channel
+from xplan_to_sbol.xplanParser.Sample import Sample
+from xplan_to_sbol.xplanParser.Source import Source
+from xplan_to_sbol.xplanParser.Measurement import Measurement
+from xplan_to_sbol.xplanParser.Transformation import Transformation
 
-''' This module is used to parse xplan's data that was generated for DARPA's TA1-SD2E project.
+'''
+    This module is used to parse xplan's data that was generated for DARPA's TA1-SD2E project.
 	
-	author(s) : Tramy Nguyen
+    author(s) : Tramy Nguyen
 ''' 
 
 class XplanDataParser():
-	''' This class is a data parser for xplan's json file. 
-		An instance of this class will provide a user the ability to get objects and its properties 
-		found in xplan's json file.
+	''' 
+        This class is a data parser for xplan's json file. 
+	    An instance of this class will provide a user the ability to get objects and its properties found in xplan's json file.
 	'''
 	
 	def __init__(self, xplanData):
@@ -29,8 +30,6 @@ class XplanDataParser():
 		self.__experiment_lab = xplanData.get('experimentLab', None)
 		self.__experiment_set = xplanData.get('experimentSet', None)
 		
-		# if 'initialState' in xplanData:
-		# 	self.initStateParser(xplanData['initialState'])
 		if 'steps' in xplanData:
 			self.stepsParser(xplanData['steps'])
 
@@ -41,7 +40,7 @@ class XplanDataParser():
 		while currIndex < len(data):
 			stepData = data[currIndex]
 			step_id = stepData['id']
-			step_obj = step(stepData)
+			step_obj = Step(stepData)
 			self.__stepsList.append(step_obj)
 			if 'operator' in stepData:
 				self.operatParser(stepData['operator'], step_id, step_obj)
@@ -50,7 +49,7 @@ class XplanDataParser():
 	def operatParser(self, data, step_id, step_obj):
 		currIndex = 0
 		# Note: There will only be one operator per step
-		oper_obj = xplanoperator(data)
+		oper_obj = XplanOperator(data)
 		if 'transformations' in data:
 			self.transParser(data['transformations'], step_id, oper_obj)
 		if 'measurements' in data:
@@ -66,7 +65,7 @@ class XplanDataParser():
 		currIndex = 0
 		while currIndex < len(data):
 			chanData = data[currIndex]
-			chan_obj = channel(chanData)
+			chan_obj = Channel(chanData)
 			oper_obj.add_channel(chan_obj)
 			currIndex = currIndex+1
 
@@ -74,7 +73,7 @@ class XplanDataParser():
 		currIndex = 0
 		while currIndex < len(data):
 			measData = data[currIndex]
-			meas_obj = measurement(measData)
+			meas_obj = Measurement(measData)
 			if 'file' in measData:
 				if isinstance(measData['file'], str):
 					meas_obj.add_file(measData['file'])
@@ -88,14 +87,14 @@ class XplanDataParser():
 		currIndex = 0
 		while currIndex < len(data):
 			sampsData = data[currIndex]
-			samp_obj = sample()
+			samp_obj = Sample()
 			samp_obj.add_uri(sampsData)
 			oper_obj.add_sample(samp_obj)
 			currIndex = currIndex + 1
 
 	def sourceParser(self, data, source_id, transf_obj):
 		if isinstance(data, str):
-			source_obj = source()
+			source_obj = Source()
 			source_obj.add_uri(data)
 			transf_obj.add_source(source_obj)
 		else:
@@ -103,7 +102,7 @@ class XplanDataParser():
 			while currIndex < len(data):
 				s_id = str(source_id) + '_' + str(currIndex)
 				sourceData = data[currIndex]
-				source_obj = source()
+				source_obj = Source()
 				if isinstance(sourceData, dict):
 					source_obj.add_measure(sourceData)
 				else:
@@ -116,7 +115,7 @@ class XplanDataParser():
 		while currIndex < len(data):
 			t_id = str(trans_id) + '_' + str(currIndex)
 			transfData = data[currIndex]
-			transf_obj = transformation(transfData)
+			transf_obj = Transformation(transfData)
 			if 'source' in transfData:
 				self.sourceParser(transfData['source'], t_id, transf_obj)
 			oper_obj.add_transformation(transf_obj)
