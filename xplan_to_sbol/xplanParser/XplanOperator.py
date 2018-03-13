@@ -82,3 +82,23 @@ class XplanOperator:
 	# Otherwise, None is returned.
 	def get_type(self):
 		return self.__type
+
+	# Returns False if this operator instance has an empty list of channels. 
+	# Otherwise, True is returned
+	def has_channels(self):
+		return False if not self.__channels else True
+
+	# Returns False if this operator instance has an empty list of measures. 
+	# Otherwise, True is returned
+	def has_measures(self):
+		return False if not self.__measurements else True
+
+	# Returns False if this operator instance has an empty list of samples. 
+	# Otherwise, True is returned
+	def has_samples(self):
+		return False if not self.__samples else True
+	
+	# Returns False if this operator instance has an empty list of transformations. 
+	# Otherwise, True is returned
+	def has_transformations(self):
+		return False if not self.__transformations else True
