@@ -6,9 +6,18 @@ class SBOLNamespace():
 	PURL_NS = 'http://purl.org/dc/terms/'
 	SD2_NS = 'http://sd2e.org#'
 
+	ATTACHMENT_NS = SD2_NS + 'Attachment'
+	EXPERIMENT_NS = SD2_NS + 'Experiment'
+	EXPERIMENTAL_DATA_NS = SD2_NS + 'ExperimentalData'
+	IMPLEMENTATION_NS = SD2_NS + 'Implementation'
+	MEASURE_NS = SD2_NS + 'Measure'
+	UNIT_NS = SD2_NS + 'Unit'
+
 	DESCRIPTION_NS = PURL_NS + 'description'
 	TITLE_NS = PURL_NS + 'title'
 	OPERTYPE_NS = SD2_NS + 'operatorType'
+
+	VERSION_1 = "1.0.0"
 
 # Returns a new string from the SBOL URI without the given homespace attached to the original string
 # Otherwise, None is returned if the given homespace wasn't found in the given URI
