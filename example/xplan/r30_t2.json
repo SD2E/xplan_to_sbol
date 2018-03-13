@@ -1,0 +1,44 @@
+{
+    "experimentId": "1",
+    "experimentLab": "transcriptic",
+    "experimentSet": "https://hub.sd2e.org/user/sd2e/rule_30/rule_30/1",
+    "id": "https://hub.sd2e.org/user/sd2e/rule_30/transcriptic_rule_30_q0_1_09242017/1",
+    "name": "Rule30 Q0 Plan",
+    "steps": [
+        {
+            "id": 1,
+            "name": "Step 1",
+            "operator": {
+                "_comment": "",
+                "description": "3 Transformations (one time - keeping plates for isolates)",
+                "id": 1,
+                "name": "Transform Plasmids",
+                "transformations": [
+                    {
+                        "destination": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN3928_pAN4036/1",
+                        "source": [
+                            "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/pAN3928/1",
+                            "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/pAN4036/1",
+                            "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta/1"
+                        ]
+                    },
+                    {
+                        "destination": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1201/1",
+                        "source": [
+                            "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/pAN1201/1",
+                            "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta/1"
+                        ]
+                    },
+                    {
+                        "destination": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1717/1",
+                        "source": [
+                            "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/pAN1717/1",
+                            "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta/1"
+                        ]
+                    }
+                ],
+                "type": "transform"
+            }
+        }
+    ]
+}

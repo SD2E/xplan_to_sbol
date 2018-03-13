@@ -1,0 +1,320 @@
+{
+    "experimentId": "1",
+    "experimentLab": "transcriptic",
+    "experimentSet": "https://hub.sd2e.org/user/sd2e/rule_30/rule_30/1",
+    "id": "https://hub.sd2e.org/user/sd2e/rule_30/transcriptic_rule_30_q0_1_09242017/1",
+    "name": "Rule30 Q0 Plan",
+    "steps": [
+        {
+            "id": 11,
+            "name": "Step 3",
+            "operator": {
+                "channels": [
+                    {
+                        "calibration_file": "",
+                        "name": "BL1-A"
+                    }
+                ],
+                "id": 11,
+                "instrument_configuration": "agave://data-sd2e-community/transcriptic/instruments/cytometer_configuration.json",
+                "manifest": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/manifest/09242017-manifest.json",
+                "measurements": [
+                    {
+                        "file": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A12.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/beadcontrol/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A1.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/A01/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A2.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/A02/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A3.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/A03/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A4.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/A04/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A5.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/A05/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A6.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/A06/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A7.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/A07/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A8.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/A08/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_A9.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/A09/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B1.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/B01/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B2.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/B02/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B3.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/B03/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B4.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/B04/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B5.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/B05/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B6.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/B06/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B7.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/B07/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B8.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/B08/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_B9.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/B09/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C1.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/C01/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C2.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/C02/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C3.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/C03/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C4.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/C04/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C5.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/C05/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C6.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/C06/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C7.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/C07/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C8.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/C08/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_C9.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/C09/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D1.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/D01/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D2.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/D02/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D3.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/D03/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D4.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/D04/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D5.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/D05/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D6.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/D06/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D7.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/D07/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D8.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/D08/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_D9.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/D09/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E1.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/E01/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E2.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/E02/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E3.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/E03/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E4.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/E04/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E5.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/E05/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E6.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/E06/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E7.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/E07/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E8.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/E08/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_E9.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/E09/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F1.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/F01/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F2.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/F02/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F3.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/F03/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F4.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/F04/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F5.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/F05/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F6.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/F06/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F7.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/F07/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F8.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/F08/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_F9.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/F09/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G1.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/G01/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G2.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/G02/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G3.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/G03/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G4.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/G04/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G5.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/G05/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G6.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/G06/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G7.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/G07/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G8.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/G08/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_G9.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/G09/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H1.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/H01/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H2.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/H02/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H3.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/H03/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H4.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/H04/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H5.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/H05/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H6.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/H06/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H7.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/H07/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H8.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/H08/1"
+                    },
+                    {
+                        "file": "agave://data-sd2e-community/transcriptic/rule-30_q0/1/instrument_output/SD30_09242017_SD30_09242017_Rule30Plate_H9.fcs",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/H09/1"
+                    }
+                ],
+                "name": "Flow Operator",
+                "type": "flowCytometry"
+            }
+        }
+    ]
+}

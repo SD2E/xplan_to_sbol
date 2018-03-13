@@ -1,0 +1,25 @@
+{
+    "experimentId": "1",
+    "experimentLab": "transcriptic",
+    "experimentSet": "https://hub.sd2e.org/user/sd2e/rule_30/rule_30/1",
+    "id": "https://hub.sd2e.org/user/sd2e/rule_30/transcriptic_rule_30_q0_1_09242017/1",
+    "name": "Rule30 Q0 Plan",
+    "steps": [
+        {
+            "id": 3,
+            "name": "Step 3",
+            "operator": {
+                "_comment": "",
+                "description": "Grow single colonies in sealed (Excel Scientific, Inc., AeraSeal, BS-25) V-bottom 96-well plates overnight (16 hours) at 37\u00b0C and 1000 RPM in an ELMI Digital Thermos Microplates shaker incubator (Elmi Ltd, Riga, Latvia).",
+                "id": 3,
+                "name": "Incubate",
+                "samples": [
+                    "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN3928_pAN4036_1/1",
+                    "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1201_1/1",
+                    "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/NEB_10_beta_pAN1717_1/1"
+                ],
+                "type": "incubate"
+            }
+        }
+    ]
+}

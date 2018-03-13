@@ -1,0 +1,34 @@
+{
+    "experimentId": "1",
+    "experimentLab": "transcriptic",
+    "experimentSet": "https://hub.sd2e.org/user/sd2e/rule_30/rule_30/1",
+    "id": "https://hub.sd2e.org/user/sd2e/rule_30/transcriptic_rule_30_q0_1_09242017/1",
+    "name": "Rule30 Q0 Plan",
+    "steps": [
+        {
+            "id": 10,
+            "name": "Step 10",
+            "operator": {
+                "description": "8.c-dd of httpss://docs.google.com/document/d/1WiTOQPM9ylZqIGz86UWsODVydNsDSqJHlEZnSvkQYcs/edit?usp=sharing",
+                "id": 10,
+                "measurements": [
+                    {
+                        "file": [
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L001_R1_001.fastq.gz",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L001_R2_001.fastq.gz",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L002_R1_001.fastq.gz",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L002_R2_001.fastq.gz",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L003_R1_001.fastq.gz",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L003_R2_001.fastq.gz",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L004_R1_001.fastq.gz",
+                            "agave://data-sd2e-community/transcriptic/rule-30_q0/1/171009_TS004-TP01/instrument_output/A1_S2_L004_R2_001.fastq.gz"
+                        ],
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/A01_1/1"
+                    }
+                ],
+                "name": "RNASeq Operator",
+                "type": "rnaSeq"
+            }
+        }
+    ]
+}

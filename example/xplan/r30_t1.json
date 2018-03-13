@@ -1,0 +1,38 @@
+{
+    "experimentId": "1",
+    "experimentLab": "transcriptic",
+    "experimentSet": "https://hub.sd2e.org/user/sd2e/rule_30/rule_30/1",
+    "id": "https://hub.sd2e.org/user/sd2e/rule_30/transcriptic_rule_30_q0_1_09242017/1",
+    "name": "Rule30 Q0 Plan",
+    "steps": [
+        {
+            "id": 0,
+            "name": "Step 0",
+            "operator": {
+                "_comment": "Resource should be a streak plate",
+                "description": "Miniprep (QIAprep Spin Miniprep Kit ) and isolate plasmids pAN3928, pAN4036, pAN1201, and pAN1717  from provided plate streaks",
+                "id": 0,
+                "name": "Prepare Plasmids",
+                "transformations": [
+                    {
+                        "destination": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/pAN3928/1",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/pAN3928_streak/1"
+                    },
+                    {
+                        "destination": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/pAN4036/1",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/pAN4036_streak/1"
+                    },
+                    {
+                        "destination": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/pAN1201/1",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/pAN1201_streak/1"
+                    },
+                    {
+                        "destination": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/pAN1717/1",
+                        "source": "https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/pAN1717_streak/1"
+                    }
+                ],
+                "type": "prepare_plasmids"
+            }
+        }
+    ]
+}
