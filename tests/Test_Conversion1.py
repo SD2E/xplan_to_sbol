@@ -53,48 +53,60 @@ class TestConversion1(unittest.TestCase):
 
     def test_Transformations2Activities_size(self):
         self.assertEqual(len(self.sbolDoc.activities), 4)
+        self.assertEqual(len(self.sbolDoc.activities), len(self.sbol_idDict.get_activity_idList()))
 
     def test_Transformations2Implementations_size(self):
         self.assertEqual(len(self.implementations_tl), 8)
+        self.assertEqual(len(self.implementations_tl), len(self.sbol_idDict.get_implementations_idList()))
 
     def test_Transformations2Experiments_size(self):
         self.assertEqual(len(self.experiments_tl), 1)
+        self.assertEqual(len(self.experiments_tl), len(self.sbol_idDict.get_experiments_idList()))
 
     def test_Attachment_size(self):
         self.assertEqual(len(self.attachments_tl), 0)
+        self.assertEqual(len(self.attachments_tl), len(self.sbol_idDict.get_attachment_idList()))
 
     def test_ComponentDefinition_size(self):
         self.assertEqual(len(self.sbolDoc.componentDefinitions), 0)
+        self.assertEqual(len(self.sbolDoc.componentDefinitions), len(self.sbol_idDict.get_attachment_idList()))
 
     def test_ExperimentalData_size(self):
         self.assertEqual(len(self.experimentalData_tl), 0)
+        self.assertEqual(len(self.experimentalData_tl), len(self.sbol_idDict.get_experimentalData_idList()))
 
-    def test_ComponentDefinition_size(self):
+    def test_ModuleDefinition_size(self):
         self.assertEqual(len(self.sbolDoc.moduleDefinitions), 0)
+        self.assertEqual(len(self.sbolDoc.moduleDefinitions), len(self.sbol_idDict.get_moduleDefinition_idList()))
 
     def test_Measure_size(self):
         self.assertEqual(len(self.measures_tl), 0)
+        self.assertEqual(len(self.measures_tl), len(self.sbol_idDict.get_measures_idList()))
 
     def test_Unit_size(self):
         self.assertEqual(len(self.units_tl), 0)
+        self.assertEqual(len(self.units_tl), len(self.sbol_idDict.get_units_idList()))
 
     def test_Activity_ids(self):
         expected_ids = self.sbol_idDict.get_activity_idList()
-        for i in expected_ids:
-            activity = self.sbolDoc.find(i)
-            self.assertIsNotNone(activity)
+        actual_ids = set()
+        for a in self.sbolDoc.activities:
+            actual_ids.add(a.identity)
+        self.assertEqual(expected_ids, actual_ids)
 
     def test_Implementation_ids(self):
         expected_ids = self.sbol_idDict.get_implementations_idList()
-        for i in expected_ids:
-            implementation = self.sbolDoc.find(i)
-            self.assertIsNotNone(implementation)
+        actual_ids = set()
+        for a in self.implementations_tl:
+            actual_ids.add(a.identity)
+        self.assertEqual(expected_ids, actual_ids)
 
     def test_Experiment_ids(self):
         expected_ids = self.sbol_idDict.get_experiments_idList()
-        for i in expected_ids:
-            experiment = self.sbolDoc.find(i)
-            self.assertIsNotNone(experiment)
+        actual_ids = set()
+        for a in self.experiments_tl:
+            actual_ids.add(a.identity)
+        self.assertEqual(expected_ids, actual_ids)
 
     # def test_Experiment_id2(self):
         # TODO: test with xplan file that does not have HPTTS TRANSCRIPTIC HOMESPACE 
