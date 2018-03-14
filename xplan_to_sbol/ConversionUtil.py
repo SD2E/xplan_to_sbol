@@ -3,9 +3,11 @@
 class SBOLNamespace():
 	HTTPS_HS = 'https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/'
 	HTTP_HS = 'http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/'
+	PROV_NS = 'http://www.w3.org/ns/prov#'
 	PURL_NS = 'http://purl.org/dc/terms/'
 	SD2_NS = 'http://sd2e.org#'
 
+	ACTIVITY_NS = PROV_NS + 'Activity'
 	ATTACHMENT_NS = SD2_NS + 'Attachment'
 	EXPERIMENT_NS = SD2_NS + 'Experiment'
 	EXPERIMENTAL_DATA_NS = SD2_NS + 'ExperimentalData'

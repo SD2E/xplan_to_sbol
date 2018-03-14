@@ -1,48 +1,82 @@
 from xplan_to_sbol.ConversionUtil import *
 from xplan_to_sbol.xplanParser.XplanDataParser import XplanDataParser
 
-def get_ID_List(xplan_data):
-    expected_idList = []
-    for step_obj in xplan_data.get_stepsList():
-        for oper_obj in step_obj.get_operatorList():
-            if oper_obj.has_transformations():
-                expected_idList = expected_idList + get_transfIDList(oper_obj)
-            if oper_obj.has_samples():
-                expected_idList = expected_idList + get_sampsIDList(oper_obj)
-            if oper_obj.has_measures():
-                expected_idList = expected_idList + get_measIDList(oper_obj)
-    return expected_idList
+class SBOLTestUtil():
 
-def get_sampsIDList(oper_obj):
-    expected_idList = []
-    for samp_obj in oper_obj.get_samplesList():
-        for uri in samp_obj.get_uriList():
-            uriVer = removeHomespace(SBOLNamespace.HTTPS_HS, uri)
-            uriName = removeVersion("1", uriVer)
-            expected_id = SBOLNamespace.HTTPS_HS + "/" + oper_obj.get_type() + "_" + uriName + "/" + SBOLNamespace.VERSION_1
-            expected_idList.append(expected_id)
-    return expected_idList
+    def __init__(self, xplanData):
+        self.__activity_idList = []
+        self.__experiments_idList = []
+        self.__experimentalData_idList = []
+        self.__implementations_idList = []
+        self.__measures_idList = []
+        self.__units_idList = []
 
-def get_measIDList(oper_obj):
-    expected_idList = []
-    for meas_obj in oper_obj.get_measurementsList():
-        measVer = removeHomespace(SBOLNamespace.HTTPS_HS, meas_obj.get_source())
-        measName = removeVersion("1", measVer)
-        expected_id = SBOLNamespace.HTTPS_HS + "/" + oper_obj.get_type() + "_" + measName + "_to_" + measName + "_" + oper_obj.get_type() + "_" + str(oper_obj.get_id()) + "/" + SBOLNamespace.VERSION_1 
-        expected_idList.append(expected_id)
-    return expected_idList
+        self.set_SBOL_ids(xplanData)
 
-def get_transfIDList(oper_obj):
-    expected_idList = []
-    for transf_obj in oper_obj.get_transformationsList():
-        destVer = removeHomespace(SBOLNamespace.HTTPS_HS, transf_obj.get_destination())
-        destName = removeVersion("1", destVer)
-        sourceName = ""
-        for source_obj in transf_obj.get_sourceList():
-            for uri in source_obj.get_uriList():
-                uriVer = removeHomespace(SBOLNamespace.HTTPS_HS, uri)
-                uriName = removeVersion("1", uriVer) + "_" 
-                sourceName = sourceName + uriName 
-        expected_id = SBOLNamespace.HTTPS_HS + "/" + oper_obj.get_type() + "_" + sourceName + "to_" + destName + "/" + SBOLNamespace.VERSION_1 
-        expected_idList.append(expected_id)
-    return expected_idList
+    def get_activity_idList(self):
+        return self.__activity_idList
+
+    def get_experiments_idList(self):
+        return self.__experiments_idList
+
+    def get_experimentalData_idList(self):
+        return self.__experimentalData_idList
+
+    def get_implementations_idList(self):
+        return self.__implementations_idList
+
+    def get_measures_idList(self):
+        return self.__measures_idList
+
+    def get_units_idList(self):
+        return self.__units_idList
+
+    def create_SBOL_identities(self, identityName):
+        return  SBOLNamespace.HTTPS_HS + "/" + identityName + "/" + SBOLNamespace.VERSION_1
+
+    def get_uri_name(self, uri):
+        uriVer = removeHomespace(SBOLNamespace.HTTPS_HS, uri)
+        return removeVersion("1", uriVer)
+
+    def set_SBOL_ids(self, xplanData):
+        for step_obj in xplanData.get_stepsList():
+            for oper_obj in step_obj.get_operatorList():
+                if oper_obj.has_transformations():
+                    self.set_transfIDList(oper_obj)
+                if oper_obj.has_samples():
+                    self.set_sampsIDList(oper_obj)
+                if oper_obj.has_measures():
+                    self.set_measIDList(oper_obj)
+    
+    def set_sampsIDList(self, oper_obj):
+        for samp_obj in oper_obj.get_samplesList():
+            for uri in samp_obj.get_uriList():
+                uriName = get_uri_name(uri)
+                activity_id = self.create_SBOL_identities(oper_obj.get_type() + "_" + uriName)
+                self.__activity_idList.append(activity_id)
+
+    def set_measIDList(self, oper_obj):
+        for meas_obj in oper_obj.get_measurementsList():
+            self.get_uri_name(measVer)
+            activity_id = self.create_SBOL_identities(oper_obj.get_type() + "_" + measName + "_to_" + measName + "_" + oper_obj.get_type() + "_" + str(oper_obj.get_id()))
+            self.__activity_idList.append(activity_id)
+
+    def set_transfIDList(self, oper_obj):
+        for transf_obj in oper_obj.get_transformationsList():
+            dest_uri = transf_obj.get_destination()
+            destName = self.get_uri_name(dest_uri)
+
+            dest_id = SBOLNamespace.HTTPS_HS + "/" + destName + "/1"
+            self.__implementations_idList.append(dest_id)
+
+            sourceName = ""
+            for source_obj in transf_obj.get_sourceList():
+                for uri in source_obj.get_uriList():
+                    uriName = self.get_uri_name(uri) + "_"
+                    sourceName = sourceName + uriName
+                    source_id = SBOLNamespace.HTTPS_HS + "/" + self.get_uri_name(uri) + "/1"
+                    self.__implementations_idList.append(source_id)
+
+            activity_id = self.create_SBOL_identities(oper_obj.get_type() + "_" + sourceName + "to_" + destName)
+            self.__activity_idList.append(activity_id)
+
