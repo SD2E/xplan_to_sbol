@@ -1,8 +1,10 @@
 
 
 class SBOLNamespace():
-	HTTPS_HS = 'https://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/'
-	HTTP_HS = 'http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017/'
+	HTTPS_HS = 'https://hub.sd2e.org/user/sd2e/'
+	HTTP_HS = 'http://hub.sd2e.org/user/sd2e/'
+	TRANSCRIPTIC_HS = HTTPS_HS + 'transcriptic_rule_30_q0_1_09242017/'
+	TRANSCRIPTIC_NAME = 'transcriptic_rule_30_q0_1_09242017/'
 	PROV_NS = 'http://www.w3.org/ns/prov#'
 	PURL_NS = 'http://purl.org/dc/terms/'
 	SD2_NS = 'http://sd2e.org#'

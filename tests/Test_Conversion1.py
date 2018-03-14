@@ -28,18 +28,18 @@ class TestConversion1(unittest.TestCase):
 
             cls.attachments_tl = []
             cls.experiments_tl = []
-            cls.experimentalDatas_tl = []
+            cls.experimentalData_tl = []
             cls.implementations_tl = []
             cls.measures_tl = []
             cls.units_tl = []
-            # print(cls.sbolDoc.writeString())
+            
             for topLevel in cls.sbolDoc:
                 if topLevel.type == SBOLNamespace.ATTACHMENT_NS:
                     cls.attachments_tl.append(topLevel)
                 elif topLevel.type == SBOLNamespace.EXPERIMENT_NS:
                     cls.experiments_tl.append(topLevel)
                 elif topLevel.type == SBOLNamespace.EXPERIMENTAL_DATA_NS:
-                    cls.experimentalDatas_tl.append(topLevel)
+                    cls.experimentalData_tl.append(topLevel)
                 elif topLevel.type == SBOLNamespace.IMPLEMENTATION_NS:
                     cls.implementations_tl.append(topLevel)
                 elif topLevel.type == SBOLNamespace.MEASURE_NS:
@@ -60,6 +60,24 @@ class TestConversion1(unittest.TestCase):
     def test_Transformations2Experiments_size(self):
         self.assertEqual(len(self.experiments_tl), 1)
 
+    def test_Attachment_size(self):
+        self.assertEqual(len(self.attachments_tl), 0)
+
+    def test_ComponentDefinition_size(self):
+        self.assertEqual(len(self.sbolDoc.componentDefinitions), 0)
+
+    def test_ExperimentalData_size(self):
+        self.assertEqual(len(self.experimentalData_tl), 0)
+
+    def test_ComponentDefinition_size(self):
+        self.assertEqual(len(self.sbolDoc.moduleDefinitions), 0)
+
+    def test_Measure_size(self):
+        self.assertEqual(len(self.measures_tl), 0)
+
+    def test_Unit_size(self):
+        self.assertEqual(len(self.units_tl), 0)
+
     def test_Activity_ids(self):
         expected_ids = self.sbol_idDict.get_activity_idList()
         for i in expected_ids:
@@ -73,11 +91,14 @@ class TestConversion1(unittest.TestCase):
             self.assertIsNotNone(implementation)
 
     def test_Experiment_ids(self):
-        print("There should be 1 experiment here")
         expected_ids = self.sbol_idDict.get_experiments_idList()
-        # for i in expected_ids:
-        #     experiment = self.sbolDoc.find(i)
-        #     self.assertIsNotNone(experiment)
+        for i in expected_ids:
+            experiment = self.sbolDoc.find(i)
+            self.assertIsNotNone(experiment)
+
+    # def test_Experiment_id2(self):
+        # TODO: test with xplan file that does not have HPTTS TRANSCRIPTIC HOMESPACE 
+        # Currently, the conversion is inserting a default string for SBOL Experiment ID that doesn't consider what the curent xplan's id is
 
 
 

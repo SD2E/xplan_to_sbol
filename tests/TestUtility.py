@@ -35,10 +35,19 @@ class SBOLTestUtil():
         return  SBOLNamespace.HTTPS_HS + "/" + identityName + "/" + SBOLNamespace.VERSION_1
 
     def get_uri_name(self, uri):
-        uriVer = removeHomespace(SBOLNamespace.HTTPS_HS, uri)
+        # Note: this is specifically removing a transcriptic URI and version 1. 
+        # This will need to be modified for diverse sample files in the future
+        uriVer = removeHomespace(SBOLNamespace.TRANSCRIPTIC_HS, uri)
         return removeVersion("1", uriVer)
 
     def set_SBOL_ids(self, xplanData):
+        # TODO: This is restricted to removing TRANSCRIPTIC URI from xplan's id. Need to expand this at one point. 
+        xplan_id = xplanData.get_xplanId()
+        https_pos = xplan_id.find(SBOLNamespace.HTTPS_HS) + len(SBOLNamespace.HTTPS_HS)
+        trans_pos = xplan_id.find(SBOLNamespace.TRANSCRIPTIC_NAME)
+        new_str = xplan_id[:https_pos] + "/" + xplan_id[trans_pos:]
+        self.__experiments_idList.append(new_str)
+
         for step_obj in xplanData.get_stepsList():
             for oper_obj in step_obj.get_operatorList():
                 if oper_obj.has_transformations():
@@ -65,7 +74,6 @@ class SBOLTestUtil():
         for transf_obj in oper_obj.get_transformationsList():
             dest_uri = transf_obj.get_destination()
             destName = self.get_uri_name(dest_uri)
-
             dest_id = SBOLNamespace.HTTPS_HS + "/" + destName + "/1"
             self.__implementations_idList.append(dest_id)
 
