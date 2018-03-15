@@ -30,61 +30,35 @@ class TestRule30(unittest.TestCase):
         print("Running " + cls.__name__)
         rule30_json = 'example/xplan/rule30-Q0-v2.json'		
         rule30_sbol = 'example/sbol/rule30-Q0-v2.xml'
+        om_path = 'example/om/om-2.0.rdf'
 		
         cls.sbolDoc = Document()
         cls.sbolDoc.read(rule30_sbol)
 		
         with open(rule30_json) as jsonFile:
             jsonData = json.load(jsonFile)
+            cls.converted_sbol =  xbol.convert_xplan_to_sbol(jsonData, SBOLNamespace.HTTPS_HS, om_path, True)
             cls.xplan_data = XplanDataParser(jsonData)
 
     def test_totalIds(self):
-        expected_ids = list(range(0, 11))
-        actual_ids = []
+        expected_ids = set(range(0, 12))
+        actual_ids = set()
         for step_obj in self.xplan_data.get_stepsList():
-            actual_ids.append(step_obj.get_id())
-            
-            # Warning this assert will failt because there are duplicate values of step:id = 3
-            # self.assertEqual(expected_ids, actual_ids)
-
-    def test_step3Conversion(self):
-
-        step_obj = self.xplan_data.get_step(3)
-        self.assertTrue(step_obj.get_id(), 3) 
-        oper_obj = step_obj.get_firstOperator()
-        self.assertIsNotNone(oper_obj)
-        
-        samp_objs = oper_obj.get_samplesList()
-        self.assertTrue(len(samp_objs) == 3)
-
-	# Note: Do not assert values for xplan/sbol description due to unicode contained within the description. 
-	# pysbol will make the assert fail because the unicodes are altered when pysbol reads in an sbol file.
-        numAct = 0
-        for sample in samp_objs:
-            for uri in sample.get_uriList():
-                val = removeVersion('1', uri)
-                
-                # Get the equivalent SBOL value of this xplan sample
-                d_id = oper_obj.get_type() + "_" + removeHomespace(SBOLNamespace.HTTPS_HS, val)
-                p_id = SBOLNamespace.HTTP_HS + d_id
-                _id = p_id + "/1.0.0"
-                oper_type = SBOLNamespace.SD2_NS + oper_obj.get_type()
-                
-                # act_obj = self.sbolDoc.find(_id)
-                # self.assertIsNotNone(act_obj)
-                # self.assertEqual(act_obj.identity, _id)
-                # self.assertEqual(act_obj.persistentIdentity, p_id)
-
-        #         for a in self.sbolDoc.activities:
-        #            if a.identity == _id:
-        #                self.assertEqual(a.persistentIdentity, p_id)
-        #                self.assertEqual(a.displayId, d_id)
-        #                self.assertEqual(a.getAnnotation(SBOLNamespace.TITLE_NS), oper_obj.get_name())
-        #                self.assertEqual(a.getAnnotation(SBOLNamespace.OPERTYPE_NS), oper_type)
-        #                numAct += 1
-        # self.assertTrue(numAct == 3)		
+            actual_ids.add(step_obj.get_id())
+        self.assertEqual(expected_ids, actual_ids)
+             	
 		
+    def test_SBOLFiles_diff(self):
+        outputFile = 'example/sbol/convertedResult.xml'
+        self.converted_sbol.write(outputFile)
 
+        actual_sbol = Document()
+        actual_sbol.read(outputFile)
+        
+        actual_sbol.identity = "rule30-Q0-v2_conversionDocument"
+        self.sbolDoc.identity = 'rule30-Q0-v2_goldenDocument'
+        sbolDiff_res = self.sbolDoc.compare(actual_sbol)
+        self.assertTrue(sbolDiff_res == 1)
 		
 if __name__ == '__main__':
 	unittest.main()

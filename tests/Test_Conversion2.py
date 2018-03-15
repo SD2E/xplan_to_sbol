@@ -17,7 +17,7 @@ from sbol import *
 
 class TestConversion2(unittest.TestCase):
 
-   """ 
+    """ 
     This class will perform unit testing on xplan2sbol conversion for rule of 30 example.
     
     1. Run module as a standalone: python -m unittest tests/Test_Conversion2.py

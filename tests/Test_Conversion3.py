@@ -43,8 +43,8 @@ class TestConversion3(unittest.TestCase):
             cls.implementations_tl = []
             cls.measures_tl = []
             cls.units_tl = []
-            print(cls.sbolDoc)
-            print(cls.sbolDoc.writeString())
+            # print(cls.sbolDoc)
+            # print(cls.sbolDoc.writeString())
             for topLevel in cls.sbolDoc:
                 if topLevel.type == SBOLNamespace.ATTACHMENT_NS:
                     cls.attachments_tl.append(topLevel)

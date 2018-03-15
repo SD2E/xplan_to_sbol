@@ -9,7 +9,7 @@ from xplan_to_sbol.xplanParser.XplanDataParser import XplanDataParser
 
 class SBOLTestUtil():
 
-     """ 
+    """ 
     An instance of this class will allow a user to retrieve SBOL identity URIs of any top level SBOL object from the 
     xplanData object produced from the XplanDataParser.
     
