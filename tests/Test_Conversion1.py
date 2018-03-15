@@ -9,9 +9,20 @@ from xplan_to_sbol.xplanParser.XplanDataParser import XplanDataParser
 import xplan_to_sbol.__main__ as xbol
 from sbol import *
 
+''' 
+    This module is used to test xplan's data for the DARPA's SD2E project.
+    
+    author(s) : Tramy Nguyen
+''' 
+
 class TestConversion1(unittest.TestCase):
 
-    # Run:  python -m unittest tests/Test_Conversion1.py
+    """ 
+    This class will perform unit testing on xplan2sbol conversion for rule of 30 example.
+    
+    1. Run module as a standalone: python -m unittest tests/Test_Conversion1.py
+    
+    """
 
     @classmethod
     def setUpClass(cls):

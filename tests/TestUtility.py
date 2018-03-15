@@ -1,7 +1,19 @@
 from xplan_to_sbol.ConversionUtil import *
 from xplan_to_sbol.xplanParser.XplanDataParser import XplanDataParser
 
+''' 
+    This is an SBOL utitlity module used to parse SBOL identities from the xplan data for the DARPA's SD2E project.
+    
+    author(s) : Tramy Nguyen
+''' 
+
 class SBOLTestUtil():
+
+     """ 
+    An instance of this class will allow a user to retrieve SBOL identity URIs of any top level SBOL object from the 
+    xplanData object produced from the XplanDataParser.
+    
+    """
 
     def __init__(self, xplanData):
         self.__activity_idList = set()
