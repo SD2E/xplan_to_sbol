@@ -43,13 +43,24 @@ class SBOLTestUtil():
     def get_units_idList(self):
         return self.__units_idList
 
-    def create_SBOL_identities(self, identityName):
+    def create_SBOL_identities_v1_0_0(self, identityName):
+        return  SBOLNamespace.HTTPS_HS + "/" + identityName + "/" + SBOLNamespace.VERSION_1_0_0
+
+    def create_SBOL_identities_v1(self, identityName):
         return  SBOLNamespace.HTTPS_HS + "/" + identityName + "/" + SBOLNamespace.VERSION_1
+
+    def remove_HS(self, uri, useChildHS):
+        if uri.startswith(SBOLNamespace.TRANSCRIPTIC_HS) and useChildHS:
+            return removeHomespace(SBOLNamespace.TRANSCRIPTIC_HS, uri)
+        elif uri.startswith(SBOLNamespace.HTTPS_HS):
+            return removeHomespace(SBOLNamespace.HTTPS_HS, uri)
+        elif uri.startswith(SBOLNamespace.AGAVE_HS):
+            return removeHomespace(SBOLNamespace.AGAVE_HS, uri)
+        return None
 
     def get_uri_name(self, uri):
         # Note: this is specifically removing a transcriptic URI and version 1. 
-        # This will need to be modified for diverse sample files in the future
-        uriVer = removeHomespace(SBOLNamespace.TRANSCRIPTIC_HS, uri)
+        uriVer = self.remove_HS(uri, True)
         return removeVersion("1", uriVer)
 
     def set_SBOL_ids(self, xplanData):
@@ -72,21 +83,32 @@ class SBOLTestUtil():
     def set_sampsIDList(self, oper_obj):
         for samp_obj in oper_obj.get_samplesList():
             for uri in samp_obj.get_uriList():
-                uriName = get_uri_name(uri)
-                activity_id = self.create_SBOL_identities(oper_obj.get_type() + "_" + uriName)
+                uriName = self.get_uri_name(uri)
+                activity_id = self.create_SBOL_identities_v1_0_0(oper_obj.get_type() + "_" + uriName)
+                implemen_id = self.create_SBOL_identities_v1_0_0(uriName)
                 self.__activity_idList.add(activity_id)
+                self.__implementations_idList.add(implemen_id)
 
     def set_measIDList(self, oper_obj):
         for meas_obj in oper_obj.get_measurementsList():
-            self.get_uri_name(measVer)
-            activity_id = self.create_SBOL_identities(oper_obj.get_type() + "_" + measName + "_to_" + measName + "_" + oper_obj.get_type() + "_" + str(oper_obj.get_id()))
+            sourceName = self.get_uri_name(meas_obj.get_source())
+            for file in meas_obj.get_filesList():
+                tempFile = self.remove_HS(file, False)
+                fileName = replace_uriChar(tempFile)
+                attachme_id = self.create_SBOL_identities_v1(fileName)
+                self.__attachement_idList.add(attachme_id)
+            activity_id = self.create_SBOL_identities_v1_0_0(oper_obj.get_type() + "_" + sourceName + "_to_" + sourceName + "_" + oper_obj.get_type() + "_" + str(oper_obj.get_id()))
+            implemen_id = self.create_SBOL_identities_v1(sourceName)
+            expData_id = self.create_SBOL_identities_v1(sourceName + "_" + oper_obj.get_type() + "_" + str(oper_obj.get_id()))
             self.__activity_idList.add(activity_id)
+            self.__implementations_idList.add(implemen_id)
+            self.__experimentalData_idList.add(expData_id)
 
     def set_transfIDList(self, oper_obj):
         for transf_obj in oper_obj.get_transformationsList():
             dest_uri = transf_obj.get_destination()
             destName = self.get_uri_name(dest_uri)
-            dest_id = SBOLNamespace.HTTPS_HS + "/" + destName + "/1"
+            dest_id = self.create_SBOL_identities_v1(destName)
             self.__implementations_idList.add(dest_id)
 
             sourceName = ""
@@ -94,9 +116,9 @@ class SBOLTestUtil():
                 for uri in source_obj.get_uriList():
                     uriName = self.get_uri_name(uri) + "_"
                     sourceName = sourceName + uriName
-                    source_id = SBOLNamespace.HTTPS_HS + "/" + self.get_uri_name(uri) + "/1"
+                    source_id = self.create_SBOL_identities_v1(self.get_uri_name(uri))
                     self.__implementations_idList.add(source_id)
 
-            activity_id = self.create_SBOL_identities(oper_obj.get_type() + "_" + sourceName + "to_" + destName)
+            activity_id = self.create_SBOL_identities_v1_0_0(oper_obj.get_type() + "_" + sourceName + "to_" + destName)
             self.__activity_idList.add(activity_id)
 

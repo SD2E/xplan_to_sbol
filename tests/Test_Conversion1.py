@@ -69,7 +69,7 @@ class TestConversion1(unittest.TestCase):
 
     def test_ComponentDefinition_size(self):
         self.assertEqual(len(self.sbolDoc.componentDefinitions), 0)
-        self.assertEqual(len(self.sbolDoc.componentDefinitions), len(self.sbol_idDict.get_attachment_idList()))
+        self.assertEqual(len(self.sbolDoc.componentDefinitions), len(self.sbol_idDict.get_componentDefinition_idList()))
 
     def test_ExperimentalData_size(self):
         self.assertEqual(len(self.experimentalData_tl), 0)
