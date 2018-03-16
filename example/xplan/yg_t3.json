@@ -1,0 +1,26 @@
+{
+    "experimentId": "1",
+    "experimentLab": "transcriptic",
+    "experimentSet": "https://hub.sd2e.org/user/sd2e/rule_30/rule_30/1",
+    "id": "https://hub.sd2e.org/user/sd2e/rule_30/transcriptic_rule_30_q0_1_09242017/1",
+    "name": "Rule30 Q0 Plan",
+    "steps": [
+        {
+            "id": 9, 
+            "name": "Step 9", 
+            "operator": {
+                "description": "96 flat 2 measure OD600, GFP\nAdd 3 wells of 300 uL spherotech calibration beads to 96 flat 2\n96 flat 2 mix well by pipetting up and down to avoid settling before flow cytometry", 
+                "id": 9, 
+                "manifest": "agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/4/manifest/manifest.json", 
+                "measurements": [
+                    {
+                        "file": "agave://data-sd2e-community/sample/biofab/yeast-gates_q0/1/4/instrument_output/A01_1_1.od", 
+                        "source": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/4/A01_1_1"
+                    }
+                ], 
+                "name": "Spectrophotometry Operator", 
+                "type": "spectrophotometry"
+            }
+        }
+    ]
+}

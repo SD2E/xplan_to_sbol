@@ -1,0 +1,22 @@
+{
+    "experimentId": "1", 
+    "experimentLab": "biofab", 
+    "experimentSet": "yeast-gates_q0", 
+    "id": "df82e79b-e18c-457e-8c5c-ed605acc94cd", 
+    "name": "Yeast Gates Q0 Plan", 
+    "steps": [
+        {
+            "id": 1, 
+            "name": "Step 1", 
+            "operator": {
+                "description": "Incubate (30C, 2 days), YPAD-plate_1", 
+                "id": 1, 
+                "name": "Incubate Operator", 
+                "samples": [
+                    "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/A01"
+                ], 
+                "type": "incubate"
+            }
+        }
+            ]
+}

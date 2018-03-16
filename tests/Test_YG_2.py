@@ -15,12 +15,12 @@ from sbol import *
     author(s) : Tramy Nguyen
 ''' 
 
-class TestR30_3(unittest.TestCase):
-    
+class TestYG_2(unittest.TestCase):
+
     """ 
-    This class will perform unit testing on xplan2sbol conversion for rule of 30 example.
+    This class will perform unit testing on xplan2sbol conversion for yeastGates example.
     
-    1. Run module as a standalone: python -m unittest tests/Test_R30_3.py
+    1. Run module as a standalone: python -m unittest tests/Test_YG_2.py
     2. Run this module as a test suite : python -m tests.SBOLTestSuite
     
     """
@@ -28,14 +28,14 @@ class TestR30_3(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         print("Running " + cls.__name__)
-        rule30_json = 'example/xplan/r30_t3.json'
+        rule30_json = 'example/xplan/yg_t2.json'
 		
         om_path = 'example/om/om-2.0.rdf'
         with open(rule30_json) as jsonFile:
             jsonData = json.load(jsonFile)
             cls.xplanData = XplanDataParser(jsonData)
             cls.sbolDoc = xbol.convert_xplan_to_sbol(jsonData, SBOLNamespace.HTTPS_HS, om_path, True)
-
+            # print(cls.sbolDoc.writeString())
             cls.sbol_idDict = SBOLTestUtil(cls.xplanData) 
 
             cls.attachments_tl = []
@@ -44,8 +44,7 @@ class TestR30_3(unittest.TestCase):
             cls.implementations_tl = []
             cls.measures_tl = []
             cls.units_tl = []
-            # print(cls.sbolDoc)
-            # print(cls.sbolDoc.writeString())
+            
             for topLevel in cls.sbolDoc:
                 if topLevel.type == SBOLNamespace.ATTACHMENT_NS:
                     cls.attachments_tl.append(topLevel)
@@ -65,11 +64,11 @@ class TestR30_3(unittest.TestCase):
                     print("Warning! Unexpected SBOL object was found: " + topLevel.type)
 
     def test_Samples2Activities_size(self):
-        self.assertEqual(len(self.sbolDoc.activities), 3)
+        self.assertEqual(len(self.sbolDoc.activities), 1)
         self.assertEqual(len(self.sbolDoc.activities), len(self.sbol_idDict.get_activity_idList()))
 
     def test_Samples2Implementation_size(self):
-        self.assertEqual(len(self.implementations_tl), 3)
+        self.assertEqual(len(self.implementations_tl), 1)
         self.assertEqual(len(self.implementations_tl), len(self.sbol_idDict.get_implementations_idList()))
 
     def test_Samples2Experiments_size(self):
