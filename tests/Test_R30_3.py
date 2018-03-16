@@ -20,7 +20,8 @@ class TestR30_3(unittest.TestCase):
     """ 
     This class will perform unit testing on xplan2sbol conversion for rule of 30 example.
     
-    1. Run module as a standalone: python -m unittest tests/Test_Conversion3.py
+    1. Run module as a standalone: python -m unittest tests/Test_R30_3.py
+    2. Run this module as a test suite : python -m tests.SBOLTestSuite
     
     """
 

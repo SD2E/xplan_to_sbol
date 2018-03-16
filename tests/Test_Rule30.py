@@ -21,7 +21,7 @@ class TestRule30(unittest.TestCase):
 	
     There are two options to run this module from the xplan_to_sbol directory:
     1. Run module as a standalone: python -m unittest tests/Test_Rule30.py
-    2. Run this module as a test suite : python tests/SBOLTestSuite.py
+    2. Run this module as a test suite : python -m tests.SBOLTestSuite
     
     """
     

@@ -11,6 +11,11 @@ from sbol import *
 
 class TestR30_4(unittest.TestCase):
 
+    '''
+    1. Run module as a standalone: python -m unittest tests/Test_R30_3.py
+    2. Run this module as a test suite : python -m tests.SBOLTestSuite
+    '''
+
     @classmethod
     def setUpClass(cls):
         print("Running " + cls.__name__)
