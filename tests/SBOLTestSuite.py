@@ -1,14 +1,20 @@
 import unittest
 
+from tests import Test_XplanDataParser
 from tests import Test_SBOLConversion
+from tests import Test_Rule30
+from tests import Test_yeastGates
 from tests import Test_R30_1
 from tests import Test_R30_2
 from tests import Test_R30_3
 from tests import Test_R30_4
 from tests import Test_R30_5
 from tests import Test_R30_6
-from tests import Test_XplanDataParser
-from tests import Test_Rule30
+from tests import Test_YG_1
+from tests import Test_YG_2
+from tests import Test_YG_3
+
+
 
 
 ''' 
@@ -36,17 +42,27 @@ def Rule30_TestSuite():
 	rule30_testSuite = unittest.TestSuite((s1, s2, s3, s4, s5, s6, s7))
 	return rule30_testSuite
 
+def YeastGates_TestSuite():
+	s1 = unittest.TestLoader().loadTestsFromModule(Test_yeastGates)
+	s2 = unittest.TestLoader().loadTestsFromModule(Test_YG_1)
+	s3 = unittest.TestLoader().loadTestsFromModule(Test_YG_2)
+	s4 = unittest.TestLoader().loadTestsFromModule(Test_YG_3)
+	yeastGates_testSuite = unittest.TestSuite((s1, s2, s3, s4))
+	return yeastGates_testSuite
+
 def Xplan2SBOL_TestSuite():
 	s1 = unittest.TestLoader().loadTestsFromModule(Test_SBOLConversion)
 	xplan2sbol_testSuite = unittest.TestSuite(s1)
 	return xplan2sbol_testSuite
 
 if __name__ == '__main__':
-	x_suite = Xplan_TestSuite()
-	r30_suite = Rule30_TestSuite()
+	xpn_suite = Xplan_TestSuite()
 	x2s_suite = Xplan2SBOL_TestSuite()
+	r30_suite = Rule30_TestSuite()
+	ygs_suite = YeastGates_TestSuite()
         
 	testRunner = unittest.TextTestRunner()
-	testRunner.run(x_suite)
+	testRunner.run(xpn_suite)
+	testRunner.run(x2s_suite)
 	testRunner.run(r30_suite)
-	testRunner.run(x2s_suite)	
+	testRunner.run(ygs_suite)	
