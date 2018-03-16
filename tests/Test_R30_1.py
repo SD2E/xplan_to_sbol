@@ -9,12 +9,25 @@ from xplan_to_sbol.xplanParser.XplanDataParser import XplanDataParser
 import xplan_to_sbol.__main__ as xbol
 from sbol import *
 
-class TestConversion4(unittest.TestCase):
+''' 
+    This module is used to test xplan's data for the DARPA's SD2E project.
+    
+    author(s) : Tramy Nguyen
+''' 
+
+class TestR30_1(unittest.TestCase):
+
+    """ 
+    This class will perform unit testing on xplan2sbol conversion for rule of 30 example.
+    
+    1. Run module as a standalone: python -m unittest tests/Test_Conversion1.py
+    
+    """
 
     @classmethod
     def setUpClass(cls):
         print("Running " + cls.__name__)
-        rule30_json = 'example/xplan/r30_t4.json'
+        rule30_json = 'example/xplan/r30_t1.json'
 		
         om_path = 'example/om/om-2.0.rdf'
         with open(rule30_json) as jsonFile:
@@ -30,6 +43,7 @@ class TestConversion4(unittest.TestCase):
             cls.implementations_tl = []
             cls.measures_tl = []
             cls.units_tl = []
+            
             for topLevel in cls.sbolDoc:
                 if topLevel.type == SBOLNamespace.ATTACHMENT_NS:
                     cls.attachments_tl.append(topLevel)
@@ -49,11 +63,11 @@ class TestConversion4(unittest.TestCase):
                     print("Warning! Unexpected SBOL object was found: " + topLevel.type)
 
     def test_Transformations2Activities_size(self):
-        self.assertEqual(len(self.sbolDoc.activities), 72)
+        self.assertEqual(len(self.sbolDoc.activities), 4)
         self.assertEqual(len(self.sbolDoc.activities), len(self.sbol_idDict.get_activity_idList()))
 
     def test_Transformations2Implementations_size(self):
-        self.assertEqual(len(self.implementations_tl), 75)
+        self.assertEqual(len(self.implementations_tl), 8)
         self.assertEqual(len(self.implementations_tl), len(self.sbol_idDict.get_implementations_idList()))
 
     def test_Transformations2Experiments_size(self):
@@ -104,6 +118,10 @@ class TestConversion4(unittest.TestCase):
         for a in self.experiments_tl:
             actual_ids.add(a.identity)
         self.assertEqual(expected_ids, actual_ids)
+
+    # def test_Experiment_id2(self):
+        # TODO: test with xplan file that does not have HPTTS TRANSCRIPTIC HOMESPACE 
+        # Currently, the conversion is inserting a default string for SBOL Experiment ID that doesn't consider what the curent xplan's id is
 
 
 

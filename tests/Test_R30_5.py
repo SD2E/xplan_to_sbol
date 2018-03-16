@@ -15,19 +15,18 @@ from sbol import *
     author(s) : Tramy Nguyen
 ''' 
 
-class TestConversion2(unittest.TestCase):
+class TestR30_5(unittest.TestCase):
 
     """ 
     This class will perform unit testing on xplan2sbol conversion for rule of 30 example.
     
-    1. Run module as a standalone: python -m unittest tests/Test_Conversion2.py
+    1. Run module as a standalone: python -m unittest tests/Test_Conversion5.py
     
     """
-    
     @classmethod
     def setUpClass(cls):
         print("Running " + cls.__name__)
-        rule30_json = 'example/xplan/r30_t2.json'
+        rule30_json = 'example/xplan/r30_t5.json'
 		
         om_path = 'example/om/om-2.0.rdf'
         with open(rule30_json) as jsonFile:
@@ -43,7 +42,7 @@ class TestConversion2(unittest.TestCase):
             cls.implementations_tl = []
             cls.measures_tl = []
             cls.units_tl = []
-            
+
             for topLevel in cls.sbolDoc:
                 if topLevel.type == SBOLNamespace.ATTACHMENT_NS:
                     cls.attachments_tl.append(topLevel)
@@ -62,29 +61,29 @@ class TestConversion2(unittest.TestCase):
                 else:
                     print("Warning! Unexpected SBOL object was found: " + topLevel.type)
 
-    def test_Transformations2Activities_size(self):
-        self.assertEqual(len(self.sbolDoc.activities), 3)
-        self.assertEqual(len(self.sbolDoc.activities), len(self.sbol_idDict.get_activity_idList()))
+    def test_Measurements2ExperimentalData_size(self):
+        self.assertEqual(len(self.experimentalData_tl), 73)
+        self.assertEqual(len(self.experimentalData_tl), len(self.sbol_idDict.get_experimentalData_idList()))
 
-    def test_Transformations2Implementations_size(self):
-        self.assertEqual(len(self.implementations_tl), 8)
+    def test_Measurement2Implementation_size(self):
+        self.assertEqual(len(self.implementations_tl), 73)
         self.assertEqual(len(self.implementations_tl), len(self.sbol_idDict.get_implementations_idList()))
 
-    def test_Transformations2Experiments_size(self):
+    def test_Measurements2Activity_size(self):
+        self.assertEqual(len(self.sbolDoc.activities), 73)
+        self.assertEqual(len(self.sbolDoc.activities), len(self.sbol_idDict.get_activity_idList()))
+
+    def test_Measurements2Attachment_size(self):
+        self.assertEqual(len(self.attachments_tl), 73)
+        self.assertEqual(len(self.attachments_tl), len(self.sbol_idDict.get_attachment_idList()))
+
+    def test_Measurements2Experiment_size(self):
         self.assertEqual(len(self.experiments_tl), 1)
         self.assertEqual(len(self.experiments_tl), len(self.sbol_idDict.get_experiments_idList()))
-
-    def test_Attachment_size(self):
-        self.assertEqual(len(self.attachments_tl), 0)
-        self.assertEqual(len(self.attachments_tl), len(self.sbol_idDict.get_attachment_idList()))
 
     def test_ComponentDefinition_size(self):
         self.assertEqual(len(self.sbolDoc.componentDefinitions), 0)
         self.assertEqual(len(self.sbolDoc.componentDefinitions), len(self.sbol_idDict.get_componentDefinition_idList()))
-
-    def test_ExperimentalData_size(self):
-        self.assertEqual(len(self.experimentalData_tl), 0)
-        self.assertEqual(len(self.experimentalData_tl), len(self.sbol_idDict.get_experimentalData_idList()))
 
     def test_ModuleDefinition_size(self):
         self.assertEqual(len(self.sbolDoc.moduleDefinitions), 0)
@@ -98,10 +97,18 @@ class TestConversion2(unittest.TestCase):
         self.assertEqual(len(self.units_tl), 0)
         self.assertEqual(len(self.units_tl), len(self.sbol_idDict.get_units_idList()))
 
+
     def test_Activity_ids(self):
         expected_ids = self.sbol_idDict.get_activity_idList()
         actual_ids = set()
         for a in self.sbolDoc.activities:
+            actual_ids.add(a.identity)
+        self.assertEqual(expected_ids, actual_ids)
+
+    def test_Attachment_ids(self):
+        expected_ids = self.sbol_idDict.get_attachment_idList()
+        actual_ids = set()
+        for a in self.attachments_tl:
             actual_ids.add(a.identity)
         self.assertEqual(expected_ids, actual_ids)
 
@@ -111,10 +118,20 @@ class TestConversion2(unittest.TestCase):
         for a in self.implementations_tl:
             actual_ids.add(a.identity)
         self.assertEqual(expected_ids, actual_ids)
-        
+
     def test_Experiment_ids(self):
         expected_ids = self.sbol_idDict.get_experiments_idList()
         actual_ids = set()
         for a in self.experiments_tl:
             actual_ids.add(a.identity)
         self.assertEqual(expected_ids, actual_ids)
+
+    def test_ExperimentalData_ids(self):
+        expected_ids = self.sbol_idDict.get_experimentalData_idList()
+        actual_ids = set()
+        for a in self.experimentalData_tl:
+            actual_ids.add(a.identity)
+        self.assertEqual(expected_ids, actual_ids)
+
+
+
