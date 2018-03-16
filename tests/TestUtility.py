@@ -73,6 +73,7 @@ class SBOLTestUtil():
     def get_uri_name(self, uri):
         # Note: this is specifically removing a transcriptic URI and version 1. 
         uriVer = self.remove_HS(uri, True)
+        print(uriVer)
         return removeVersion("1", uriVer)
 
     def set_SBOL_ids(self, xplanData):

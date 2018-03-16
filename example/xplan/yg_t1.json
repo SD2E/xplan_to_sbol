@@ -1,0 +1,25 @@
+{
+    "experimentId": "1", 
+    "experimentLab": "biofab", 
+    "experimentSet": "yeast-gates_q0", 
+    "id": "df82e79b-e18c-457e-8c5c-ed605acc94cd", 
+    "name": "Yeast Gates Q0 Plan", 
+    "steps": [
+        {
+            "description": "Streak (single colonies), from: glycerol_stock, to: YPAD-plate_1", 
+            "id": 0, 
+            "name": "Step 0", 
+            "operator": {
+                "id": 0, 
+                "name": "Streak Single Colonies", 
+                "transformations": [
+                    {
+                        "destination": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/A01", 
+                        "source": "agave://data-sd2e-community/biofab/sample/yeast-gates_q0/1/1/STOCK01"
+                    }
+                ], 
+                "type": "streak"
+            }
+        }
+            ]
+}

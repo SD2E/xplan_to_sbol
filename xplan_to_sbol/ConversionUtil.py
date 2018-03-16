@@ -28,19 +28,19 @@ class SBOLNamespace():
 	VERSION_1 = "1"
 
 # Returns a new string from the SBOL URI without the given homespace attached to the original string
-# Otherwise, None is returned if the given homespace wasn't found in the given URI
+# Otherwise, the original uri is returned
 def removeHomespace(hs, uri):
 	if uri.startswith(hs):
 		return uri.replace(hs, '') 
-	return None
+	return uri
 
 # Returns a new string from the given uri without the given version number appended to the end of the original string
-# Otherwise, None is returned if the version number wasn't found in the given URI
+# Otherwise, the original uri is returned
 def removeVersion(version, uri):
 	rmv = "/" + version
 	if uri.endswith(rmv):
 		return uri[:-len(rmv)] 
-	return None
+	return uri
 
 def replace_uriChar(uri):
         replace_char = ['/', '-', '.']
