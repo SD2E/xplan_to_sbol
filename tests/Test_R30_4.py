@@ -110,5 +110,39 @@ class TestR30_4(unittest.TestCase):
             actual_ids.add(a.identity)
         self.assertEqual(expected_ids, actual_ids)
 
+    def test_Activity_Title(self):
+        for activity_uri in self.sbol_idDict.get_activity_idList():
+            activity_obj = self.sbolDoc.find(activity_uri)
+            actual_title = activity_obj.getAnnotation(SBOLNamespace.TITLE_NS)
+            
+            expected_title = self.xplanData.get_stepsList()[0].get_operatorList()[0].get_name()
+            self.assertEqual(expected_title, actual_title)
+
+    def test_Activity_Type(self):
+        for activity_uri in self.sbol_idDict.get_activity_idList():
+            activity_obj = self.sbolDoc.find(activity_uri)
+            actual_type = removeHomespace(SBOLNamespace.SD2_NS, activity_obj.getAnnotation(SBOLNamespace.OPERTYPE_NS))
+
+            expected_type = self.xplanData.get_stepsList()[0].get_operatorList()[0].get_type()
+            self.assertEqual(expected_type, actual_type)
+
+    def test_Activity_Description(self):
+        for activity_uri in self.sbol_idDict.get_activity_idList():
+            activity_obj = self.sbolDoc.find(activity_uri)
+            actual_descp = activity_obj.getAnnotation(SBOLNamespace.DESCRIPTION_NS)
+            # pySBOL will return empty string if property wasn't set
+            if not actual_descp:
+                actual_descp = None
+            expected_des = self.xplanData.get_stepsList()[0].get_operatorList()[0].get_description()
+            self.assertEqual(expected_des, actual_descp)
+
+    def test_Experiment_displayId(self):
+        experiment_uri = next(iter(self.sbol_idDict.get_experiments_idList()))
+        experiment_obj = self.sbolDoc.find(experiment_uri)
+        actual_d_id = experiment_obj.getAnnotation(SBOLNamespace.DISPLAYID_NS)
+        
+        expected_d_id = replace_uriChar(self.xplanData.get_xplanId())
+        self.assertEqual(expected_d_id, actual_d_id)
+
 
 

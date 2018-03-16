@@ -82,3 +82,39 @@ class TestYG_3(unittest.TestCase):
     def test_Measurements2Experiment_size(self):
         self.assertEqual(len(self.experiments_tl), 1)
         self.assertEqual(len(self.experiments_tl), len(self.sbol_idDict.get_experiments_idList()))
+
+    def test_Activity_Title(self):
+        activity_uri = next(iter(self.sbol_idDict.get_activity_idList()))
+        activity_obj = self.sbolDoc.find(activity_uri)
+        actual_title = activity_obj.getAnnotation(SBOLNamespace.TITLE_NS)
+
+        expected_title = self.xplanData.get_stepsList()[0].get_operatorList()[0].get_name()
+        self.assertEqual(expected_title, actual_title)
+
+    def test_Activity_Type(self):
+        activity_uri = next(iter(self.sbol_idDict.get_activity_idList()))
+        activity_obj = self.sbolDoc.find(activity_uri)
+        actual_type = removeHomespace(SBOLNamespace.SD2_NS, activity_obj.getAnnotation(SBOLNamespace.OPERTYPE_NS))
+
+        expected_type = self.xplanData.get_stepsList()[0].get_operatorList()[0].get_type()
+        self.assertEqual(expected_type, actual_type)
+
+    def test_Activity_Description(self):
+        activity_uri = next(iter(self.sbol_idDict.get_activity_idList()))
+        activity_obj = self.sbolDoc.find(activity_uri)
+        actual_descp = activity_obj.getAnnotation(SBOLNamespace.DESCRIPTION_NS)
+        # pySBOL will return empty string if property wasn't set
+        if not actual_descp:
+            actual_descp = None
+        expected_des = self.xplanData.get_stepsList()[0].get_operatorList()[0].get_description()
+        self.assertEqual(expected_des, actual_descp)
+
+    def test_Experiment_displayId(self):
+        # TODO: This will fail because Experiment Id is looking for an inocorrect identity URI with rule_30 appended 
+        experiment_uri = next(iter(self.sbol_idDict.get_experiments_idList()))
+        print(experiment_uri)
+        experiment_obj = self.sbolDoc.find(experiment_uri)
+        actual_d_id = experiment_obj.getAnnotation(SBOLNamespace.DISPLAYID_NS)
+        
+        expected_d_id = replace_uriChar(self.xplanData.get_xplanId())
+        self.assertEqual(expected_d_id, actual_d_id)

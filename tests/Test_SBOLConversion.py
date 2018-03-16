@@ -16,21 +16,20 @@ from sbol import *
 
 class testPySBOLx(unittest.TestCase):
 
-   """ This class will perform unit testing on xplan's JSON to SBOL2 conversion
+    """
+    This class will perform unit testing on xplan's JSON to SBOL2 conversion
+    There are two options to run this module from the xplan_to_sbol directory:
 
-   There are two options to run this module from the xplan_to_sbol directory:
-      1. Run module as a standalone: python -m unittest tests/Test_SBOLConversion.py
-      2. Run this module as a test suite : python tests/SBOLTestSuite.py
+    1. Run module as a standalone: python -m unittest tests/Test_SBOLConversion.py
+    2. Run this module as a test suite : python tests/SBOLTestSuite.py
+    """
 
-   """
-   
-   @classmethod
-   def setUpClass(cls):
-      print("Running " + cls.__name__)
+    @classmethod
+    def setUpClass(cls):
+        print("Running " + cls.__name__)
 
-
-   def test_SBOLidentitiy_URIs(self):
-      self.assertTrue(True)
+    def test_SBOLidentitiy_URIs(self):
+        self.assertTrue(True)
 
 
 if __name__ == '__main__':

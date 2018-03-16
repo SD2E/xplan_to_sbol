@@ -7,7 +7,7 @@ class SBOLNamespace():
 	TRANSCRIPTIC_HS = HTTPS_HS + TRANSCRIPTIC_NAME
 	
 	AGAVE_HS = 'agave://data-sd2e-community/'
-
+	SBOL_NS = 'http://sbols.org/v2#'
 	PROV_NS = 'http://www.w3.org/ns/prov#'
 	PURL_NS = 'http://purl.org/dc/terms/'
 	SD2_NS = 'http://sd2e.org#'
@@ -20,6 +20,7 @@ class SBOLNamespace():
 	MEASURE_NS = SD2_NS + 'Measure'
 	UNIT_NS = SD2_NS + 'Unit'
 
+	DISPLAYID_NS = SBOL_NS + 'displayId'
 	DESCRIPTION_NS = PURL_NS + 'description'
 	TITLE_NS = PURL_NS + 'title'
 	OPERTYPE_NS = SD2_NS + 'operatorType'

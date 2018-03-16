@@ -78,6 +78,7 @@ class SBOLTestUtil():
     def get_uri_name(self, uri):
         # TODO: The boolean parameter should be removed when TRANSCRIPTIC_HS is no longer used.
         uriVer = self.remove_HS(uri, True)
+        # TODO: not all URI will have version = 1
         return removeVersion("1", uriVer)
 
     def set_SBOL_ids(self, xplanData):
@@ -135,6 +136,5 @@ class SBOLTestUtil():
                     self.__implementations_idList.add(source_id)
 
             activity_id = self.create_SBOL_identities_v1_0_0(oper_obj.get_type() + "_" + sourceName + "to_" + destName)
-            
             self.__activity_idList.add(activity_id)
 
