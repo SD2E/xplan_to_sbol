@@ -36,6 +36,7 @@ class TestYG_3(unittest.TestCase):
             cls.xplanData = XplanDataParser(jsonData)
             cls.sbolDoc = xbol.convert_xplan_to_sbol(jsonData, SBOLNamespace.HTTPS_HS, om_path, True)
             # print(cls.sbolDoc.writeString())
+            print(cls.sbolDoc)
             cls.sbol_idDict = SBOLTestUtil(cls.xplanData) 
 
             cls.attachments_tl = []
@@ -110,9 +111,8 @@ class TestYG_3(unittest.TestCase):
         self.assertEqual(expected_des, actual_descp)
 
     def test_Experiment_displayId(self):
-        # TODO: This will fail because Experiment Id is looking for an inocorrect identity URI with rule_30 appended 
+        # TODO: This will fail because Experiment Id is looking for an inocorrect identity URI
         experiment_uri = next(iter(self.sbol_idDict.get_experiments_idList()))
-        print(experiment_uri)
         experiment_obj = self.sbolDoc.find(experiment_uri)
         actual_d_id = experiment_obj.getAnnotation(SBOLNamespace.DISPLAYID_NS)
         

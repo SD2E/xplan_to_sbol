@@ -35,7 +35,7 @@ class TestYG_2(unittest.TestCase):
             jsonData = json.load(jsonFile)
             cls.xplanData = XplanDataParser(jsonData)
             cls.sbolDoc = xbol.convert_xplan_to_sbol(jsonData, SBOLNamespace.HTTPS_HS, om_path, True)
-            # print(cls.sbolDoc.writeString())
+            print(cls.sbolDoc.writeString())
             cls.sbol_idDict = SBOLTestUtil(cls.xplanData) 
 
             cls.attachments_tl = []
