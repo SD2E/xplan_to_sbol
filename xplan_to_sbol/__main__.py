@@ -279,13 +279,13 @@ def load_unit(entity_data, doc, om):
 def load_inducers(condition_data, doc, om, measures):
     inducer_data = condition_data['inducer']
 
+    inducer_id = load_alnum_id(inducer_data['compound'])
+
     try:
         unit = load_unit(inducer_data, doc, om)
-        measures.append({'id': None, 'mag': float(inducer_data['amount']), 'unit': unit})
+        measures[inducer_id] = {'id': None, 'mag': float(inducer_data['amount']), 'unit': unit}
     except:
-        measures.append({'id': None, 'mag': float(inducer_data['amount']), 'unit': None})
-
-    inducer_id = load_alnum_id(inducer_data['compound'])
+        measures[inducer_id] = {'id': None, 'mag': float(inducer_data['amount']), 'unit': None}
 
     return [doc.create_inducer(inducer_id, inducer_id)]
 
@@ -312,7 +312,7 @@ def load_condition(condition_data, doc, om, plasmid=None):
     except:
         pass
 
-    measures = []
+    measures = {}
     try:
         inputs = load_inducers(condition_data, doc, om, measures)
     except:
