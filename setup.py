@@ -13,11 +13,9 @@ setup(name='xplan_to_sbol',
           ]
       },
       install_requires=[
-          'sbol',
           'pySBOLx'
       ],
       dependency_links=[
-        'git+https://git@github.com/nroehner/pySBOL_Win_64_3.git#egg=sbol',
         'git+https://git@github.com/nroehner/pySBOLx.git#egg=pySBOLx'
       ],
       zip_safe=False)
