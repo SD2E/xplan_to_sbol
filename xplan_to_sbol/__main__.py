@@ -151,7 +151,12 @@ def load_step_activities(step_data, doc, exp_data_dict, act_dict, om):
     try:
         load_upload_activity(operator_data, doc, exp_data_dict, act_dict)
     except:
+        pass
+
+    try:
         load_operator_activities(operator_data, doc, act_dict, om)
+    except:
+        pass
 
 def load_src_sample_key(sample_data):
     try:
@@ -174,6 +179,8 @@ def load_dest_sample_key(sample_data):
 
 def load_sample(sample_key, doc, condition=None, src_samples=[], measures=[]):
     sample_id = load_alnum_id(sample_key)
+
+    print(sample_id)
 
     return doc.create_sample(sample_id, condition, src_samples, measures)
 
@@ -384,6 +391,10 @@ def load_sample_data(operator_data):
     except:
         try:
             entity_data = operator_data['samples']
+
+            operator = operator_data['type'].replace('-', '_')
+
+            assert operator != 'uploadData'
         except:
             try:
                 entity_data = operator_data['transfer']
@@ -443,7 +454,12 @@ def load_step_entities(step_data, doc, exp, exp_data_dict, om):
     try:
         load_experimental_data(operator_data, doc, repr(step_data['id']), exp, exp_data_dict)
     except:
+        pass
+
+    try:
         load_operator_samples(operator_data, doc, om)
+    except:
+        pass
 
 def load_experiment(plan_data, doc):
     exp_id = load_alnum_id(plan_data['id'])
