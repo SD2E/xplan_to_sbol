@@ -30,7 +30,7 @@ xplan_to_sbol can be run from the Command Prompt as follows:
 
 .. code-block:: powershell
 
-    xplan_to_sbol -xp [path to input XPLAN JSON file] -ep [path for output SBOL RDF/XML file] -om [path to OM file (unit reference)] -es [authority to prefix any generated URIs] 
+    xplan_to_sbol -xp [path to input XPLAN JSON file] -ep [path for output SBOL RDF/XML file] -op [path to OM file (unit reference)] -es [authority to prefix any generated URIs] 
 
 xplan_to_sbol can also be imported and used as a Python module like so:
 
@@ -38,7 +38,7 @@ xplan_to_sbol can also be imported and used as a Python module like so:
 
     import xplan_to_sbol.__main__ as xbol
 
-    args = ['-xp', 'path to input XPLAN JSON file', '-ep', 'path for output SBOL RDF/XML file', '-om', 'path to OM file (unit reference)', '-es', 'authority to prefix generated URIs']
+    args = ['-xp', 'path to input XPLAN JSON file', '-ep', 'path for output SBOL RDF/XML file', '-op', 'path to OM file (unit reference)', '-es', 'authority to prefix generated URIs']
 
     xbol.main(args)
 
@@ -49,6 +49,6 @@ Run the following from the xplan_to_sbol directory:
 
 .. code-block:: powershell
 
-    xplan_to_sbol -xp example/xplan/rule30-Q0-v2.json -ep example/sbol/rule30-Q0-v2.xml -om example/om/om-2.0.rdf -es http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017
+    xplan_to_sbol -xp example/xplan/rule30-Q0-v2.json -ep example/sbol/rule30-Q0-v2.xml -op example/om/om-2.0.rdf -es http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017
 
 An example of importing xplan_to_sbol can be found in the Jupyter notebook xplan_to_sbol.ipynb.
