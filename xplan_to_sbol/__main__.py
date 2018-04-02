@@ -397,9 +397,9 @@ def load_experimental_data(operator_data, doc, replicate_id, exp, exp_data_dict)
         file_key = repr(file_paths)
 
         if file_key not in exp_data_dict:
-            doc.configure_namespace(SD2_NS_HTTPS)
+            # doc.configure_namespace(SD2_NS_HTTPS)
             exp_data_dict[file_key] = doc.create_experimental_data(attachs, sample, exp, operator, replicate_id)
-            doc.configure_namespace(SD2_NS)
+            # doc.configure_namespace(SD2_NS)
 
 def load_sample_data(operator_data):
     try:
@@ -496,6 +496,7 @@ def load_experiment_doc():
 
     doc.displayId = SD2_EXP_ID
     doc.name = SD2_EXP_NAME
+    doc.description = "This is a collection of all experiments carried out as part of the Protein Stability challenge problem for SD2."
     doc.version = '1'
 
     return doc
@@ -507,6 +508,7 @@ def load_plan_doc(plan_data):
 
     doc.displayId = exp_id
     doc.name = plan_data['name']
+    doc.description = "This collection contains metadata for an experiment carried out as part of the Protein STability challenge problem for SD2."
     doc.version = '1'
 
     return doc
@@ -563,17 +565,13 @@ def main(args=None):
 
         docs = convert_xplan_to_sbol(plan_data, args.plan, args.experiment, args.om, args.validate, args.namespace)
 
-        docs[0].write(args.plan)
-        docs[1].write(args.experiment)
-
-        # if args.design is not None:
-        #     docs[2].write(args.design)
+        if args.password is None:
+            docs[0].write(args.plan)
+            docs[1].write(args.experiment)
 
         if args.password is not None:
             docs[0].upload(args.url, args.email, args.password)
             docs[1].upload(args.url, args.email, args.password)
-
-            # docs[2].upload(args.url, args.email, args.password)
 
     print('done')
 
