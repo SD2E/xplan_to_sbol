@@ -1,8 +1,8 @@
 {
     "experimentId": "1",
     "experimentLab": "transcriptic",
-    "experimentSet": "https://hub.sd2e.org/user/sd2e/rule_30/rule_30/1",
-    "id": "https://hub.sd2e.org/user/sd2e/rule_30/transcriptic_rule_30_q0_1_09242017/1",
+    "experimentSet": "https://hub.sd2e.org/user/sd2e/experiment/rule_30/1",
+    "id": "https://hub.sd2e.org/user/sd2e/experiment/transcriptic_rule_30_q0_1_09242017/1",
     "name": "Rule30 Q0 Plan",
     "steps": [
         {

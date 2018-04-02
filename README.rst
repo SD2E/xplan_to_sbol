@@ -14,13 +14,13 @@ Installation
 Windows
 -------------
 
-xplan_to_sbol requires that Git and Python 3 be installed first, and it currently depends on a version of pySBOL that is only compatible with 64-bit Windows. To install xplan_to_sbol, checkout this repository from GitHub and run the following in the Command Prompt from the xplan_to_sbol directory:
+xplan_to_sbol requires that Git and Python 3 be installed first. To install xplan_to_sbol, checkout this repository from GitHub and run the following in the Command Prompt from the xplan_to_sbol directory:
 
 .. code-block:: powershell
 
     python setup.py install
 
-This command will automatically download and install the pySBOL and pySBOLx packages that xplan_to_sbol depends on from GitHub.
+This command will automatically download and install the pySBOLx package that it depends on from GitHub.
 
 
 Usage
@@ -30,7 +30,7 @@ xplan_to_sbol can be run from the Command Prompt as follows:
 
 .. code-block:: powershell
 
-    xplan_to_sbol -xp [path to input XPLAN JSON file] -ep [path for output SBOL RDF/XML file] -op [path to OM file (unit reference)] -es [authority to prefix any generated URIs] 
+    xplan_to_sbol -i [path to input XPLAN (JSON file)] -o1 [path for output SBOL plan (RDF/XML file)] -o2 [path for output SBOL experiment (RDF/XML file)] 
 
 xplan_to_sbol can also be imported and used as a Python module like so:
 
@@ -38,7 +38,7 @@ xplan_to_sbol can also be imported and used as a Python module like so:
 
     import xplan_to_sbol.__main__ as xbol
 
-    args = ['-xp', 'path to input XPLAN JSON file', '-ep', 'path for output SBOL RDF/XML file', '-op', 'path to OM file (unit reference)', '-es', 'authority to prefix generated URIs']
+    args = ['-i', 'path to input XPLAN (JSON file)', '-o1', 'path for output SBOL plan (RDF/XML file)', '-o2', 'path for output SBOL experiment (RDF/XML file)']
 
     xbol.main(args)
 
@@ -49,6 +49,6 @@ Run the following from the xplan_to_sbol directory:
 
 .. code-block:: powershell
 
-    xplan_to_sbol -xp example/xplan/rule30-Q0-v2.json -ep example/sbol/rule30-Q0-v2.xml -op example/om/om-2.0.rdf -es http://hub.sd2e.org/user/sd2e/transcriptic_rule_30_q0_1_09242017
+    xplan_to_sbol -xp example/xplan/draft_protstab_plan-v2.json -o1 example/sbol/draft_protstab_plan-v2.xml -o2 draft_protstab_experiment-v2.xml
 
 An example of importing xplan_to_sbol can be found in the Jupyter notebook xplan_to_sbol.ipynb.
