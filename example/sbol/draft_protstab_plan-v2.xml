@@ -1,0 +1,2325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:prov="http://www.w3.org/ns/prov#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:sbol="http://sbols.org/v2#"
+   xmlns:sd2="http://sd2e.org#"
+   xmlns:sys-bio="http://sys-bio.org#">
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/C1/1">
+    <dcterms:title>C1</dcterms:title>
+    <sbol:displayId>C1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/C1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Chymotrypsin_Y_to_C1/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/C2/1">
+    <dcterms:title>C2</dcterms:title>
+    <sbol:displayId>C2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/C2"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Chymotrypsin_Y_to_C2/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/C2_expressing/1">
+    <dcterms:title>C2_expressing</dcterms:title>
+    <sbol:displayId>C2_expressing</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/C2_expressing"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C2/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C2_expressing/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/C3/1">
+    <dcterms:title>C3</dcterms:title>
+    <sbol:displayId>C3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/C3"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C2/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C3/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/C4/1">
+    <dcterms:title>C4</dcterms:title>
+    <sbol:displayId>C4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/C4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C2/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C4/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/C4_expressing/1">
+    <dcterms:title>C4_expressing</dcterms:title>
+    <sbol:displayId>C4_expressing</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/C4_expressing"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C4/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C4_expressing/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/C5/1">
+    <dcterms:title>C5</dcterms:title>
+    <sbol:displayId>C5</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/C5"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C4/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C5/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/C6/1">
+    <dcterms:title>C6</dcterms:title>
+    <sbol:displayId>C6</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/C6"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C4/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C6/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/T1/1">
+    <dcterms:title>T1</dcterms:title>
+    <sbol:displayId>T1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/T1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Trypsin_Y_to_T1/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/T2/1">
+    <dcterms:title>T2</dcterms:title>
+    <sbol:displayId>T2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/T2"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Trypsin_Y_to_T2/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/T2_expressing/1">
+    <dcterms:title>T2_expressing</dcterms:title>
+    <sbol:displayId>T2_expressing</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/T2_expressing"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T2/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T2_expressing/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/T3/1">
+    <dcterms:title>T3</dcterms:title>
+    <sbol:displayId>T3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/T3"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T2/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T3/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/T4/1">
+    <dcterms:title>T4</dcterms:title>
+    <sbol:displayId>T4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/T4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T2/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T4/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/T4_expressing/1">
+    <dcterms:title>T4_expressing</dcterms:title>
+    <sbol:displayId>T4_expressing</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/T4_expressing"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T4/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T4_expressing/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/T5/1">
+    <dcterms:title>T5</dcterms:title>
+    <sbol:displayId>T5</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/T5"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T4/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T5/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/T6/1">
+    <dcterms:title>T6</dcterms:title>
+    <sbol:displayId>T6</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/T6"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T4/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T6/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/C1/1">
+    <dcterms:title>C1</dcterms:title>
+    <sbol:displayId>C1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/C1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Y/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/C2/1">
+    <dcterms:title>C2</dcterms:title>
+    <sbol:displayId>C2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/C2"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Y/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/T1/1">
+    <dcterms:title>T1</dcterms:title>
+    <sbol:displayId>T1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/T1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Y/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/T2/1">
+    <dcterms:title>T2</dcterms:title>
+    <sbol:displayId>T2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/T2"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Y/1"/>
+  </sd2:Implementation>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/biofab_protstab_022218_1_instrument_output_naive_P0_fcs/1">
+    <dcterms:title>biofab_protstab_022218_1_instrument_output_naive_P0_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_1_instrument_output_naive_P0_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/biofab_protstab_022218_1_instrument_output_naive_P0_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/instrument_output/naive-P0.fcs"/>
+  </sd2:Attachment>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/naive/1">
+    <dcterms:title>naive</dcterms:title>
+    <sbol:displayId>naive</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/naive"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Y/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/naive_P0/1">
+    <dcterms:title>naive_P0</dcterms:title>
+    <sbol:displayId>naive_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/naive_P0"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/Y/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/r1_negative_P0/1">
+    <dcterms:title>r1_negative_P0</dcterms:title>
+    <sbol:displayId>r1_negative_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/r1_negative_P0"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/d55555/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/r1_positive_C1/1">
+    <dcterms:title>r1_positive_C1</dcterms:title>
+    <sbol:displayId>r1_positive_C1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/r1_positive_C1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/r1_positive_P0/1">
+    <dcterms:title>r1_positive_P0</dcterms:title>
+    <sbol:displayId>r1_positive_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/r1_positive_P0"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/r1_positive_T1/1">
+    <dcterms:title>r1_positive_T1</dcterms:title>
+    <sbol:displayId>r1_positive_T1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/r1_positive_T1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+  </sd2:Implementation>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_C1_fcs/1">
+    <dcterms:title>biofab_protstab_022218_1_instrument_output_C1_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_1_instrument_output_C1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_C1_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/instrument_output/C1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_C2_fcs/1">
+    <dcterms:title>biofab_protstab_022218_1_instrument_output_C2_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_1_instrument_output_C2_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_C2_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/instrument_output/C2.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_T1_fcs/1">
+    <dcterms:title>biofab_protstab_022218_1_instrument_output_T1_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_1_instrument_output_T1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_T1_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/instrument_output/T1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_T2_fcs/1">
+    <dcterms:title>biofab_protstab_022218_1_instrument_output_T2_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_1_instrument_output_T2_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_T2_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/instrument_output/T2.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_r1_negative_P0_fcs/1">
+    <dcterms:title>biofab_protstab_022218_1_instrument_output_r1_negative_P0_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_1_instrument_output_r1_negative_P0_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_r1_negative_P0_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/instrument_output/r1-negative-P0.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_r1_positive_C1_fcs/1">
+    <dcterms:title>biofab_protstab_022218_1_instrument_output_r1_positive_C1_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_1_instrument_output_r1_positive_C1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_r1_positive_C1_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/instrument_output/r1-positive-C1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_r1_positive_P0_fcs/1">
+    <dcterms:title>biofab_protstab_022218_1_instrument_output_r1_positive_P0_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_1_instrument_output_r1_positive_P0_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_r1_positive_P0_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/instrument_output/r1-positive-P0.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_r1_positive_T1_fcs/1">
+    <dcterms:title>biofab_protstab_022218_1_instrument_output_r1_positive_T1_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_1_instrument_output_r1_positive_T1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_r1_positive_T1_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/instrument_output/r1-positive-T1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_C2_expressing_fcs/1">
+    <dcterms:title>biofab_protstab_022218_2_instrument_output_C2_expressing_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_2_instrument_output_C2_expressing_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_C2_expressing_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/instrument_output/C2-expressing.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_C3_fcs/1">
+    <dcterms:title>biofab_protstab_022218_2_instrument_output_C3_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_2_instrument_output_C3_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_C3_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/instrument_output/C3.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_C4_fcs/1">
+    <dcterms:title>biofab_protstab_022218_2_instrument_output_C4_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_2_instrument_output_C4_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_C4_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/instrument_output/C4.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_T2_expressing_fcs/1">
+    <dcterms:title>biofab_protstab_022218_2_instrument_output_T2_expressing_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_2_instrument_output_T2_expressing_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_T2_expressing_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/instrument_output/T2-expressing.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_T3_fcs/1">
+    <dcterms:title>biofab_protstab_022218_2_instrument_output_T3_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_2_instrument_output_T3_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_T3_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/instrument_output/T3.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_T4_fcs/1">
+    <dcterms:title>biofab_protstab_022218_2_instrument_output_T4_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_2_instrument_output_T4_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_T4_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/instrument_output/T4.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_r2_negative_P0_fcs/1">
+    <dcterms:title>biofab_protstab_022218_2_instrument_output_r2_negative_P0_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_2_instrument_output_r2_negative_P0_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_r2_negative_P0_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/instrument_output/r2-negative-P0.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_r2_positive_C1_fcs/1">
+    <dcterms:title>biofab_protstab_022218_2_instrument_output_r2_positive_C1_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_2_instrument_output_r2_positive_C1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_r2_positive_C1_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/instrument_output/r2-positive-C1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_r2_positive_P0_fcs/1">
+    <dcterms:title>biofab_protstab_022218_2_instrument_output_r2_positive_P0_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_2_instrument_output_r2_positive_P0_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_r2_positive_P0_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/instrument_output/r2-positive-P0.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_r2_positive_T1_fcs/1">
+    <dcterms:title>biofab_protstab_022218_2_instrument_output_r2_positive_T1_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_2_instrument_output_r2_positive_T1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_r2_positive_T1_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/instrument_output/r2-positive-T1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_C4_expressing_fcs/1">
+    <dcterms:title>biofab_protstab_022218_3_instrument_output_C4_expressing_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_3_instrument_output_C4_expressing_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_C4_expressing_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/instrument_output/C4-expressing.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_C5_fcs/1">
+    <dcterms:title>biofab_protstab_022218_3_instrument_output_C5_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_3_instrument_output_C5_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_C5_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/instrument_output/C5.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_C6_fcs/1">
+    <dcterms:title>biofab_protstab_022218_3_instrument_output_C6_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_3_instrument_output_C6_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_C6_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/instrument_output/C6.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_T4_expressing_fcs/1">
+    <dcterms:title>biofab_protstab_022218_3_instrument_output_T4_expressing_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_3_instrument_output_T4_expressing_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_T4_expressing_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/instrument_output/T4-expressing.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_T5_fcs/1">
+    <dcterms:title>biofab_protstab_022218_3_instrument_output_T5_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_3_instrument_output_T5_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_T5_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/instrument_output/T5.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_T6_fcs/1">
+    <dcterms:title>biofab_protstab_022218_3_instrument_output_T6_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_3_instrument_output_T6_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_T6_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/instrument_output/T6.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_r3_negative_P0_fcs/1">
+    <dcterms:title>biofab_protstab_022218_3_instrument_output_r3_negative_P0_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_3_instrument_output_r3_negative_P0_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_r3_negative_P0_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/instrument_output/r3-negative-P0.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_r3_positive_C1_fcs/1">
+    <dcterms:title>biofab_protstab_022218_3_instrument_output_r3_positive_C1_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_3_instrument_output_r3_positive_C1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_r3_positive_C1_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/instrument_output/r3-positive-C1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_r3_positive_P0_fcs/1">
+    <dcterms:title>biofab_protstab_022218_3_instrument_output_r3_positive_P0_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_3_instrument_output_r3_positive_P0_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_r3_positive_P0_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/instrument_output/r3-positive-P0.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_r3_positive_T1_fcs/1">
+    <dcterms:title>biofab_protstab_022218_3_instrument_output_r3_positive_T1_fcs</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_3_instrument_output_r3_positive_T1_fcs</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_r3_positive_T1_fcs"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/instrument_output/r3-positive-T1.fcs"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C1_fastq/1">
+    <dcterms:title>biofab_protstab_022218_4_instrument_output_C1_fastq</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_4_instrument_output_C1_fastq</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C1_fastq"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/instrument_output/C1.fastq"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C2_fastq/1">
+    <dcterms:title>biofab_protstab_022218_4_instrument_output_C2_fastq</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_4_instrument_output_C2_fastq</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C2_fastq"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/instrument_output/C2.fastq"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C3_fastq/1">
+    <dcterms:title>biofab_protstab_022218_4_instrument_output_C3_fastq</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_4_instrument_output_C3_fastq</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C3_fastq"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/instrument_output/C3.fastq"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C4_fastq/1">
+    <dcterms:title>biofab_protstab_022218_4_instrument_output_C4_fastq</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_4_instrument_output_C4_fastq</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C4_fastq"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/instrument_output/C4.fastq"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C5_fastq/1">
+    <dcterms:title>biofab_protstab_022218_4_instrument_output_C5_fastq</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_4_instrument_output_C5_fastq</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C5_fastq"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/instrument_output/C5.fastq"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C6_fastq/1">
+    <dcterms:title>biofab_protstab_022218_4_instrument_output_C6_fastq</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_4_instrument_output_C6_fastq</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C6_fastq"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/instrument_output/C6.fastq"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T1_fastq/1">
+    <dcterms:title>biofab_protstab_022218_4_instrument_output_T1_fastq</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_4_instrument_output_T1_fastq</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T1_fastq"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/instrument_output/T1.fastq"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T2_fastq/1">
+    <dcterms:title>biofab_protstab_022218_4_instrument_output_T2_fastq</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_4_instrument_output_T2_fastq</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T2_fastq"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/instrument_output/T2.fastq"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T3_fastq/1">
+    <dcterms:title>biofab_protstab_022218_4_instrument_output_T3_fastq</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_4_instrument_output_T3_fastq</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T3_fastq"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/instrument_output/T3.fastq"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T4_fastq/1">
+    <dcterms:title>biofab_protstab_022218_4_instrument_output_T4_fastq</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_4_instrument_output_T4_fastq</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T4_fastq"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/instrument_output/T4.fastq"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T5_fastq/1">
+    <dcterms:title>biofab_protstab_022218_4_instrument_output_T5_fastq</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_4_instrument_output_T5_fastq</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T5_fastq"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/instrument_output/T5.fastq"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T6_fastq/1">
+    <dcterms:title>biofab_protstab_022218_4_instrument_output_T6_fastq</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_4_instrument_output_T6_fastq</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T6_fastq"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/instrument_output/T6.fastq"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_naive_P0_fastq/1">
+    <dcterms:title>biofab_protstab_022218_4_instrument_output_naive_P0_fastq</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_4_instrument_output_naive_P0_fastq</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_naive_P0_fastq"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/instrument_output/naive-P0.fastq"/>
+  </sd2:Attachment>
+  <sd2:Attachment rdf:about="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_naive_fastq/1">
+    <dcterms:title>biofab_protstab_022218_4_instrument_output_naive_fastq</dcterms:title>
+    <sbol:displayId>biofab_protstab_022218_4_instrument_output_naive_fastq</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_naive_fastq"/>
+    <sbol:version>1</sbol:version>
+    <sd2:source rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/instrument_output/naive.fastq"/>
+  </sd2:Attachment>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/dna_seq_C1_to_C1_dna_seq_4/1">
+    <dcterms:title>DNA_SEQ Operator</dcterms:title>
+    <sbol:displayId>dna_seq_C1_to_C1_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_C1_to_C1_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/illumina_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#dna_seq"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_C1_to_C1_protstab_round_1_1/1"/>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/dna_seq_C2_to_C2_dna_seq_4/1">
+    <dcterms:title>DNA_SEQ Operator</dcterms:title>
+    <sbol:displayId>dna_seq_C2_to_C2_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_C2_to_C2_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/illumina_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#dna_seq"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_C2_to_C2_protstab_round_1_1/1"/>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/dna_seq_C3_to_C3_dna_seq_4/1">
+    <dcterms:title>DNA_SEQ Operator</dcterms:title>
+    <sbol:displayId>dna_seq_C3_to_C3_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_C3_to_C3_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/illumina_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#dna_seq"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C3_to_C3_protstab_round_2_on_2/1"/>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/dna_seq_C4_to_C4_dna_seq_4/1">
+    <dcterms:title>DNA_SEQ Operator</dcterms:title>
+    <sbol:displayId>dna_seq_C4_to_C4_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_C4_to_C4_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/illumina_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#dna_seq"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C4_to_C4_protstab_round_2_on_2/1"/>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/dna_seq_C5_to_C5_dna_seq_4/1">
+    <dcterms:title>DNA_SEQ Operator</dcterms:title>
+    <sbol:displayId>dna_seq_C5_to_C5_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_C5_to_C5_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/illumina_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#dna_seq"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C5_to_C5_protstab_round_2_on_3/1"/>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/dna_seq_C6_to_C6_dna_seq_4/1">
+    <dcterms:title>DNA_SEQ Operator</dcterms:title>
+    <sbol:displayId>dna_seq_C6_to_C6_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_C6_to_C6_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/illumina_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#dna_seq"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C6_to_C6_protstab_round_2_on_3/1"/>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/dna_seq_T1_to_T1_dna_seq_4/1">
+    <dcterms:title>DNA_SEQ Operator</dcterms:title>
+    <sbol:displayId>dna_seq_T1_to_T1_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_T1_to_T1_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/illumina_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#dna_seq"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_T1_to_T1_protstab_round_1_1/1"/>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/dna_seq_T2_to_T2_dna_seq_4/1">
+    <dcterms:title>DNA_SEQ Operator</dcterms:title>
+    <sbol:displayId>dna_seq_T2_to_T2_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_T2_to_T2_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/illumina_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#dna_seq"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_T2_to_T2_protstab_round_1_1/1"/>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/dna_seq_T3_to_T3_dna_seq_4/1">
+    <dcterms:title>DNA_SEQ Operator</dcterms:title>
+    <sbol:displayId>dna_seq_T3_to_T3_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_T3_to_T3_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/illumina_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#dna_seq"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T3_to_T3_protstab_round_2_on_2/1"/>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/dna_seq_T4_to_T4_dna_seq_4/1">
+    <dcterms:title>DNA_SEQ Operator</dcterms:title>
+    <sbol:displayId>dna_seq_T4_to_T4_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_T4_to_T4_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/illumina_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#dna_seq"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T4_to_T4_protstab_round_2_on_2/1"/>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/dna_seq_T5_to_T5_dna_seq_4/1">
+    <dcterms:title>DNA_SEQ Operator</dcterms:title>
+    <sbol:displayId>dna_seq_T5_to_T5_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_T5_to_T5_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/illumina_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#dna_seq"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T5_to_T5_protstab_round_2_on_3/1"/>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/dna_seq_T6_to_T6_dna_seq_4/1">
+    <dcterms:title>DNA_SEQ Operator</dcterms:title>
+    <sbol:displayId>dna_seq_T6_to_T6_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_T6_to_T6_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/illumina_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#dna_seq"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T6_to_T6_protstab_round_2_on_3/1"/>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/dna_seq_naive_P0_to_naive_P0_dna_seq_4/1">
+    <dcterms:title>DNA_SEQ Operator</dcterms:title>
+    <sbol:displayId>dna_seq_naive_P0_to_naive_P0_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_naive_P0_to_naive_P0_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/illumina_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#dna_seq"/>
+    <prov:wasInformedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_naive_P0_to_naive_P0_protstab_round_1_1/1"/>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/dna_seq_naive_to_naive_dna_seq_4/1">
+    <dcterms:title>DNA_SEQ Operator</dcterms:title>
+    <sbol:displayId>dna_seq_naive_to_naive_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_naive_to_naive_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/illumina_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/4/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#dna_seq"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/dna_seq_naive_to_naive_dna_seq_4/naive/1">
+        <sbol:displayId>naive</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_naive_to_naive_dna_seq_4/naive"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/naive/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/naive/1">
+    <dcterms:title>naive</dcterms:title>
+    <sbol:displayId>naive</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/naive"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Y_to_naive/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/naive_P0/1">
+    <dcterms:title>naive_P0</dcterms:title>
+    <sbol:displayId>naive_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/naive_P0"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Y_to_naive_P0/1"/>
+  </sd2:Implementation>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_C1_to_C1_protstab_round_1_1/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_C1_to_C1_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_C1_to_C1_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_C1_to_C1_protstab_round_1_1/C1/1">
+        <sbol:displayId>C1</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_C1_to_C1_protstab_round_1_1/C1"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/C1/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_C2_to_C2_protstab_round_1_1/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_C2_to_C2_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_C2_to_C2_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_C2_to_C2_protstab_round_1_1/C2/1">
+        <sbol:displayId>C2</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_C2_to_C2_protstab_round_1_1/C2"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/C2/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Chymotrypsin_Y_to_C1/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_Chymotrypsin_Y_to_C1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Chymotrypsin_Y_to_C1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Chymotrypsin_Y_to_C1/Chymotrypsin/1">
+        <sbol:displayId>Chymotrypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Chymotrypsin_Y_to_C1/Chymotrypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Chymotrypsin_Y_to_C1/Y/1">
+        <sbol:displayId>Y</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Chymotrypsin_Y_to_C1/Y"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Y/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Chymotrypsin_Y_to_C2/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_Chymotrypsin_Y_to_C2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Chymotrypsin_Y_to_C2"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Chymotrypsin_Y_to_C2/Chymotrypsin/1">
+        <sbol:displayId>Chymotrypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Chymotrypsin_Y_to_C2/Chymotrypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Chymotrypsin_Y_to_C2/Y/1">
+        <sbol:displayId>Y</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Chymotrypsin_Y_to_C2/Y"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Y/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_T1_to_T1_protstab_round_1_1/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_T1_to_T1_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_T1_to_T1_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_T1_to_T1_protstab_round_1_1/T1/1">
+        <sbol:displayId>T1</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_T1_to_T1_protstab_round_1_1/T1"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/T1/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_T2_to_T2_protstab_round_1_1/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_T2_to_T2_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_T2_to_T2_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_T2_to_T2_protstab_round_1_1/T2/1">
+        <sbol:displayId>T2</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_T2_to_T2_protstab_round_1_1/T2"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/T2/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Trypsin_Y_to_T1/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_Trypsin_Y_to_T1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Trypsin_Y_to_T1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Trypsin_Y_to_T1/Trypsin/1">
+        <sbol:displayId>Trypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Trypsin_Y_to_T1/Trypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Trypsin_Y_to_T1/Y/1">
+        <sbol:displayId>Y</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Trypsin_Y_to_T1/Y"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Y/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Trypsin_Y_to_T2/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_Trypsin_Y_to_T2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Trypsin_Y_to_T2"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Trypsin_Y_to_T2/Trypsin/1">
+        <sbol:displayId>Trypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Trypsin_Y_to_T2/Trypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Trypsin_Y_to_T2/Y/1">
+        <sbol:displayId>Y</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Trypsin_Y_to_T2/Y"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Y/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Y_to_naive/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_Y_to_naive</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Y_to_naive"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Y_to_naive/Y/1">
+        <sbol:displayId>Y</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Y_to_naive/Y"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Y/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Y_to_naive_P0/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_Y_to_naive_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Y_to_naive_P0"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_Y_to_naive_P0/Y/1">
+        <sbol:displayId>Y</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_Y_to_naive_P0/Y"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Y/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_d55555_to_r1_negative_P0/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_d55555_to_r1_negative_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_d55555_to_r1_negative_P0"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_d55555_to_r1_negative_P0/d55555/1">
+        <sbol:displayId>d55555</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_d55555_to_r1_negative_P0/d55555"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/d55555/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_d66666_to_r1_positive_C1/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_d66666_to_r1_positive_C1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_d66666_to_r1_positive_C1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_d66666_to_r1_positive_C1/d66666/1">
+        <sbol:displayId>d66666</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_d66666_to_r1_positive_C1/d66666"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_d66666_to_r1_positive_P0/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_d66666_to_r1_positive_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_d66666_to_r1_positive_P0"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_d66666_to_r1_positive_P0/d66666/1">
+        <sbol:displayId>d66666</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_d66666_to_r1_positive_P0/d66666"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_d66666_to_r1_positive_T1/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_d66666_to_r1_positive_T1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_d66666_to_r1_positive_T1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_d66666_to_r1_positive_T1/d66666/1">
+        <sbol:displayId>d66666</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_d66666_to_r1_positive_T1/d66666"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_naive_P0_to_naive_P0_protstab_round_1_1/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_naive_P0_to_naive_P0_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_naive_P0_to_naive_P0_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_naive_P0_to_naive_P0_protstab_round_1_1/naive_P0/1">
+        <sbol:displayId>naive_P0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_naive_P0_to_naive_P0_protstab_round_1_1/naive_P0"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/naive_P0/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_negative_P0_to_r1_negative_P0_protstab_round_1_1/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_r1_negative_P0_to_r1_negative_P0_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_negative_P0_to_r1_negative_P0_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_negative_P0_to_r1_negative_P0_protstab_round_1_1/r1_negative_P0/1">
+        <sbol:displayId>r1_negative_P0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_negative_P0_to_r1_negative_P0_protstab_round_1_1/r1_negative_P0"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/r1_negative_P0/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_positive_C1_to_r1_positive_C1_protstab_round_1_1/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_r1_positive_C1_to_r1_positive_C1_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_positive_C1_to_r1_positive_C1_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_positive_C1_to_r1_positive_C1_protstab_round_1_1/r1_positive_C1/1">
+        <sbol:displayId>r1_positive_C1</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_positive_C1_to_r1_positive_C1_protstab_round_1_1/r1_positive_C1"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/r1_positive_C1/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_positive_P0_to_r1_positive_P0_protstab_round_1_1/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_r1_positive_P0_to_r1_positive_P0_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_positive_P0_to_r1_positive_P0_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_positive_P0_to_r1_positive_P0_protstab_round_1_1/r1_positive_P0/1">
+        <sbol:displayId>r1_positive_P0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_positive_P0_to_r1_positive_P0_protstab_round_1_1/r1_positive_P0"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/r1_positive_P0/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_positive_T1_to_r1_positive_T1_protstab_round_1_1/1">
+    <dcterms:description>Round 1</dcterms:description>
+    <dcterms:title>Step 1</dcterms:title>
+    <sbol:displayId>protstab_round_1_r1_positive_T1_to_r1_positive_T1_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_positive_T1_to_r1_positive_T1_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/1/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_1"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_positive_T1_to_r1_positive_T1_protstab_round_1_1/r1_positive_T1/1">
+        <sbol:displayId>r1_positive_T1</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_positive_T1_to_r1_positive_T1_protstab_round_1_1/r1_positive_T1"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/r1_positive_T1/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C2_expressing_to_C2_expressing_protstab_round_2_on_2/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_C2_expressing_to_C2_expressing_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C2_expressing_to_C2_expressing_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C2_expressing_to_C2_expressing_protstab_round_2_on_2/C2_expressing/1">
+        <sbol:displayId>C2_expressing</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C2_expressing_to_C2_expressing_protstab_round_2_on_2/C2_expressing"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/C2_expressing/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C3_to_C3_protstab_round_2_on_2/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_C3_to_C3_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C3_to_C3_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C3_to_C3_protstab_round_2_on_2/C3/1">
+        <sbol:displayId>C3</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C3_to_C3_protstab_round_2_on_2/C3"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/C3/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C4_expressing_to_C4_expressing_protstab_round_2_on_3/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_C4_expressing_to_C4_expressing_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C4_expressing_to_C4_expressing_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C4_expressing_to_C4_expressing_protstab_round_2_on_3/C4_expressing/1">
+        <sbol:displayId>C4_expressing</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C4_expressing_to_C4_expressing_protstab_round_2_on_3/C4_expressing"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/C4_expressing/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C4_to_C4_protstab_round_2_on_2/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_C4_to_C4_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C4_to_C4_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C4_to_C4_protstab_round_2_on_2/C4/1">
+        <sbol:displayId>C4</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C4_to_C4_protstab_round_2_on_2/C4"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/C4/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C5_to_C5_protstab_round_2_on_3/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_C5_to_C5_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C5_to_C5_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C5_to_C5_protstab_round_2_on_3/C5/1">
+        <sbol:displayId>C5</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C5_to_C5_protstab_round_2_on_3/C5"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/C5/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C6_to_C6_protstab_round_2_on_3/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_C6_to_C6_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C6_to_C6_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C6_to_C6_protstab_round_2_on_3/C6/1">
+        <sbol:displayId>C6</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C6_to_C6_protstab_round_2_on_3/C6"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/C6/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C2_expressing/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_Chymotrypsin_C2_to_C2_expressing</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C2_expressing"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C2_expressing/C2/1">
+        <sbol:displayId>C2</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C2_expressing/C2"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/C2/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C2_expressing/Chymotrypsin/1">
+        <sbol:displayId>Chymotrypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C2_expressing/Chymotrypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C3/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_Chymotrypsin_C2_to_C3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C3"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C3/C2/1">
+        <sbol:displayId>C2</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C3/C2"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/C2/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C3/Chymotrypsin/1">
+        <sbol:displayId>Chymotrypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C3/Chymotrypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C4/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_Chymotrypsin_C2_to_C4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C4/C2/1">
+        <sbol:displayId>C2</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C4/C2"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/C2/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C4/Chymotrypsin/1">
+        <sbol:displayId>Chymotrypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C2_to_C4/Chymotrypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C4_expressing/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_Chymotrypsin_C4_to_C4_expressing</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C4_expressing"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C4_expressing/C4/1">
+        <sbol:displayId>C4</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C4_expressing/C4"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/C4/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C4_expressing/Chymotrypsin/1">
+        <sbol:displayId>Chymotrypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C4_expressing/Chymotrypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C5/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_Chymotrypsin_C4_to_C5</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C5"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C5/C4/1">
+        <sbol:displayId>C4</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C5/C4"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/C4/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C5/Chymotrypsin/1">
+        <sbol:displayId>Chymotrypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C5/Chymotrypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C6/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_Chymotrypsin_C4_to_C6</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C6"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C6/C4/1">
+        <sbol:displayId>C4</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C6/C4"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/C4/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C6/Chymotrypsin/1">
+        <sbol:displayId>Chymotrypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Chymotrypsin_C4_to_C6/Chymotrypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Chymotrypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T2_expressing_to_T2_expressing_protstab_round_2_on_2/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_T2_expressing_to_T2_expressing_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T2_expressing_to_T2_expressing_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T2_expressing_to_T2_expressing_protstab_round_2_on_2/T2_expressing/1">
+        <sbol:displayId>T2_expressing</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T2_expressing_to_T2_expressing_protstab_round_2_on_2/T2_expressing"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/T2_expressing/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T3_to_T3_protstab_round_2_on_2/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_T3_to_T3_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T3_to_T3_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T3_to_T3_protstab_round_2_on_2/T3/1">
+        <sbol:displayId>T3</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T3_to_T3_protstab_round_2_on_2/T3"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/T3/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T4_expressing_to_T4_expressing_protstab_round_2_on_3/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_T4_expressing_to_T4_expressing_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T4_expressing_to_T4_expressing_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T4_expressing_to_T4_expressing_protstab_round_2_on_3/T4_expressing/1">
+        <sbol:displayId>T4_expressing</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T4_expressing_to_T4_expressing_protstab_round_2_on_3/T4_expressing"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/T4_expressing/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T4_to_T4_protstab_round_2_on_2/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_T4_to_T4_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T4_to_T4_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T4_to_T4_protstab_round_2_on_2/T4/1">
+        <sbol:displayId>T4</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T4_to_T4_protstab_round_2_on_2/T4"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/T4/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T5_to_T5_protstab_round_2_on_3/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_T5_to_T5_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T5_to_T5_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T5_to_T5_protstab_round_2_on_3/T5/1">
+        <sbol:displayId>T5</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T5_to_T5_protstab_round_2_on_3/T5"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/T5/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T6_to_T6_protstab_round_2_on_3/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_T6_to_T6_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T6_to_T6_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T6_to_T6_protstab_round_2_on_3/T6/1">
+        <sbol:displayId>T6</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T6_to_T6_protstab_round_2_on_3/T6"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/T6/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T2_expressing/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_Trypsin_T2_to_T2_expressing</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T2_expressing"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T2_expressing/T2/1">
+        <sbol:displayId>T2</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T2_expressing/T2"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/T2/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T2_expressing/Trypsin/1">
+        <sbol:displayId>Trypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T2_expressing/Trypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T3/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_Trypsin_T2_to_T3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T3"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T3/T2/1">
+        <sbol:displayId>T2</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T3/T2"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/T2/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T3/Trypsin/1">
+        <sbol:displayId>Trypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T3/Trypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T4/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_Trypsin_T2_to_T4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T4"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T4/T2/1">
+        <sbol:displayId>T2</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T4/T2"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/T2/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T4/Trypsin/1">
+        <sbol:displayId>Trypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T2_to_T4/Trypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T4_expressing/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_Trypsin_T4_to_T4_expressing</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T4_expressing"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T4_expressing/T4/1">
+        <sbol:displayId>T4</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T4_expressing/T4"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/T4/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T4_expressing/Trypsin/1">
+        <sbol:displayId>Trypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T4_expressing/Trypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T5/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_Trypsin_T4_to_T5</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T5"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T5/T4/1">
+        <sbol:displayId>T4</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T5/T4"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/T4/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T5/Trypsin/1">
+        <sbol:displayId>Trypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T5/Trypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T6/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_Trypsin_T4_to_T6</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T6"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T6/T4/1">
+        <sbol:displayId>T4</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T6/T4"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/T4/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T6/Trypsin/1">
+        <sbol:displayId>Trypsin</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_Trypsin_T4_to_T6/Trypsin"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/Trypsin/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d55555_to_r2_negative_P0/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_d55555_to_r2_negative_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d55555_to_r2_negative_P0"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d55555_to_r2_negative_P0/d55555/1">
+        <sbol:displayId>d55555</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d55555_to_r2_negative_P0/d55555"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/d55555/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d55555_to_r3_negative_P0/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_d55555_to_r3_negative_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d55555_to_r3_negative_P0"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d55555_to_r3_negative_P0/d55555/1">
+        <sbol:displayId>d55555</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d55555_to_r3_negative_P0/d55555"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/d55555/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r2_positive_C1/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_d66666_to_r2_positive_C1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r2_positive_C1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r2_positive_C1/d66666/1">
+        <sbol:displayId>d66666</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r2_positive_C1/d66666"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r2_positive_P0/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_d66666_to_r2_positive_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r2_positive_P0"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r2_positive_P0/d66666/1">
+        <sbol:displayId>d66666</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r2_positive_P0/d66666"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r2_positive_T1/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_d66666_to_r2_positive_T1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r2_positive_T1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r2_positive_T1/d66666/1">
+        <sbol:displayId>d66666</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r2_positive_T1/d66666"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r3_positive_C1/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_d66666_to_r3_positive_C1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r3_positive_C1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r3_positive_C1/d66666/1">
+        <sbol:displayId>d66666</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r3_positive_C1/d66666"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r3_positive_P0/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_d66666_to_r3_positive_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r3_positive_P0"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r3_positive_P0/d66666/1">
+        <sbol:displayId>d66666</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r3_positive_P0/d66666"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r3_positive_T1/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_d66666_to_r3_positive_T1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r3_positive_T1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r3_positive_T1/d66666/1">
+        <sbol:displayId>d66666</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r3_positive_T1/d66666"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#design"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_negative_P0_to_r2_negative_P0_protstab_round_2_on_2/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_r2_negative_P0_to_r2_negative_P0_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_negative_P0_to_r2_negative_P0_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_negative_P0_to_r2_negative_P0_protstab_round_2_on_2/r2_negative_P0/1">
+        <sbol:displayId>r2_negative_P0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_negative_P0_to_r2_negative_P0_protstab_round_2_on_2/r2_negative_P0"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/r2_negative_P0/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_positive_C1_to_r2_positive_C1_protstab_round_2_on_2/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_r2_positive_C1_to_r2_positive_C1_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_positive_C1_to_r2_positive_C1_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_positive_C1_to_r2_positive_C1_protstab_round_2_on_2/r2_positive_C1/1">
+        <sbol:displayId>r2_positive_C1</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_positive_C1_to_r2_positive_C1_protstab_round_2_on_2/r2_positive_C1"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/r2_positive_C1/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_positive_P0_to_r2_positive_P0_protstab_round_2_on_2/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_r2_positive_P0_to_r2_positive_P0_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_positive_P0_to_r2_positive_P0_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_positive_P0_to_r2_positive_P0_protstab_round_2_on_2/r2_positive_P0/1">
+        <sbol:displayId>r2_positive_P0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_positive_P0_to_r2_positive_P0_protstab_round_2_on_2/r2_positive_P0"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/r2_positive_P0/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_positive_T1_to_r2_positive_T1_protstab_round_2_on_2/1">
+    <dcterms:title>Step 2</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_r2_positive_T1_to_r2_positive_T1_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_positive_T1_to_r2_positive_T1_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/2/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_positive_T1_to_r2_positive_T1_protstab_round_2_on_2/r2_positive_T1/1">
+        <sbol:displayId>r2_positive_T1</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_positive_T1_to_r2_positive_T1_protstab_round_2_on_2/r2_positive_T1"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/r2_positive_T1/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_negative_P0_to_r3_negative_P0_protstab_round_2_on_3/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_r3_negative_P0_to_r3_negative_P0_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_negative_P0_to_r3_negative_P0_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_negative_P0_to_r3_negative_P0_protstab_round_2_on_3/r3_negative_P0/1">
+        <sbol:displayId>r3_negative_P0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_negative_P0_to_r3_negative_P0_protstab_round_2_on_3/r3_negative_P0"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/r3_negative_P0/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_positive_C1_to_r3_positive_C1_protstab_round_2_on_3/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_r3_positive_C1_to_r3_positive_C1_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_positive_C1_to_r3_positive_C1_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_positive_C1_to_r3_positive_C1_protstab_round_2_on_3/r3_positive_C1/1">
+        <sbol:displayId>r3_positive_C1</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_positive_C1_to_r3_positive_C1_protstab_round_2_on_3/r3_positive_C1"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/r3_positive_C1/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_positive_P0_to_r3_positive_P0_protstab_round_2_on_3/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_r3_positive_P0_to_r3_positive_P0_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_positive_P0_to_r3_positive_P0_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_positive_P0_to_r3_positive_P0_protstab_round_2_on_3/r3_positive_P0/1">
+        <sbol:displayId>r3_positive_P0</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_positive_P0_to_r3_positive_P0_protstab_round_2_on_3/r3_positive_P0"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/r3_positive_P0/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <prov:Activity rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_positive_T1_to_r3_positive_T1_protstab_round_2_on_3/1">
+    <dcterms:title>Protstab Operator</dcterms:title>
+    <sbol:displayId>protstab_round_2_on_r3_positive_T1_to_r3_positive_T1_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_positive_T1_to_r3_positive_T1_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <sd2:instrument_configuration rdf:resource="agave://data-sd2e-community/biofab/instruments/aria_configuration.json"/>
+    <sd2:manifest rdf:resource="agave://data-sd2e-community/biofab/protstab/022218/3/manifest/manifest.json"/>
+    <sd2:operatorType rdf:resource="http://sd2e.org#protstab_round_2_on"/>
+    <prov:qualifiedUsage>
+      <prov:Usage rdf:about="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_positive_T1_to_r3_positive_T1_protstab_round_2_on_3/r3_positive_T1/1">
+        <sbol:displayId>r3_positive_T1</sbol:displayId>
+        <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_positive_T1_to_r3_positive_T1_protstab_round_2_on_3/r3_positive_T1"/>
+        <sbol:version>1</sbol:version>
+        <prov:entity rdf:resource="http://hub.sd2e.org/user/sd2e/r3_positive_T1/1"/>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#build"/>
+      </prov:Usage>
+    </prov:qualifiedUsage>
+  </prov:Activity>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/r1_negative_P0/1">
+    <dcterms:title>r1_negative_P0</dcterms:title>
+    <sbol:displayId>r1_negative_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/r1_negative_P0"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_d55555_to_r1_negative_P0/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/r1_positive_C1/1">
+    <dcterms:title>r1_positive_C1</dcterms:title>
+    <sbol:displayId>r1_positive_C1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/r1_positive_C1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_d66666_to_r1_positive_C1/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/r1_positive_P0/1">
+    <dcterms:title>r1_positive_P0</dcterms:title>
+    <sbol:displayId>r1_positive_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/r1_positive_P0"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_d66666_to_r1_positive_P0/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/r1_positive_T1/1">
+    <dcterms:title>r1_positive_T1</dcterms:title>
+    <sbol:displayId>r1_positive_T1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/r1_positive_T1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_d66666_to_r1_positive_T1/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/r2_negative_P0/1">
+    <dcterms:title>r2_negative_P0</dcterms:title>
+    <sbol:displayId>r2_negative_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/r2_negative_P0"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/d55555/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d55555_to_r2_negative_P0/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/r2_positive_C1/1">
+    <dcterms:title>r2_positive_C1</dcterms:title>
+    <sbol:displayId>r2_positive_C1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/r2_positive_C1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r2_positive_C1/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/r2_positive_P0/1">
+    <dcterms:title>r2_positive_P0</dcterms:title>
+    <sbol:displayId>r2_positive_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/r2_positive_P0"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r2_positive_P0/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/r2_positive_T1/1">
+    <dcterms:title>r2_positive_T1</dcterms:title>
+    <sbol:displayId>r2_positive_T1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/r2_positive_T1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r2_positive_T1/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/r3_negative_P0/1">
+    <dcterms:title>r3_negative_P0</dcterms:title>
+    <sbol:displayId>r3_negative_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/r3_negative_P0"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/d55555/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d55555_to_r3_negative_P0/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/r3_positive_C1/1">
+    <dcterms:title>r3_positive_C1</dcterms:title>
+    <sbol:displayId>r3_positive_C1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/r3_positive_C1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r3_positive_C1/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/r3_positive_P0/1">
+    <dcterms:title>r3_positive_P0</dcterms:title>
+    <sbol:displayId>r3_positive_P0</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/r3_positive_P0"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r3_positive_P0/1"/>
+  </sd2:Implementation>
+  <sd2:Implementation rdf:about="http://hub.sd2e.org/user/sd2e/r3_positive_T1/1">
+    <dcterms:title>r3_positive_T1</dcterms:title>
+    <sbol:displayId>r3_positive_T1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/r3_positive_T1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="https://hub.sd2e.org/user/sd2e/design/d66666/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_d66666_to_r3_positive_T1/1"/>
+  </sd2:Implementation>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/C1_dna_seq_4/1">
+    <dcterms:title>C1_dna_seq_4</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C1_fastq/1"/>
+    <sbol:displayId>C1_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/C1_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C1/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_C1_to_C1_dna_seq_4/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/C1_protstab_round_1_1/1">
+    <dcterms:title>C1_protstab_round_1_1</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_C1_fcs/1"/>
+    <sbol:displayId>C1_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/C1_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C1/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_C1_to_C1_protstab_round_1_1/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/C2_dna_seq_4/1">
+    <dcterms:title>C2_dna_seq_4</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C2_fastq/1"/>
+    <sbol:displayId>C2_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/C2_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C2/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_C2_to_C2_dna_seq_4/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/C2_expressing_protstab_round_2_on_2/1">
+    <dcterms:title>C2_expressing_protstab_round_2_on_2</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_C2_expressing_fcs/1"/>
+    <sbol:displayId>C2_expressing_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/C2_expressing_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C2_expressing/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C2_expressing_to_C2_expressing_protstab_round_2_on_2/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/C2_protstab_round_1_1/1">
+    <dcterms:title>C2_protstab_round_1_1</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_C2_fcs/1"/>
+    <sbol:displayId>C2_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/C2_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C2/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_C2_to_C2_protstab_round_1_1/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/C3_dna_seq_4/1">
+    <dcterms:title>C3_dna_seq_4</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C3_fastq/1"/>
+    <sbol:displayId>C3_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/C3_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C3/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_C3_to_C3_dna_seq_4/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/C3_protstab_round_2_on_2/1">
+    <dcterms:title>C3_protstab_round_2_on_2</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_C3_fcs/1"/>
+    <sbol:displayId>C3_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/C3_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C3/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C3_to_C3_protstab_round_2_on_2/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/C4_dna_seq_4/1">
+    <dcterms:title>C4_dna_seq_4</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C4_fastq/1"/>
+    <sbol:displayId>C4_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/C4_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C4/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_C4_to_C4_dna_seq_4/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/C4_expressing_protstab_round_2_on_3/1">
+    <dcterms:title>C4_expressing_protstab_round_2_on_3</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_C4_expressing_fcs/1"/>
+    <sbol:displayId>C4_expressing_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/C4_expressing_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C4_expressing/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C4_expressing_to_C4_expressing_protstab_round_2_on_3/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/C4_protstab_round_2_on_2/1">
+    <dcterms:title>C4_protstab_round_2_on_2</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_C4_fcs/1"/>
+    <sbol:displayId>C4_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/C4_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C4/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C4_to_C4_protstab_round_2_on_2/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/C5_dna_seq_4/1">
+    <dcterms:title>C5_dna_seq_4</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C5_fastq/1"/>
+    <sbol:displayId>C5_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/C5_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C5/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_C5_to_C5_dna_seq_4/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/C5_protstab_round_2_on_3/1">
+    <dcterms:title>C5_protstab_round_2_on_3</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_C5_fcs/1"/>
+    <sbol:displayId>C5_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/C5_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C5/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C5_to_C5_protstab_round_2_on_3/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/C6_dna_seq_4/1">
+    <dcterms:title>C6_dna_seq_4</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_C6_fastq/1"/>
+    <sbol:displayId>C6_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/C6_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C6/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_C6_to_C6_dna_seq_4/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/C6_protstab_round_2_on_3/1">
+    <dcterms:title>C6_protstab_round_2_on_3</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_C6_fcs/1"/>
+    <sbol:displayId>C6_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/C6_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/C6/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_C6_to_C6_protstab_round_2_on_3/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/T1_dna_seq_4/1">
+    <dcterms:title>T1_dna_seq_4</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T1_fastq/1"/>
+    <sbol:displayId>T1_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/T1_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T1/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_T1_to_T1_dna_seq_4/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/T1_protstab_round_1_1/1">
+    <dcterms:title>T1_protstab_round_1_1</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_T1_fcs/1"/>
+    <sbol:displayId>T1_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/T1_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T1/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_T1_to_T1_protstab_round_1_1/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/T2_dna_seq_4/1">
+    <dcterms:title>T2_dna_seq_4</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T2_fastq/1"/>
+    <sbol:displayId>T2_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/T2_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T2/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_T2_to_T2_dna_seq_4/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/T2_expressing_protstab_round_2_on_2/1">
+    <dcterms:title>T2_expressing_protstab_round_2_on_2</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_T2_expressing_fcs/1"/>
+    <sbol:displayId>T2_expressing_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/T2_expressing_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T2_expressing/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T2_expressing_to_T2_expressing_protstab_round_2_on_2/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/T2_protstab_round_1_1/1">
+    <dcterms:title>T2_protstab_round_1_1</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_T2_fcs/1"/>
+    <sbol:displayId>T2_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/T2_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T2/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_T2_to_T2_protstab_round_1_1/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/T3_dna_seq_4/1">
+    <dcterms:title>T3_dna_seq_4</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T3_fastq/1"/>
+    <sbol:displayId>T3_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/T3_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T3/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_T3_to_T3_dna_seq_4/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/T3_protstab_round_2_on_2/1">
+    <dcterms:title>T3_protstab_round_2_on_2</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_T3_fcs/1"/>
+    <sbol:displayId>T3_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/T3_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T3/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T3_to_T3_protstab_round_2_on_2/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/T4_dna_seq_4/1">
+    <dcterms:title>T4_dna_seq_4</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T4_fastq/1"/>
+    <sbol:displayId>T4_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/T4_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T4/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_T4_to_T4_dna_seq_4/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/T4_expressing_protstab_round_2_on_3/1">
+    <dcterms:title>T4_expressing_protstab_round_2_on_3</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_T4_expressing_fcs/1"/>
+    <sbol:displayId>T4_expressing_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/T4_expressing_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T4_expressing/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T4_expressing_to_T4_expressing_protstab_round_2_on_3/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/T4_protstab_round_2_on_2/1">
+    <dcterms:title>T4_protstab_round_2_on_2</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_T4_fcs/1"/>
+    <sbol:displayId>T4_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/T4_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T4/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T4_to_T4_protstab_round_2_on_2/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/T5_dna_seq_4/1">
+    <dcterms:title>T5_dna_seq_4</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T5_fastq/1"/>
+    <sbol:displayId>T5_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/T5_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T5/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_T5_to_T5_dna_seq_4/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/T5_protstab_round_2_on_3/1">
+    <dcterms:title>T5_protstab_round_2_on_3</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_T5_fcs/1"/>
+    <sbol:displayId>T5_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/T5_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T5/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T5_to_T5_protstab_round_2_on_3/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/T6_dna_seq_4/1">
+    <dcterms:title>T6_dna_seq_4</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_T6_fastq/1"/>
+    <sbol:displayId>T6_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/T6_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T6/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_T6_to_T6_dna_seq_4/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/T6_protstab_round_2_on_3/1">
+    <dcterms:title>T6_protstab_round_2_on_3</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_T6_fcs/1"/>
+    <sbol:displayId>T6_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/T6_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/T6/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_T6_to_T6_protstab_round_2_on_3/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/naive_P0_dna_seq_4/1">
+    <dcterms:title>naive_P0_dna_seq_4</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_naive_P0_fastq/1"/>
+    <sbol:displayId>naive_P0_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/naive_P0_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/naive_P0/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_naive_P0_to_naive_P0_dna_seq_4/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/naive_P0_protstab_round_1_1/1">
+    <dcterms:title>naive_P0_protstab_round_1_1</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/biofab_protstab_022218_1_instrument_output_naive_P0_fcs/1"/>
+    <sbol:displayId>naive_P0_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/naive_P0_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_prot_stab_q0_1_022218/naive_P0/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_naive_P0_to_naive_P0_protstab_round_1_1/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/naive_dna_seq_4/1">
+    <dcterms:title>naive_dna_seq_4</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_4_instrument_output_naive_fastq/1"/>
+    <sbol:displayId>naive_dna_seq_4</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/naive_dna_seq_4"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/naive/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/dna_seq_naive_to_naive_dna_seq_4/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/r1_negative_P0_protstab_round_1_1/1">
+    <dcterms:title>r1_negative_P0_protstab_round_1_1</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_r1_negative_P0_fcs/1"/>
+    <sbol:displayId>r1_negative_P0_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/r1_negative_P0_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/r1_negative_P0/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_negative_P0_to_r1_negative_P0_protstab_round_1_1/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/r1_positive_C1_protstab_round_1_1/1">
+    <dcterms:title>r1_positive_C1_protstab_round_1_1</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_r1_positive_C1_fcs/1"/>
+    <sbol:displayId>r1_positive_C1_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/r1_positive_C1_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/r1_positive_C1/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_positive_C1_to_r1_positive_C1_protstab_round_1_1/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/r1_positive_P0_protstab_round_1_1/1">
+    <dcterms:title>r1_positive_P0_protstab_round_1_1</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_r1_positive_P0_fcs/1"/>
+    <sbol:displayId>r1_positive_P0_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/r1_positive_P0_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/r1_positive_P0/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_positive_P0_to_r1_positive_P0_protstab_round_1_1/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/r1_positive_T1_protstab_round_1_1/1">
+    <dcterms:title>r1_positive_T1_protstab_round_1_1</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_1_instrument_output_r1_positive_T1_fcs/1"/>
+    <sbol:displayId>r1_positive_T1_protstab_round_1_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/r1_positive_T1_protstab_round_1_1"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/r1_positive_T1/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_1_r1_positive_T1_to_r1_positive_T1_protstab_round_1_1/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/r2_negative_P0_protstab_round_2_on_2/1">
+    <dcterms:title>r2_negative_P0_protstab_round_2_on_2</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_r2_negative_P0_fcs/1"/>
+    <sbol:displayId>r2_negative_P0_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/r2_negative_P0_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/r2_negative_P0/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_negative_P0_to_r2_negative_P0_protstab_round_2_on_2/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/r2_positive_C1_protstab_round_2_on_2/1">
+    <dcterms:title>r2_positive_C1_protstab_round_2_on_2</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_r2_positive_C1_fcs/1"/>
+    <sbol:displayId>r2_positive_C1_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/r2_positive_C1_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/r2_positive_C1/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_positive_C1_to_r2_positive_C1_protstab_round_2_on_2/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/r2_positive_P0_protstab_round_2_on_2/1">
+    <dcterms:title>r2_positive_P0_protstab_round_2_on_2</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_r2_positive_P0_fcs/1"/>
+    <sbol:displayId>r2_positive_P0_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/r2_positive_P0_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/r2_positive_P0/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_positive_P0_to_r2_positive_P0_protstab_round_2_on_2/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/r2_positive_T1_protstab_round_2_on_2/1">
+    <dcterms:title>r2_positive_T1_protstab_round_2_on_2</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_2_instrument_output_r2_positive_T1_fcs/1"/>
+    <sbol:displayId>r2_positive_T1_protstab_round_2_on_2</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/r2_positive_T1_protstab_round_2_on_2"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/r2_positive_T1/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r2_positive_T1_to_r2_positive_T1_protstab_round_2_on_2/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/r3_negative_P0_protstab_round_2_on_3/1">
+    <dcterms:title>r3_negative_P0_protstab_round_2_on_3</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_r3_negative_P0_fcs/1"/>
+    <sbol:displayId>r3_negative_P0_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/r3_negative_P0_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/r3_negative_P0/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_negative_P0_to_r3_negative_P0_protstab_round_2_on_3/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/r3_positive_C1_protstab_round_2_on_3/1">
+    <dcterms:title>r3_positive_C1_protstab_round_2_on_3</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_r3_positive_C1_fcs/1"/>
+    <sbol:displayId>r3_positive_C1_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/r3_positive_C1_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/r3_positive_C1/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_positive_C1_to_r3_positive_C1_protstab_round_2_on_3/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/r3_positive_P0_protstab_round_2_on_3/1">
+    <dcterms:title>r3_positive_P0_protstab_round_2_on_3</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_r3_positive_P0_fcs/1"/>
+    <sbol:displayId>r3_positive_P0_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/r3_positive_P0_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/r3_positive_P0/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_positive_P0_to_r3_positive_P0_protstab_round_2_on_3/1"/>
+  </sd2:ExperimentalData>
+  <sd2:ExperimentalData rdf:about="https://hub.sd2e.org/user/sd2e/r3_positive_T1_protstab_round_2_on_3/1">
+    <dcterms:title>r3_positive_T1_protstab_round_2_on_3</dcterms:title>
+    <sbol:attachment rdf:resource="http://hub.sd2e.org/user/sd2e/biofab_protstab_022218_3_instrument_output_r3_positive_T1_fcs/1"/>
+    <sbol:displayId>r3_positive_T1_protstab_round_2_on_3</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="https://hub.sd2e.org/user/sd2e/r3_positive_T1_protstab_round_2_on_3"/>
+    <sbol:version>1</sbol:version>
+    <prov:wasDerivedFrom rdf:resource="http://hub.sd2e.org/user/sd2e/r3_positive_T1/1"/>
+    <prov:wasGeneratedBy rdf:resource="http://hub.sd2e.org/user/sd2e/protstab_round_2_on_r3_positive_T1_to_r3_positive_T1_protstab_round_2_on_3/1"/>
+  </sd2:ExperimentalData>
+</rdf:RDF>

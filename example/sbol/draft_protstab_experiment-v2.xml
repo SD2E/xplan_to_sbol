@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:prov="http://www.w3.org/ns/prov#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:sbol="http://sbols.org/v2#"
+   xmlns:sd2="http://sd2e.org#"
+   xmlns:sys-bio="http://sys-bio.org#">
+  <sd2:Experiment rdf:about="http://hub.sd2e.org/user/sd2e/experiment/biofab_prot_stab_q0_1_022218/1">
+    <dcterms:title>Protein Stability Hand-coded Plan</dcterms:title>
+    <sbol:displayId>biofab_prot_stab_q0_1_022218</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/experiment/biofab_prot_stab_q0_1_022218"/>
+    <sbol:version>1</sbol:version>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/C1_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/C1_protstab_round_1_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/C2_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/C2_expressing_protstab_round_2_on_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/C2_protstab_round_1_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/C3_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/C3_protstab_round_2_on_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/C4_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/C4_expressing_protstab_round_2_on_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/C4_protstab_round_2_on_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/C5_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/C5_protstab_round_2_on_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/C6_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/C6_protstab_round_2_on_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/T1_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/T1_protstab_round_1_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/T2_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/T2_expressing_protstab_round_2_on_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/T2_protstab_round_1_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/T3_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/T3_protstab_round_2_on_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/T4_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/T4_expressing_protstab_round_2_on_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/T4_protstab_round_2_on_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/T5_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/T5_protstab_round_2_on_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/T6_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/T6_protstab_round_2_on_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/naive_P0_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/naive_P0_protstab_round_1_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/naive_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/r1_negative_P0_protstab_round_1_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/r1_positive_C1_protstab_round_1_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/r1_positive_P0_protstab_round_1_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/r1_positive_T1_protstab_round_1_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/r2_negative_P0_protstab_round_2_on_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/r2_positive_C1_protstab_round_2_on_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/r2_positive_P0_protstab_round_2_on_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/r2_positive_T1_protstab_round_2_on_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/r3_negative_P0_protstab_round_2_on_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/r3_positive_C1_protstab_round_2_on_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/r3_positive_P0_protstab_round_2_on_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/r3_positive_T1_protstab_round_2_on_3/1"/>
+  </sd2:Experiment>
+</rdf:RDF>

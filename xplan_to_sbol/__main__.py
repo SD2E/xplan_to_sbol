@@ -4,6 +4,15 @@ import sys
 from urllib.parse import urlparse
 from pySBOLx.pySBOLx import XDocument
 
+SD2_NS = 'http://hub.sd2e.org/user/sd2e'
+SD2_NS_HTTPS = 'https://hub.sd2e.org/user/sd2e'
+SD2_DESIGN_ID = 'design'
+SD2_EXP_ID = 'experiment'
+SD2_DESIGN_NAME = 'SD2 Designs'
+SD2_EXP_NAME = 'SD2 Experiments'
+SD2_DESIGN_NS = ''.join([SD2_NS, '/', SD2_DESIGN_ID])
+SD2_EXP_NS = ''.join([SD2_NS, '/', SD2_EXP_ID])
+
 def load_alnum_id(id_data):
     if id_data.replace('_', '').replace('-', '').isalnum():
         return id_data.replace('-', '_')
@@ -39,9 +48,9 @@ def load_build_activity(src_entity_keys, doc, operator, act_dict, act_name=None,
                 src_entities.append(load_sample(src_entity_key, doc))
 
     if dest_sample_key is None:
-            act = doc.create_activity(operator, src_entities, act_name, act_desc, custom)
+        act = doc.create_activity(operator, src_entities, act_name, act_desc, custom)
 
-            act_dict[src_entity_key] = act
+        act_dict[src_entity_key] = act
     else:
         dest_sample = load_sample(dest_sample_key, doc)
 
@@ -149,12 +158,12 @@ def load_step_activities(step_data, doc, exp_data_dict, act_dict, om):
     operator_data = step_data['operator']
 
     try:
-        load_upload_activity(operator_data, doc, exp_data_dict, act_dict)
+        load_operator_activities(operator_data, doc, act_dict, om)
     except:
         pass
 
     try:
-        load_operator_activities(operator_data, doc, act_dict, om)
+        load_upload_activity(operator_data, doc, exp_data_dict, act_dict)
     except:
         pass
 
@@ -178,11 +187,16 @@ def load_dest_sample_key(sample_data):
     return sample_key.replace('https', 'http')
 
 def load_sample(sample_key, doc, condition=None, src_samples=[], measures=[]):
-    sample_id = load_alnum_id(sample_key)
+    if sample_key.startswith('https://hub.sd2e.org/user/sd2e/design'):
+        print(sample_key)
 
-    print(sample_id)
+        return sample_key
+    else:
+        sample_id = load_alnum_id(sample_key)
 
-    return doc.create_sample(sample_id, condition, src_samples, measures)
+        print(sample_id)
+
+        return doc.create_sample(sample_id, condition, src_samples, measures)
 
 def load_src_sample_data(sample_data):
     try:
@@ -383,7 +397,9 @@ def load_experimental_data(operator_data, doc, replicate_id, exp, exp_data_dict)
         file_key = repr(file_paths)
 
         if file_key not in exp_data_dict:
+            doc.configure_namespace(SD2_NS_HTTPS)
             exp_data_dict[file_key] = doc.create_experimental_data(attachs, sample, exp, operator, replicate_id)
+            doc.configure_namespace(SD2_NS)
 
 def load_sample_data(operator_data):
     try:
@@ -452,74 +468,112 @@ def load_step_entities(step_data, doc, exp, exp_data_dict, om):
     operator_data = step_data['operator']
 
     try:
-        load_experimental_data(operator_data, doc, repr(step_data['id']), exp, exp_data_dict)
-    except:
-        pass
-
-    try:
         load_operator_samples(operator_data, doc, om)
     except:
         pass
 
+    try:
+        load_experimental_data(operator_data, doc, repr(step_data['id']), exp, exp_data_dict)
+    except:
+        pass
+    
 def load_experiment(plan_data, doc):
     exp_id = load_alnum_id(plan_data['id'])
 
     return doc.create_experiment(exp_id, plan_data['name'])
 
-# def load_experiment_collection(plan_data, prob_doc, exp_doc):
-#     exp_collect_id = load_alnum_id(plan_data['id'])
+def load_design_doc():
+    doc = XDocument()
 
-#     return prob_doc.create_collection(exp_collect_id, plan_data['name'])
+    doc.displayId = SD2_DESIGN_ID
+    doc.name = SD2_DESIGN_NAME
+    doc.version = '1'
 
-def convert_xplan_to_sbol(plan_data, exp_space, om_path, validate):
-    exp_doc = XDocument()
+    return doc
 
-    om = exp_doc.read_om(om_path)
+def load_experiment_doc():
+    doc = XDocument()
 
-    exp_data_dict = {}
+    doc.displayId = SD2_EXP_ID
+    doc.name = SD2_EXP_NAME
+    doc.version = '1'
 
-    exp_doc.configure_options(exp_space, validate, False)
+    return doc
+
+def load_plan_doc(plan_data):
+    exp_id = load_alnum_id(plan_data['id'])
+
+    doc = XDocument()
+
+    doc.displayId = exp_id
+    doc.name = plan_data['name']
+    doc.version = '1'
+
+    return doc
+
+def convert_xplan_to_sbol(plan_data, plan_path, exp_path, om_path, validate, namespace=None):
+    exp_doc = load_experiment_doc()
+
+    exp_doc.configure_namespace(SD2_EXP_NS)
+    exp_doc.configure_options(validate, False)
 
     exp = load_experiment(plan_data, exp_doc)
 
+    plan_doc = load_plan_doc(plan_data)
+
+    if namespace is None:
+        plan_doc.configure_namespace(''.join([SD2_NS, '/', exp.displayId]))
+    else:
+        plan_doc.configure_namespace(namespace)
+
+    exp_data_dict = {}
+
+    om = plan_doc.read_om(om_path)
+
     for step_data in plan_data['steps']:
-        load_step_entities(step_data, exp_doc, exp, exp_data_dict, om)
+        load_step_entities(step_data, plan_doc, exp, exp_data_dict, om)
     
     act_dict = {}
 
     for step_data in plan_data['steps']:
-        load_step_activities(step_data, exp_doc, exp_data_dict, act_dict, om)
+        load_step_activities(step_data, plan_doc, exp_data_dict, act_dict, om)
 
-    return exp_doc
+    return (plan_doc, exp_doc)
 
 def main(args=None):
     if args is None:
         args = sys.argv[1:]
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-xp', '--xplan_path')
-    parser.add_argument('-es', '--exp_space')
-    parser.add_argument('-op', '--om_path')
-    parser.add_argument('-va', '--validate', action='store_true')
-    parser.add_argument('-ep', '--exp_path', nargs='?', default=None)
-    parser.add_argument('-ds', '--design_space', nargs='?', default=None)
-    parser.add_argument('-dp', '--design_path', nargs='?', default=None)
-    parser.add_argument('-su', '--sbh_url', nargs='?', default=None)
-    parser.add_argument('-se', '--sbh_email', nargs='?', default=None)
-    parser.add_argument('-sp', '--sbh_password', nargs='?', default=None)
+    parser.add_argument('-i', '--input')
+    parser.add_argument('-o1', '--plan', nargs='?', default='example/sbol/plan.xml')
+    parser.add_argument('-o2', '--experiment', nargs='?', default='example/sbol/experiment.xml')
+    # parser.add_argument('-o3', '--design', nargs='?', default=None)
+    parser.add_argument('-m', '--om', nargs='?', default='example/om/om-2.0.rdf')
+    parser.add_argument('-v', '--validate', action='store_true')
+    parser.add_argument('-n', '--namespace', nargs='?', default=None)
+    parser.add_argument('-u', '--url', nargs='?', default='https://hub.sd2e.org/')
+    parser.add_argument('-e', '--email', nargs='?', default='sd2_service@sd2e.org')
+    parser.add_argument('-p', '--password', nargs='?', default=None)
     
     args = parser.parse_args(args)
 
-    with open(args.xplan_path) as plan_file:
+    with open(args.input) as plan_file:
         plan_data = json.load(plan_file)
 
-        exp_doc = convert_xplan_to_sbol(plan_data, args.exp_space, args.om_path, args.validate)
+        docs = convert_xplan_to_sbol(plan_data, args.plan, args.experiment, args.om, args.validate, args.namespace)
 
-        if args.exp_path is not None:
-            exp_doc.write(args.exp_path)
+        docs[0].write(args.plan)
+        docs[1].write(args.experiment)
 
-        if args.sbh_url is not None and args.sbh_email is not None and args.sbh_password is not None:
-            exp_doc.upload(args.sbh_url, args.sbh_email, args.sbh_password)
+        # if args.design is not None:
+        #     docs[2].write(args.design)
+
+        if args.password is not None:
+            docs[0].upload(args.url, args.email, args.password)
+            docs[1].upload(args.url, args.email, args.password)
+
+            # docs[2].upload(args.url, args.email, args.password)
 
     print('done')
 
