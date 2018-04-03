@@ -509,7 +509,10 @@ def load_plan_doc(plan_data):
 
     doc.displayId = exp_id
     doc.name = plan_data['name']
-    doc.description = plan_data['description']
+    try:
+        doc.description = plan_data['description']
+    except:
+        doc.description = "This collection contains metadata for an experiment carried out as part of an SD2 challenge problem."
     doc.version = '1'
 
     return doc
