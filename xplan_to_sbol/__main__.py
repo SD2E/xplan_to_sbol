@@ -12,6 +12,7 @@ SD2_DESIGN_NAME = 'SD2 Designs'
 SD2_EXP_NAME = 'SD2 Experiments'
 SD2_DESIGN_NS = ''.join([SD2_NS, '/', SD2_DESIGN_ID])
 SD2_EXP_NS = ''.join([SD2_NS, '/', SD2_EXP_ID])
+SD2_EXP_COLLECTION = 'https://hub.sd2e.org/user/sd2e/experiment/experiment_collection/1'
 
 def load_alnum_id(id_data):
     if id_data.replace('_', '').replace('-', '').isalnum():
@@ -397,9 +398,9 @@ def load_experimental_data(operator_data, doc, replicate_id, exp, exp_data_dict)
         file_key = repr(file_paths)
 
         if file_key not in exp_data_dict:
-            # doc.configure_namespace(SD2_NS_HTTPS)
-            exp_data_dict[file_key] = doc.create_experimental_data(attachs, sample, exp, operator, replicate_id)
-            # doc.configure_namespace(SD2_NS)
+            exp_data_dict[file_key] = doc.create_experimental_data(attachs, sample, operator, replicate_id)
+            
+            exp.experimentalData.add(exp_data_dict[file_key].identity.replace('http', 'https'))
 
 def load_sample_data(operator_data):
     try:
@@ -496,7 +497,7 @@ def load_experiment_doc():
 
     doc.displayId = SD2_EXP_ID
     doc.name = SD2_EXP_NAME
-    doc.description = "This is a collection of all experiments carried out as part of the Protein Stability challenge problem for SD2."
+    doc.description = "This collection contains all experiments carried out as part of the DARPA SD2 (Synergistic Discovery and Design) program, as well as sub-collections for each challenge problem in the program."
     doc.version = '1'
 
     return doc
@@ -508,7 +509,7 @@ def load_plan_doc(plan_data):
 
     doc.displayId = exp_id
     doc.name = plan_data['name']
-    doc.description = "This collection contains metadata for an experiment carried out as part of the Protein STability challenge problem for SD2."
+    doc.description = plan_data['description']
     doc.version = '1'
 
     return doc
@@ -571,7 +572,7 @@ def main(args=None):
 
         if args.password is not None:
             docs[0].upload(args.url, args.email, args.password)
-            docs[1].upload(args.url, args.email, args.password)
+            docs[1].upload(args.url, args.email, args.password, SD2_EXP_COLLECTION, 2)
 
     print('done')
 
