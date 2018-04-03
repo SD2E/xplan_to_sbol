@@ -415,6 +415,7 @@
       "id": 4
     }
   ],
+  "description": "This collection contains metadata for an experiment carried out as part of the Protein Stability challenge problem for SD2.",
   "name": "Protein Stability Hand-coded Plan",
   "id": "https://hub.sd2e.org/user/sd2e/experiment/biofab_prot_stab_q0_1_022218/1",
   "experimentSet": "https://hub.sd2e.org/user/sd2e/experiment/prot_stab/1",
