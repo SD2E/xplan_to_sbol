@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 from pySBOLx.pySBOLx import XDocument
 
 SD2_NS = 'http://hub.sd2e.org/user/sd2e'
-SD2_NS_HTTPS = 'https://hub.sd2e.org/user/sd2e'
+SD2_HTTPS_NS = 'https://hub.sd2e.org/user/sd2e'
 SD2_DESIGN_ID = 'design'
 SD2_EXP_ID = 'experiment'
 SD2_DESIGN_NAME = 'SD2 Designs'
@@ -557,6 +557,7 @@ def main(args=None):
     # parser.add_argument('-o3', '--design', nargs='?', default=None)
     parser.add_argument('-m', '--om', nargs='?', default='example/om/om-2.0.rdf')
     parser.add_argument('-v', '--validate', action='store_true')
+    parser.add_argument('-w', '--overwrite', action='store_true')
     parser.add_argument('-n', '--namespace', nargs='?', default=None)
     parser.add_argument('-u', '--url', nargs='?', default='https://hub.sd2e.org/')
     parser.add_argument('-e', '--email', nargs='?', default='sd2_service@sd2e.org')
@@ -574,8 +575,17 @@ def main(args=None):
             docs[1].write(args.experiment)
 
         if args.password is not None:
-            docs[0].upload(args.url, args.email, args.password)
-            docs[1].upload(args.url, args.email, args.password, SD2_EXP_COLLECTION, 2)
+            result = docs[0].upload(args.url, args.email, args.password)
+            if result == 'Submission id and version already in use':
+                if args.overwrite:
+                    docs[0].upload(args.url, args.email, args.password, ''.join[SD2_HTTPS_NS, '/', docs[0].displayId, '/', docs[0].displayId + '_collection/1'], 1)
+                    docs[1].upload(args.url, args.email, args.password, SD2_EXP_COLLECTION, 2)
+                    print('Plan overwritten.')
+                else:
+                    print('Plan ID is already used and would be overwritten. Upload aborted. To overwrite, include -w in arguments.')
+            else:
+                docs[1].upload(args.url, args.email, args.password, SD2_EXP_COLLECTION, 2)
+                print('Plan uploaded.')
 
     print('done')
 
