@@ -578,7 +578,7 @@ def main(args=None):
             result = docs[0].upload(args.url, args.email, args.password)
             if result == 'Submission id and version already in use':
                 if args.overwrite:
-                    docs[0].upload(args.url, args.email, args.password, ''.join[SD2_HTTPS_NS, '/', docs[0].displayId, '/', docs[0].displayId + '_collection/1'], 1)
+                    docs[0].upload(args.url, args.email, args.password, ''.join([SD2_HTTPS_NS, '/', docs[0].displayId, '/', docs[0].displayId + '_collection/1']), 1)
                     docs[1].upload(args.url, args.email, args.password, SD2_EXP_COLLECTION, 2)
                     print('Plan overwritten.')
                 else:
