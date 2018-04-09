@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:prov="http://www.w3.org/ns/prov#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:sbol="http://sbols.org/v2#"
+   xmlns:sd2="http://sd2e.org#"
+   xmlns:sys-bio="http://sys-bio.org#">
+  <sd2:Experiment rdf:about="http://hub.sd2e.org/user/sd2e/experiment/biofab_protstab_Q2_1/1">
+    <dcterms:title>protstab-Q2_1_biofab_d52f22774-6dd2-4dfd-b8fd-cc0f7e84f92c_Plan</dcterms:title>
+    <sbol:displayId>biofab_protstab_Q2_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/experiment/biofab_protstab_Q2_1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s796_R1498_protstab_round_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s796_R2084_protstab_round_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s796_R2670_protstab_round_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s827_R1343_protstab_round_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s827_R1396_protstab_round_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s827_R1449_protstab_round_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s827_R1905_protstab_round_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s827_R1966_protstab_round_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s827_R2027_protstab_round_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s827_R2491_protstab_round_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s827_R2552_protstab_round_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s827_R2613_protstab_round_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1047_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1047_protstab_round_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1128_R1590_protstab_round_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1128_R1645_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1128_R1645_protstab_round_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1128_R1700_R2176_protstab_round_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1128_R1700_R2231_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1128_R1700_R2231_protstab_round_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1128_R1700_R2286_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1128_R1700_R2286_protstab_round_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1128_R1700_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1128_R1700_protstab_round_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1128_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1128_protstab_round_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1209_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1209_protstab_round_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1290_R1748_protstab_round_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1290_R1796_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1290_R1796_protstab_round_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1290_R1844_R2334_protstab_round_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1290_R1844_R2382_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1290_R1844_R2382_protstab_round_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1290_R1844_R2430_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1290_R1844_R2430_protstab_round_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1290_R1844_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1290_R1844_protstab_round_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1290_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R1290_protstab_round_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R966_dna_seq_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_R966_protstab_round_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_protstab_Q2_1/s858_dna_seq_4/1"/>
+  </sd2:Experiment>
+</rdf:RDF>
