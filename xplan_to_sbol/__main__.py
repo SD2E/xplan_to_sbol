@@ -5,13 +5,15 @@ from urllib.parse import urlparse
 from pySBOLx.pySBOLx import XDocument
 
 SD2_NS = 'http://hub.sd2e.org/user/sd2e'
-SD2_HTTPS_NS = 'https://hub.sd2e.org/user/sd2e'
+SD2S_NS = 'https://hub.sd2e.org/user/sd2e'
 SD2_DESIGN_ID = 'design'
 SD2_EXP_ID = 'experiment'
 SD2_DESIGN_NAME = 'SD2 Designs'
 SD2_EXP_NAME = 'SD2 Experiments'
 SD2_DESIGN_NS = ''.join([SD2_NS, '/', SD2_DESIGN_ID])
 SD2_EXP_NS = ''.join([SD2_NS, '/', SD2_EXP_ID])
+SD2S_DESIGN_NS = ''.join([SD2S_NS, '/', SD2_DESIGN_ID])
+SD2S_EXP_NS = ''.join([SD2S_NS, '/', SD2_EXP_ID])
 SD2_EXP_COLLECTION = 'https://hub.sd2e.org/user/sd2e/experiment/experiment_collection/1'
 
 def load_alnum_id(id_data):
@@ -106,7 +108,7 @@ def load_channels(operator_data):
 
     return channels
 
-def load_upload_activity(operator_data, doc, exp_data_dict, act_dict):
+def load_test_activity(operator_data, doc, exp_data_dict, act_dict):
     operator = operator_data['type'].replace('-', '_')
 
     if operator == 'uploadData':
@@ -164,7 +166,7 @@ def load_step_activities(step_data, doc, exp_data_dict, act_dict, om):
         pass
 
     try:
-        load_upload_activity(operator_data, doc, exp_data_dict, act_dict)
+        load_test_activity(operator_data, doc, exp_data_dict, act_dict)
     except:
         pass
 
@@ -188,7 +190,7 @@ def load_dest_sample_key(sample_data):
     return sample_key.replace('https', 'http')
 
 def load_sample(sample_key, doc, condition=None, src_samples=[], measures=[]):
-    if sample_key.startswith('https://hub.sd2e.org/user/sd2e/design'):
+    if sample_key.startswith(SD2S_DESIGN_NS):
         print(sample_key)
 
         return sample_key
@@ -312,11 +314,23 @@ def load_inducers(condition_data, doc, om, measures):
     return [doc.create_inducer(inducer_id, inducer_id)]
 
 def load_condition(condition_data, doc, om, plasmid=None):
+    src_samples = load_src_samples(condition_data, doc)
+
+    built = []
+
+    for src_sample in src_samples:
+        if isinstance(src_sample, str):
+            built.append(src_sample)
+        else:
+            try:
+                built.append(src_sample.built)
+            except:
+                pass
+
     try:
         devices = load_strains(condition_data, doc)
     except:
         devices = []
-
     if plasmid is not None:
         if isinstance(plasmid, str):
             devices.append(plasmid)
@@ -324,26 +338,26 @@ def load_condition(condition_data, doc, om, plasmid=None):
             for plasm in plasmid:
                 devices.append(plasm)
 
-    sub_systems = []
-    try:
-        src_samples = load_src_samples(condition_data, doc)
-
-        for src_sample in src_samples:
-            for sub_system in doc.get_systems(src_sample.built):
-                sub_systems.append(sub_system)
-    except:
-        pass
-
     measures = {}
     try:
         inputs = load_inducers(condition_data, doc, om, measures)
     except:
         inputs = []
 
-    if len(sub_systems) == 1 and len(devices) == 0 and len(inputs) == 0:
-        return sub_systems[0]
-    elif len(devices) > 0 or len(sub_systems) > 1 or len(inputs) > 0:
+    sub_systems = []
+    if len(built) > 1 or len(devices) > 0 or len(inputs) > 0:
+        for bu in built:
+            try:
+                devices.append(doc.get_device(bu))
+            except:
+                sub_systems.append(doc.get_system(bu))
+
+    if len(devices) > 1 or len(sub_systems) > 1 or len(inputs) > 0:
         return doc.create_system(devices, sub_systems, inputs, measures)
+    elif len(sub_systems) == 1 and len(devices) == 0:
+        return sub_systems[0]
+    elif len(sub_systems) == 0 and len(devices) == 1:
+        return devices[0]
     else:
         return None
 
@@ -578,7 +592,7 @@ def main(args=None):
             result = docs[0].upload(args.url, args.email, args.password)
             if result == 'Submission id and version already in use':
                 if args.overwrite:
-                    docs[0].upload(args.url, args.email, args.password, ''.join([SD2_HTTPS_NS, '/', docs[0].displayId, '/', docs[0].displayId + '_collection/1']), 1)
+                    docs[0].upload(args.url, args.email, args.password, ''.join([SD2S_NS, '/', docs[0].displayId, '/', docs[0].displayId + '_collection/1']), 1)
                     docs[1].upload(args.url, args.email, args.password, SD2_EXP_COLLECTION, 2)
                     print('Plan overwritten.')
                 else:
