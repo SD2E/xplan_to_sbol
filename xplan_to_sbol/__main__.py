@@ -191,6 +191,7 @@ def load_dest_sample_key(sample_data):
 
 def load_sample(sample_key, doc, condition=None, src_samples=[], measures=[]):
     if sample_key.startswith(SD2S_DESIGN_NS):
+
         print(sample_key)
 
         return sample_key
@@ -344,20 +345,23 @@ def load_condition(condition_data, doc, om, plasmid=None):
     except:
         inputs = []
 
-    sub_systems = []
-    if len(built) > 1 or len(devices) > 0 or len(inputs) > 0:
+    if len(built) + len(devices) + len(inputs) > 1:
+        sub_systems = []
         for bu in built:
             try:
                 devices.append(doc.get_device(bu))
             except:
-                sub_systems.append(doc.get_system(bu))
-
-    if len(devices) > 1 or len(sub_systems) > 1 or len(inputs) > 0:
+                try:
+                    sub_systems.append(doc.get_system(bu))
+                except:
+                    return None
         return doc.create_system(devices, sub_systems, inputs, measures)
-    elif len(sub_systems) == 1 and len(devices) == 0:
-        return sub_systems[0]
-    elif len(sub_systems) == 0 and len(devices) == 1:
+    elif len(built) == 1:
+        return built[0]
+    elif len(devices) == 1:
         return devices[0]
+    elif len(inputs) == 1:
+        return inputs[0]
     else:
         return None
 
