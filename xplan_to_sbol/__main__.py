@@ -17,8 +17,8 @@ SD2S_EXP_NS = ''.join([SD2S_NS, '/', SD2_EXP_ID])
 SD2_EXP_COLLECTION = 'https://hub.sd2e.org/user/sd2e/experiment/experiment_collection/1'
 
 def load_alnum_id(id_data):
-    if id_data.replace('_', '').replace('-', '').isalnum():
-        return id_data.replace('-', '_')
+    if id_data.replace('_', '').replace('-', '').replace(':', '').isalnum():
+        return id_data.replace('-', '_').replace(':', '')
     else:
         parsed_uri = urlparse(id_data)
 
@@ -495,6 +495,48 @@ def load_step_entities(step_data, doc, exp, exp_data_dict, om):
         load_experimental_data(operator_data, doc, repr(step_data['id']), exp, exp_data_dict)
     except:
         pass
+
+def load_experimental_intent(plan_data, doc, exp, exp_vars, out_vars):
+    intent_data = plan_data['intent']
+
+    exp_design = doc.create_experimental_design(load_alnum_id(plan_data['id']) + '_design')
+
+    for dv_data in intent_data['diagnostic-variables']:
+        doc.create_diagnostic_variable(exp_design, load_alnum_id(dv_data['name']), dv_data['name'])
+
+    for ev_data in intent_data['experimental-variables']:
+        exp_vars.append(doc.create_experimental_variable(exp_design, load_alnum_id(ev_data['name']), ev_data['name']))
+
+    for ov_data in intent_data['outcome-variables']:
+        out_vars.append(doc.create_outcome_variable(exp_design, load_alnum_id(ov_data['name']), ov_data['name']))
+
+    exp.experimentalDesign.add(exp_design.identity.replace('http', 'https'))
+
+    return exp_design
+
+def load_truth_table(plan_data, doc, exp_design, exp_vars, out_vars):
+    intent_data = plan_data['intent']
+    table_data = intent_data['truth-table']
+    input_data = table_data['input']
+
+    plan_id = load_alnum_id(plan_data['id'])
+
+    exp_conditions = []
+    for i in range(0, len(input_data)):
+        condition_id = 'condition_' + str(i + 1)
+        exp_condition = doc.create_experimental_condition(exp_design=exp_design, display_id=condition_id, definition=input_data[i]['strain'])
+        exp_conditions.append(exp_condition)
+
+        exp_var_data = input_data[i]['experimental-variables']
+        for j in range(0, len(exp_var_data)):
+            input_id = 'input_' + str(j + 1)
+            doc.create_experimental_level(exp_condition, [exp_vars[j]], str(exp_var_data[j]), input_id)
+
+    output_data = table_data['output']
+    for i in range(0, len(output_data)):
+        doc.create_outcome_level(exp_conditions[i], out_vars, str(output_data[i]), 'output')
+
+    return exp_conditions
     
 def load_experiment(plan_data, doc):
     exp_id = load_alnum_id(plan_data['id'])
@@ -537,18 +579,26 @@ def load_plan_doc(plan_data):
 
 def convert_xplan_to_sbol(plan_data, plan_path, exp_path, om_path, validate, namespace=None):
     exp_doc = load_experiment_doc()
-
     exp_doc.configure_namespace(SD2_EXP_NS)
     exp_doc.configure_options(validate, False)
 
     exp = load_experiment(plan_data, exp_doc)
 
     plan_doc = load_plan_doc(plan_data)
-
     if namespace is None:
         plan_doc.configure_namespace(''.join([SD2_NS, '/', exp.displayId]))
     else:
         plan_doc.configure_namespace(namespace)
+
+    try:
+        exp_vars = []
+        out_vars = []
+
+        exp_intent = load_experimental_intent(plan_data, plan_doc, exp, exp_vars, out_vars)
+
+        load_truth_table(plan_data, plan_doc, exp_intent, exp_vars, out_vars)
+    except:
+        pass
 
     exp_data_dict = {}
 
