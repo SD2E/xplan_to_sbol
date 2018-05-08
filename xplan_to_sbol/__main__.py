@@ -502,13 +502,22 @@ def load_experimental_intent(plan_data, doc, exp, exp_vars, out_vars):
     exp_design = doc.create_experimental_design(load_alnum_id(plan_data['id']) + '_design')
 
     for dv_data in intent_data['diagnostic-variables']:
-        doc.create_diagnostic_variable(exp_design, load_alnum_id(dv_data['name']), dv_data['name'])
+        try:
+            doc.create_diagnostic_variable(exp_design=exp_design, display_id=load_alnum_id(dv_data['uri']), name=dv_data['name'], definition=dv_data['uri'])
+        except:
+            doc.create_diagnostic_variable(exp_design, load_alnum_id(dv_data['name']), dv_data['name'])
 
     for ev_data in intent_data['experimental-variables']:
-        exp_vars.append(doc.create_experimental_variable(exp_design, load_alnum_id(ev_data['name']), ev_data['name']))
+        try:
+            exp_vars.append(doc.create_experimental_variable(exp_design=exp_design, display_id=load_alnum_id(ev_data['uri']), name=ev_data['name'], definition=ev_data['uri']))
+        except:
+            exp_vars.append(doc.create_experimental_variable(exp_design, load_alnum_id(ev_data['name']), ev_data['name']))
 
     for ov_data in intent_data['outcome-variables']:
-        out_vars.append(doc.create_outcome_variable(exp_design, load_alnum_id(ov_data['name']), ov_data['name']))
+        try:
+            out_vars.append(doc.create_outcome_variable(exp_design=exp_design, display_id=load_alnum_id(ov_data['uri']), name=ov_data['name'], definition=ov_data['uri']))
+        except:
+            out_vars.append(doc.create_outcome_variable(exp_design, load_alnum_id(ov_data['name']), ov_data['name']))
 
     exp.experimentalDesign.add(exp_design.identity.replace('http', 'https'))
 
