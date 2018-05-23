@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:prov="http://www.w3.org/ns/prov#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:sbol="http://sbols.org/v2#"
+   xmlns:sd2="http://sd2e.org#"
+   xmlns:sys-bio="http://sys-bio.org#">
+  <sd2:Experiment rdf:about="http://hub.sd2e.org/user/sd2e/experiment/biofab_yeast_gates_q0_1/1">
+    <dcterms:title>yeast-gates_q0_1_biofab_a5ed7f68-18db-4a39-b8d1-e511b12c2457_Plan</dcterms:title>
+    <sbol:displayId>biofab_yeast_gates_q0_1</sbol:displayId>
+    <sbol:persistentIdentity rdf:resource="http://hub.sd2e.org/user/sd2e/experiment/biofab_yeast_gates_q0_1"/>
+    <sbol:version>1</sbol:version>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_0/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_1/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_10/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_11/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_12/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_13/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_14/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_15/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_16/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_17/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_18/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_19/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_2/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_20/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_21/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_22/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_23/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_24/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_25/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_26/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_27/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_28/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_29/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_3/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_30/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_31/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_32/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_33/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_34/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_35/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_36/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_37/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_38/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_39/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_4/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_40/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_41/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_42/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_43/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_44/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_45/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_46/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_47/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_48/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_49/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_5/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_50/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_51/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_52/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_53/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_54/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_6/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_7/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_8/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_11_9/1"/>
+    <sd2:experimentalData rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/data_5_0/1"/>
+    <sd2:experimentalDesign rdf:resource="https://hub.sd2e.org/user/sd2e/biofab_yeast_gates_q0_1/biofab_yeast_gates_q0_1_design/1"/>
+  </sd2:Experiment>
+</rdf:RDF>
