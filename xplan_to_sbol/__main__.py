@@ -231,7 +231,9 @@ def load_sample(sample_key, doc, condition=None, src_samples=[], measures=[]):
 
         print(sample_id)
 
-        return doc.create_sample(sample_id, condition, src_samples, measures)
+        sam = doc.create_sample(sample_id, condition, src_samples, measures)
+
+        return sam
 
 def load_src_sample_data(sample_data):
     try:
@@ -361,11 +363,6 @@ def load_condition(condition_data, doc, om, plasmid=None):
     for src_sample in src_samples:
         if isinstance(src_sample, str):
             built.append(src_sample)
-        else:
-            try:
-                built.append(src_sample.built)
-            except:
-                pass
 
     try:
         devices = load_strains(condition_data, doc)
