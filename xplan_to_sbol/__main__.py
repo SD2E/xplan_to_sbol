@@ -240,15 +240,18 @@ def load_src_sample_data(sample_data):
         src_sample_data = sample_data['sources']
     except:
         try:
-            src_sample_data = sample_data['source']
+            src_sample_data = sample_data['source']['sample']
         except:
             try:
-                src_sample_data = sample_data['sample']['source']
+                src_sample_data = sample_data['source']
             except:
                 try:
-                    src_sample_data = sample_data['resource']
+                    src_sample_data = sample_data['sample']['source']
                 except:
-                    src_sample_data = sample_data['src']
+                    try:
+                        src_sample_data = sample_data['resource']
+                    except:
+                        src_sample_data = sample_data['src']
 
     return src_sample_data
 
@@ -257,19 +260,22 @@ def load_dest_sample_data(sample_data):
         dest_sample_data = sample_data['destinations']
     except:
         try:
-            dest_sample_data = sample_data['destination']
+            dest_sample_data = sample_data['destination']['sample']
         except:
             try:
-                dest_sample_data = sample_data['sample']['destination']
+                dest_sample_data = sample_data['destination']
             except:
                 try:
-                    src_sample_data = sample_data['resource']
-                    dest_sample_data = sample_data['sample']
+                    dest_sample_data = sample_data['sample']['destination']
                 except:
                     try:
-                        dest_sample_data = sample_data['dests']
+                        src_sample_data = sample_data['resource']
+                        dest_sample_data = sample_data['sample']
                     except:
-                        dest_sample_data = sample_data['dest'] 
+                        try:
+                            dest_sample_data = sample_data['dests']
+                        except:
+                            dest_sample_data = sample_data['dest'] 
 
     return dest_sample_data
 
