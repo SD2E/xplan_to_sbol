@@ -1,8 +1,11 @@
 import argparse
 import json
 import sys
+import os
 from urllib.parse import urlparse
 from pySBOLx.pySBOLx import XDocument
+from synbiohub_adapter.upload_sbol import SynBioHub
+from SPARQLWrapper import SPARQLWrapper, JSON
 
 SD2_NS = 'http://hub.sd2e.org/user/sd2e'
 SD2S_NS = 'https://hub.sd2e.org/user/sd2e'
@@ -691,6 +694,140 @@ def convert_xplan_to_sbol(plan_data, plan_path, exp_path, om_path, validate, nam
 
     return (plan_doc, exp_doc)
 
+"""
+Does the intent already exist? e.g. for re-upload
+"""
+def read_intent(plan_data):
+
+    plan_id = plan_data['id']
+    intent_file_name = plan_data['experiment_id'] + '_intent.json'
+
+    sparql = SPARQLWrapper("https://hub-api.sd2e.org/sparql")
+    query = """
+    select ?attachment_name where
+    {{
+      <{}> <http://wiki.synbiohub.org/wiki/Terms/synbiohub#attachment> ?attachment_id .
+      ?attachment_id <http://purl.org/dc/terms/title> ?attachment_name .
+    }}
+    """.format(plan_id)
+
+    sparql.setQuery(query)
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+    
+    if len(results['results']['bindings']) != 0:
+        for attachment_value in results['results']['bindings']:
+            found_attachment_name = attachment_value['attachment_name']['value']
+            if intent_file_name == found_attachment_name:
+                print("Already found attachment, skipping")
+                return True
+    return False
+
+"""
+Link the plan's intent to the plan URI as an attachment
+Skips the attachment if a file already exists with the same name
+"""
+def post_upload_intent(plan_data, url, email, password):
+
+    found_intent = read_intent(plan_data)
+    if found_intent:
+        return True
+
+    plan_id = plan_data['id']
+    intent_data = plan_data['intent']
+    intent_file_name = plan_data['experiment_id'] + '_intent.json'
+
+    sbh = SynBioHub(url,
+                    email,
+                    password,
+                    'http://hub-api.sd2e.org:80/sparql',
+                    {'http://sd2e.org#bead_model', 'http://sd2e.org#bead_batch'})
+
+    print("Attaching intent")
+    with open(intent_file_name, "w") as outfile:
+        json.dump(intent_data, outfile)
+
+    sbh.attach_file(intent_file_name, plan_id)
+    os.remove(intent_file_name)
+    return True
+
+"""
+Link some control information, if known: beads, wild-type to the plan URI
+This supports plan-automated FCS processing
+"""
+def post_upload_controls(plan_data):
+
+    plan_id = plan_data['id']
+    sparql = SPARQLWrapper("https://hub-api.sd2e.org/sparql")
+
+    save_bead_uri = None
+    save_wt_uri = None
+
+    # look up bead samples for plan
+    query = """
+    select distinct ?sample where
+    {{
+      <{}> <http://sd2e.org#experimentalData> ?data .
+      ?data <http://www.w3.org/ns/prov#wasDerivedFrom>+ <https://hub.sd2e.org/user/sd2e/design/beads_spherotech_rainbow/1> .
+      ?data <http://www.w3.org/ns/prov#wasDerivedFrom> ?sample .
+    }}
+    """.format(plan_id)
+    sparql.setQuery(query)
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()['results']['bindings']
+    for result in results:
+      bead_uri = result['sample']['value']
+      if save_bead_uri == None:
+        save_bead_uri = bead_uri
+
+    # look up WT for plan
+    # NCIT_C62195 is the ontology term for a wild type design
+    query = """
+    select distinct ?sample where
+    {{
+      <{}> <http://sd2e.org#experimentalData> ?data .
+      ?sample <http://sbols.org/v2#role> <http://purl.obolibrary.org/obo/NCIT_C62195> .
+      ?data <http://www.w3.org/ns/prov#wasDerivedFrom>+ ?sample .
+    }}
+    """.format(plan_id)
+    sparql.setQuery(query)
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()['results']['bindings']
+    for result in results:
+      wt_uri = result['sample']['value']
+      if save_wt_uri == None:
+        save_wt_uri = wt_uri
+
+    if save_bead_uri != None:
+      print("Writing bead control: " + plan_id + " " + save_bead_uri)
+
+      query = """
+      WITH <https://hub.sd2e.org/user/sd2e> 
+      INSERT {{
+      <{}> <http://sd2e.org#bead_control> <{}> .
+      }}""".format(plan_id, save_bead_uri)
+      sparql.setQuery(query)
+      sparql.setReturnFormat(JSON)
+      bead_write_results = sparql.query().convert()
+      print(bead_write_results)
+
+    if save_wt_uri != None:
+      print("Writing wild type as negative control: " + plan_id + " " + save_wt_uri)
+
+      query = """
+      WITH <https://hub.sd2e.org/user/sd2e>
+      INSERT {{
+      <{}> <http://sd2e.org#negative_control> <{}> .
+      }} 
+      """.format(plan_id, save_wt_uri)
+      sparql.setQuery(query)
+      sparql.setReturnFormat(JSON)
+      wt_write_results = sparql.query().convert()
+      print(wt_write_results)
+
+      bead_write_results['results']['bindings'].extend(wt_write_results['results']['bindings'])
+      return bead_write_results
+
 def main(args=None):
     if args is None:
         args = sys.argv[1:]
@@ -731,6 +868,9 @@ def main(args=None):
             else:
                 docs[1].upload(args.url, args.email, args.password, SD2_EXP_COLLECTION, 2)
                 print('Plan uploaded.')
+
+            post_upload_intent(plan_data, args.url, args.email, args.password)
+            post_upload_controls(plan_data)
 
     print('done')
 
