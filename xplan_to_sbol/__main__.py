@@ -870,7 +870,8 @@ def main(args=None):
             plan_base_name = os.path.basename(args.input)
             plan_id = plan_data["id"]
 
-            post_upload_json(plan_id, plan_data["intent"], create_intent_file_name(plan_base_name), args.url, args.email, args.password)
+            if "intent" in plan_data and plan_data["intent"] is not None:
+                post_upload_json(plan_id, plan_data["intent"], create_intent_file_name(plan_base_name), args.url, args.email, args.password)
             
             post_upload_controls(plan_data)
 
