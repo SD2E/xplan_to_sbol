@@ -695,12 +695,9 @@ def convert_xplan_to_sbol(plan_data, plan_path, exp_path, om_path, validate, nam
     return (plan_doc, exp_doc)
 
 """
-Does the intent already exist? e.g. for re-upload
+Does the attachment already exist? e.g. for re-upload
 """
-def read_intent(plan_data):
-
-    plan_id = plan_data['id']
-    intent_file_name = plan_data['experiment_id'] + '_intent.json'
+def read_attachment(uri, json_file_name):
 
     sparql = SPARQLWrapper("https://hub-api.sd2e.org/sparql")
     query = """
@@ -709,7 +706,7 @@ def read_intent(plan_data):
       <{}> <http://wiki.synbiohub.org/wiki/Terms/synbiohub#attachment> ?attachment_id .
       ?attachment_id <http://purl.org/dc/terms/title> ?attachment_name .
     }}
-    """.format(plan_id)
+    """.format(uri)
 
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
@@ -718,24 +715,25 @@ def read_intent(plan_data):
     if len(results['results']['bindings']) != 0:
         for attachment_value in results['results']['bindings']:
             found_attachment_name = attachment_value['attachment_name']['value']
-            if intent_file_name == found_attachment_name:
-                print("Already found attachment, skipping")
+            if json_file_name == found_attachment_name:
+                print("Already found attachment, {} skipping".format(json_file_name))
                 return True
     return False
 
-"""
-Link the plan's intent to the plan URI as an attachment
-Skips the attachment if a file already exists with the same name
-"""
-def post_upload_intent(plan_data, url, email, password):
+def create_intent_file_name(plan_path):
+    return os.path.splitext(plan_path)[0] + '_intent.json'
 
-    found_intent = read_intent(plan_data)
-    if found_intent:
+def create_sample_attributes_file_name(plan_path):
+    return os.path.splitext(plan_path)[0] + '_sample_attributes.json'
+
+"""
+Generic method for JSON upload
+"""
+def post_upload_json(uri, json_data, json_file_name, url, email, password, delete=False):
+
+    found_attachment = read_attachment(uri, json_file_name)
+    if found_attachment:
         return True
-
-    plan_id = plan_data['id']
-    intent_data = plan_data['intent']
-    intent_file_name = plan_data['experiment_id'] + '_intent.json'
 
     sbh = SynBioHub(url,
                     email,
@@ -743,12 +741,14 @@ def post_upload_intent(plan_data, url, email, password):
                     'http://hub-api.sd2e.org:80/sparql',
                     {'http://sd2e.org#bead_model', 'http://sd2e.org#bead_batch'})
 
-    print("Attaching intent")
-    with open(intent_file_name, "w") as outfile:
-        json.dump(intent_data, outfile)
+    if not os.path.exists(json_file_name):
+        with open(json_file_name, "w") as outfile:
+            json.dump(json_data, outfile)
 
-    sbh.attach_file(intent_file_name, plan_id)
-    os.remove(intent_file_name)
+    sbh.attach_file(json_file_name, uri)
+
+    if delete:
+        os.remove(json_file_name)
     return True
 
 """
@@ -760,7 +760,7 @@ def post_upload_controls(plan_data):
     plan_id = plan_data['id']
     sparql = SPARQLWrapper("https://hub-api.sd2e.org/sparql")
 
-    save_bead_uri = None
+    bead_uris = []
     save_wt_uri = None
 
     # look up bead samples for plan
@@ -777,8 +777,7 @@ def post_upload_controls(plan_data):
     results = sparql.query().convert()['results']['bindings']
     for result in results:
       bead_uri = result['sample']['value']
-      if save_bead_uri == None:
-        save_bead_uri = bead_uri
+      bead_uris.append(bead_uri)
 
     # look up WT for plan
     # NCIT_C62195 is the ontology term for a wild type design
@@ -798,18 +797,19 @@ def post_upload_controls(plan_data):
       if save_wt_uri == None:
         save_wt_uri = wt_uri
 
-    if save_bead_uri != None:
-      print("Writing bead control: " + plan_id + " " + save_bead_uri)
+    bead_write_results = {}
+    bead_write_results['results'] = { 'bindings' : [] }
+    for bead_uri in bead_uris:
+      print("Writing bead control: " + plan_id + " " + bead_uri)
 
       query = """
       WITH <https://hub.sd2e.org/user/sd2e> 
       INSERT {{
       <{}> <http://sd2e.org#bead_control> <{}> .
-      }}""".format(plan_id, save_bead_uri)
+      }}""".format(plan_id, bead_uri)
       sparql.setQuery(query)
       sparql.setReturnFormat(JSON)
-      bead_write_results = sparql.query().convert()
-      print(bead_write_results)
+      bead_write_results['results']['bindings'].extend(sparql.query().convert()['results']['bindings'])
 
     if save_wt_uri != None:
       print("Writing wild type as negative control: " + plan_id + " " + save_wt_uri)
@@ -822,10 +822,7 @@ def post_upload_controls(plan_data):
       """.format(plan_id, save_wt_uri)
       sparql.setQuery(query)
       sparql.setReturnFormat(JSON)
-      wt_write_results = sparql.query().convert()
-      print(wt_write_results)
-
-      bead_write_results['results']['bindings'].extend(wt_write_results['results']['bindings'])
+      bead_write_results['results']['bindings'].extend(sparql.query().convert()['results']['bindings'])
       return bead_write_results
 
 def main(args=None):
@@ -869,8 +866,23 @@ def main(args=None):
                 docs[1].upload(args.url, args.email, args.password, SD2_EXP_COLLECTION, 2)
                 print('Plan uploaded.')
 
-            post_upload_intent(plan_data, args.url, args.email, args.password)
+            #upload intent
+            plan_base_name = os.path.basename(args.input)
+            plan_id = plan_data["id"]
+
+            if "intent" in plan_data and plan_data["intent"] is not None:
+                post_upload_json(plan_id, plan_data["intent"], create_intent_file_name(plan_base_name), args.url, args.email, args.password)
+            
             post_upload_controls(plan_data)
+
+            # upload plan
+            post_upload_json(plan_id, plan_data, plan_base_name, args.url, args.email, args.password)
+
+            #upload sample attributes
+            sample_attribute_path = create_sample_attributes_file_name(plan_base_name)
+            with open(sample_attribute_path) as plan_sample_attributes_file:
+                plan_sample_attributes_data = json.load(plan_sample_attributes_file)
+                post_upload_json(plan_id, plan_sample_attributes_data, plan_sample_attributes_file, args.url, args.email, args.password)
 
     print('done')
 
