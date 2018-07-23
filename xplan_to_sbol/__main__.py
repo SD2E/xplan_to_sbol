@@ -883,7 +883,7 @@ def main(args=None):
             plan_sample_attributes_data = None
             with open(sample_attribute_path) as plan_sample_attributes_file:
                 plan_sample_attributes_data = json.load(plan_sample_attributes_file)
-            post_upload_json(plan_id, plan_sample_attributes_data, sample_attribute_path, args.url, args.email, args.password)
+                post_upload_json(plan_id, plan_sample_attributes_data, sample_attribute_path, args.url, args.email, args.password)
 
     print('done')
 
