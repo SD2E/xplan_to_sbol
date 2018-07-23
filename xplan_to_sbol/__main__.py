@@ -889,11 +889,12 @@ def main(args=None):
             post_upload_json(plan_id, plan_data, plan_base_name, args.url, args.email, args.password)
 
             #upload sample attributes
-            sample_attribute_path = create_sample_attributes_file_name(plan_base_name)
-            if os.path.exists(sample_attribute_path):
-                with open(sample_attribute_path) as plan_sample_attributes_file:
+            sample_attributes_name = create_sample_attributes_file_name(plan_base_name)
+
+            if os.path.exists(sample_attributes_name):
+                with open(sample_attributes_name) as plan_sample_attributes_file:
                     plan_sample_attributes_data = json.load(plan_sample_attributes_file)
-                    post_upload_json(plan_id, plan_sample_attributes_data, plan_sample_attributes_file, args.url, args.email, args.password)
+                    post_upload_json(plan_id, plan_sample_attributes_data, sample_attributes_name, args.url, args.email, args.password)
 
 if __name__ == '__main__':
     main()
