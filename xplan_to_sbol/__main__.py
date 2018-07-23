@@ -4,7 +4,8 @@ import sys
 import os
 from urllib.parse import urlparse
 from pySBOLx.pySBOLx import XDocument
-from synbiohub_adapter.upload_sbol import SynBioHub
+from synbiohub_adapter.upload_sbol import SynBioHub, URIsInUseError
+from synbiohub_adapter import SD2Constants
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 SD2_NS = 'http://hub.sd2e.org/user/sd2e'
@@ -17,7 +18,6 @@ SD2_DESIGN_NS = ''.join([SD2_NS, '/', SD2_DESIGN_ID])
 SD2_EXP_NS = ''.join([SD2_NS, '/', SD2_EXP_ID])
 SD2S_DESIGN_NS = ''.join([SD2S_NS, '/', SD2_DESIGN_ID])
 SD2S_EXP_NS = ''.join([SD2S_NS, '/', SD2_EXP_ID])
-SD2_EXP_COLLECTION = 'https://hub.sd2e.org/user/sd2e/experiment/experiment_collection/1'
 
 def load_alnum_id(id_data):
     if id_data.replace('_', '').replace('-', '').replace(':', '').isalnum():
@@ -234,9 +234,9 @@ def load_sample(sample_key, doc, condition=None, src_samples=[], measures=[]):
 
         print(sample_id)
 
-        sam = doc.create_sample(sample_id, condition, src_samples, measures)
+        sample = doc.create_sample(sample_id, condition, src_samples, measures)
 
-        return sam
+        return sample
 
 def load_src_sample_data(sample_data):
     try:
@@ -657,16 +657,16 @@ def load_plan_doc(plan_data):
 
     return doc
 
-def convert_xplan_to_sbol(plan_data, plan_path, exp_path, om_path, validate, namespace=None):
+def convert_xplan_to_sbol(plan_data, plan_path, exp_path, om_path, validate=False, serial_format='sbol', verbose=False, namespace=None):
     exp_doc = load_experiment_doc()
     exp_doc.configure_namespace(SD2_EXP_NS)
-    exp_doc.configure_options(validate, False)
+    exp_doc.configure_options(validate, False, serial_format, verbose)
 
     exp = load_experiment(plan_data, exp_doc)
 
     plan_doc = load_plan_doc(plan_data)
     if namespace is None:
-        plan_doc.configure_namespace(''.join([SD2_NS, '/', exp.displayId]))
+        plan_doc.configure_namespace('/'.join([SD2_NS, exp.displayId]))
     else:
         plan_doc.configure_namespace(namespace)
 
@@ -825,48 +825,58 @@ def post_upload_controls(plan_data):
       bead_write_results['results']['bindings'].extend(sparql.query().convert()['results']['bindings'])
       return bead_write_results
 
+def upload_plan(plan_doc, exp_doc, overwrite, url, email, password, sparql):
+    sbh = SynBioHub(url,
+                    email,
+                    password,
+                    sparql,
+                    {'http://sd2e.org#bead_model', 'http://sd2e.org#bead_batch'})
+
+    plan_collection_uri = '/'.join([SD2S_NS, plan_doc.displayId, plan_doc.displayId + '_collection/1'])
+
+    try:
+        sbh.submit_to_collection(plan_doc, plan_collection_uri, overwrite)
+        sbh.submit_to_collection(exp_doc, SD2Constants.SD2_EXPERIMENT_COLLECTION, overwrite)
+        print('Plan uploaded.')
+    except URIsInUseError as err:
+        print(err, 'Upload aborted. To overwrite, include -w in arguments.')
+
 def main(args=None):
     if args is None:
         args = sys.argv[1:]
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--input')
-    parser.add_argument('-o1', '--plan', nargs='?', default='example/sbol/plan.xml')
-    parser.add_argument('-o2', '--experiment', nargs='?', default='example/sbol/experiment.xml')
+    parser.add_argument('-o1', '--plan', nargs='?', default=None)
+    parser.add_argument('-o2', '--experiment', nargs='?', default=None)
     # parser.add_argument('-o3', '--design', nargs='?', default=None)
     parser.add_argument('-m', '--om', nargs='?', default='example/om/om-2.0.rdf')
     parser.add_argument('-v', '--validate', action='store_true')
     parser.add_argument('-w', '--overwrite', action='store_true')
     parser.add_argument('-n', '--namespace', nargs='?', default=None)
-    parser.add_argument('-u', '--url', nargs='?', default='https://hub.sd2e.org/')
+    parser.add_argument('-u', '--url', nargs='?', default='https://hub.sd2e.org')
     parser.add_argument('-e', '--email', nargs='?', default='sd2_service@sd2e.org')
     parser.add_argument('-p', '--password', nargs='?', default=None)
+    parser.add_argument('-s', '--sparql', nargs='?', default='http://hub-api.sd2e.org:80/sparql')
+    parser.add_argument('-f', '--serial_format', nargs='?', default='sbol')
+    parser.add_argument('-b', '--verbose', action='store_true')
     
     args = parser.parse_args(args)
 
     with open(args.input) as plan_file:
         plan_data = json.load(plan_file)
 
-        docs = convert_xplan_to_sbol(plan_data, args.plan, args.experiment, args.om, args.validate, args.namespace)
+        docs = convert_xplan_to_sbol(plan_data, args.plan, args.experiment, args.om, args.validate, args.serial_format, args.verbose, args.namespace)
 
-        if args.password is None:
+        if args.plan is not None and args.experiment is not None:
             docs[0].write(args.plan)
             docs[1].write(args.experiment)
 
         if args.password is not None:
-            result = docs[0].upload(args.url, args.email, args.password)
-            if result == 'Submission id and version already in use':
-                if args.overwrite:
-                    docs[0].upload(args.url, args.email, args.password, ''.join([SD2S_NS, '/', docs[0].displayId, '/', docs[0].displayId + '_collection/1']), 1)
-                    docs[1].upload(args.url, args.email, args.password, SD2_EXP_COLLECTION, 2)
-                    print('Plan overwritten.')
-                else:
-                    print('Plan ID is already used and would be overwritten. Upload aborted. To overwrite, include -w in arguments.')
-            else:
-                docs[1].upload(args.url, args.email, args.password, SD2_EXP_COLLECTION, 2)
-                print('Plan uploaded.')
+            # upload plan SBOL
+            upload_plan(docs[0], docs[1], args.overwrite, args.url, args.email, args.password, args.sparql)
 
-            #upload intent
+            # upload intent JSON
             plan_base_name = os.path.basename(args.input)
             plan_id = plan_data["id"]
 
@@ -875,16 +885,15 @@ def main(args=None):
             
             post_upload_controls(plan_data)
 
-            # upload plan
+            # upload plan JSON
             post_upload_json(plan_id, plan_data, plan_base_name, args.url, args.email, args.password)
 
             #upload sample attributes
             sample_attribute_path = create_sample_attributes_file_name(plan_base_name)
-            with open(sample_attribute_path) as plan_sample_attributes_file:
-                plan_sample_attributes_data = json.load(plan_sample_attributes_file)
-                post_upload_json(plan_id, plan_sample_attributes_data, plan_sample_attributes_file, args.url, args.email, args.password)
-
-    print('done')
+            if os.path.exists(sample_attribute_path):
+                with open(sample_attribute_path) as plan_sample_attributes_file:
+                    plan_sample_attributes_data = json.load(plan_sample_attributes_file)
+                    post_upload_json(plan_id, plan_sample_attributes_data, plan_sample_attributes_file, args.url, args.email, args.password)
 
 if __name__ == '__main__':
     main()
